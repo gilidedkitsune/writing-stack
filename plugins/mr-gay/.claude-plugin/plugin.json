@@ -1,0 +1,9 @@
+{
+  "name": "mr-gay",
+  "description": "The fix-it tool: a tough, exacting copyeditor with verdict-first review, quick-fix or full report, and concreteness scoring.",
+  "version": "1.4.1",
+  "author": {
+    "name": "Taylor",
+    "email": "taylor@stackblitz.com"
+  }
+}

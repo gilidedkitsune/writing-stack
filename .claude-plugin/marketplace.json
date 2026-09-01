@@ -1,0 +1,22 @@
+{
+  "name": "writing-stack",
+  "owner": {
+    "name": "Taylor / Bolt.new Content",
+    "email": "taylor@stackblitz.com"
+  },
+  "description": "Internal writing and editing skills for Bolt.new and StackBlitz content.",
+  "plugins": [
+    {
+      "name": "write-strike-kit",
+      "source": "./plugins/write-strike-kit",
+      "description": "The make-it kit: routing spine + craft + voice + personas + formats + SEO/GEO.",
+      "version": "1.4.1"
+    },
+    {
+      "name": "mr-gay",
+      "source": "./plugins/mr-gay",
+      "description": "The fix-it tool: verdict-first copyedit, quick-fix or full report, concreteness scoring.",
+      "version": "1.4.1"
+    }
+  ]
+}

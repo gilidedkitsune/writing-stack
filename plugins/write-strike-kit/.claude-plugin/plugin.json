@@ -1,0 +1,9 @@
+{
+  "name": "write-strike-kit",
+  "description": "The make-it kit: routing spine, brand voice, personas, content formats, Ogilvy, slop audit, and SEO/GEO data for Bolt.new and StackBlitz content.",
+  "version": "1.4.1",
+  "author": {
+    "name": "Taylor",
+    "email": "taylor@stackblitz.com"
+  }
+}

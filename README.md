@@ -10,9 +10,9 @@ Two Claude Code plugins for Bolt.new and StackBlitz content. One writes, one edi
 In Claude Code, add this marketplace, then install both plugins:
 
 ```
-/plugin marketplace add trajanodoce/bolt-writing-plugins
-/plugin install write-strike-kit@bolt-writing-plugins
-/plugin install mr-gay@bolt-writing-plugins
+/plugin marketplace add gilidedkitsune/writing-stack
+/plugin install write-strike-kit@writing-stack
+/plugin install mr-gay@writing-stack
 ```
 
 You will be asked to trust the marketplace the first time. After that you are set.
@@ -21,7 +21,7 @@ You will be asked to trust the marketplace the first time. After that you are se
 > 1. You have a **collaborator invite** to this repo (ask Taylor) and you've accepted it.
 > 2. Your git is **signed in to GitHub** on this machine — run `gh auth login`, or have an SSH key on your GitHub account.
 >
-> If `/plugin marketplace add` fails, it's almost always one of those. Quick test: you should be able to run `git clone git@github.com:trajanodoce/bolt-writing-plugins.git`. Fix the access, then retry Step 1.
+> If `/plugin marketplace add` fails, it's almost always one of those. Quick test: you should be able to run `git clone git@github.com:gilidedkitsune/writing-stack.git`. Fix the access, then retry Step 1.
 
 ## How to use them
 
@@ -68,8 +68,8 @@ bolt-seo-geo reads bolt.new's real Google Analytics and Search Console numbers u
 When a new version is pushed, you receive it automatically on next launch, or pull it now:
 
 ```
-/plugin update write-strike-kit@bolt-writing-plugins
-/plugin update mr-gay@bolt-writing-plugins
+/plugin update write-strike-kit@writing-stack
+/plugin update mr-gay@writing-stack
 ```
 
 ## For the maintainer
