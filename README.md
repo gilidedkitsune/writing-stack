@@ -56,7 +56,7 @@ write-strike is the front door; it loads the others only when a job needs them.
 | bolt-content-formats | Templates for fixed-shape content (customer story, webinar, sales enablement, creator brief) |
 | bolt-blog | The blog content-type default: write, brief, optimize, outrank a competitor |
 | ogilvy-copywriting | Persuasion principles, plus an optional voice |
-| bolt-stop-slop | The AI-tells audit |
+| noslops | The AI-tells audit |
 | bolt-seo-geo | Live SEO/GEO data and tooling (setup below) |
 
 ## bolt-seo-geo setup (per person)

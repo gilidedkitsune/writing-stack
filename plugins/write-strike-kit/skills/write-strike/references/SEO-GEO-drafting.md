@@ -1,6 +1,6 @@
 # SEO-GEO Drafting
 
-The embedded drafting layer for write-strike: how to draft copy that ranks in Google **and** gets cited by AI answer engines (ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot). Apply to blog, long-form, and website copy. Layers on top of bolt-TOV-and-guidelines and bolt-stop-slop; it does not replace either.
+The embedded drafting layer for write-strike: how to draft copy that ranks in Google **and** gets cited by AI answer engines (ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot). Apply to blog, long-form, and website copy. Layers on top of bolt-TOV-and-guidelines and noslops; it does not replace either.
 
 This file is the **writing** layer only: how the words on the page earn rankings and citations. The **tooling** (keyword research, SERP analysis, audits, data pulls, post-draft optimizers) lives in the `bolt-seo-geo` skill. When the workflow needs a tool, delegate there.
 
@@ -37,7 +37,7 @@ Every section must add something that does not already exist on the internet: an
 Write about the named real-world things (products, companies, concepts), not search phrases. Use full proper nouns on first mention in each section and tie each to its category ("Bolt.new, an AI app builder, ..."). Cover the related entities and subtopics a knowledgeable writer would naturally mention. Keyword density is dead in both SEO and GEO; stuffing is the single worst tactic. Write fluently, around a 7th to 9th grade reading level.
 
 ### 6. Definitive, non-hedged claims
-Commit to a position where the evidence supports it. Cited and extracted text skews definitive; hedged "some say X, others Y" prose gives an engine nothing to lift and a reader nothing to trust. Hedge only on genuine uncertainty (and accuracy always wins). Pairs with bolt-stop-slop's specificity and anti-hedging rules.
+Commit to a position where the evidence supports it. Cited and extracted text skews definitive; hedged "some say X, others Y" prose gives an engine nothing to lift and a reader nothing to trust. Hedge only on genuine uncertainty (and accuracy always wins). Pairs with noslops's specificity and anti-hedging rules.
 
 ### 7. Liftable structures
 AI engines lift these near-verbatim and readers scan them:

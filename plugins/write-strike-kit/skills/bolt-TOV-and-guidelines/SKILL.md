@@ -34,7 +34,7 @@ We are defining a new market. We want to own prompt coding for the enterprise. O
 **Current.**
 We want to sound like what we are, a modern, AI-native company. Stay away from wording that feels too stodgy or old-school business slang-y.
 
-Stodgy: "We provide best-in-class solutions that help enterprises leverage synergies." Current: "Describe the app you need. Bolt.new builds it." The business-jargon table in `bolt-stop-slop`'s banned.md is the field guide to what old-school sounds like.
+Stodgy: "We provide best-in-class solutions that help enterprises leverage synergies." Current: "Describe the app you need. Bolt.new builds it." The business-jargon table in `noslops`'s banned.md is the field guide to what old-school sounds like.
 
 **Engaging and intentional.**
 Our audience should read our content and be thirsty for more. What we take the time to draft, write, and publish should also be worth the reader's time. Our content should have purpose, meet a need, or drive a lead.
@@ -135,7 +135,7 @@ Exceptions:
 - Well-established acronyms (like DVD) don't need to be spelled out if doing so would confuse the reader.
 
 ### Dashes
-Don't use em dashes (—). They read as an AI tell, and we've cut them. Use a comma, colon, semicolon, parentheses, or two sentences instead. (Enforced in the bolt-stop-slop filter.)
+Don't use em dashes (—). They read as an AI tell, and we've cut them. Use a comma, colon, semicolon, parentheses, or two sentences instead. (Enforced in the noslops filter.)
 
 En dashes (–) are allowed in ranges only: Jun 15–18, 2–4 pm, $8K–$22K. Never as a stand-in for an em dash.
 
@@ -161,7 +161,7 @@ Run every line that carries weight (headlines, claims, openers, CTAs) through th
 1. **Can I picture it?** "Streamline your workflow" shows nothing. "Cut your Monday report from four hours to 15 minutes" shows a clock.
 2. **Can I prove it true or false?** "Industry-leading" is unfalsifiable. "Used by 12 of the top 20 Shopify stores" is checkable.
 3. **Could a competitor write the same sentence?** "We help businesses grow" fits any logo. "1,000 songs in your pocket" belongs to one product.
-Three yeses, keep it. Two, sharpen it. One or none, rewrite it. Specificity is what passes this test, and specificity is what readers believe. For worked examples, see `${CLAUDE_PLUGIN_ROOT}/skills/bolt-stop-slop/references/slop-vs-gold.md`.
+Three yeses, keep it. Two, sharpen it. One or none, rewrite it. Specificity is what passes this test, and specificity is what readers believe. For worked examples, see `${CLAUDE_PLUGIN_ROOT}/skills/noslops/references/slop-vs-gold.md`.
 
 ### Murder your darlings
 Make sure everything in a content piece works together. Don't keep an analogy or explanation just because you like how it sounds. If a phrase or concept weakens the cohesion of the piece: kill it.
@@ -216,8 +216,8 @@ Read through your copy to make sure you've got the correct version of all homogr
 
 ## Stop Slop: AI writing quality filter
 
-Every draft passes through the stop-slop filter before it ships. That filter lives in one place now: the **`bolt-stop-slop`** skill (`${CLAUDE_PLUGIN_ROOT}/skills/bolt-stop-slop/SKILL.md`). It is the single source of truth for killing dead language, fixing AI structural patterns, the voice rules (active voice, no adverbs, no em dashes, no copula inflation, contractions, specificity over declaration), the second-generation tells, the build-texture rules, the rhythm checks, and the 35/50 scoring rubric. Run it on every piece.
+Every draft passes through the stop-slop filter before it ships. That filter lives in one place now: the **`noslops`** skill (`${CLAUDE_PLUGIN_ROOT}/skills/noslops/SKILL.md`). It is the single source of truth for killing dead language, fixing AI structural patterns, the voice rules (active voice, no adverbs, no em dashes, no copula inflation, contractions, specificity over declaration), the second-generation tells, the build-texture rules, the rhythm checks, and the 35/50 scoring rubric. Run it on every piece.
 
-Worked examples of specific-beats-slop live in `${CLAUDE_PLUGIN_ROOT}/skills/bolt-stop-slop/references/slop-vs-gold.md`.
+Worked examples of specific-beats-slop live in `${CLAUDE_PLUGIN_ROOT}/skills/noslops/references/slop-vs-gold.md`.
 
-**Sharing this guide outside the stack** (external creators, agencies): bundle the `bolt-stop-slop` skill and its references alongside it, or the slop filter and worked examples this section points to won't travel.
+**Sharing this guide outside the stack** (external creators, agencies): bundle the `noslops` skill and its references alongside it, or the slop filter and worked examples this section points to won't travel.

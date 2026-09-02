@@ -30,4 +30,4 @@ Kill any feature line that cannot ladder to a reader benefit.
 - **PAS (tweet):** "Your landing page has been 'almost done' for three weeks. Every day it's down is leads you're not capturing. Describe it to Bolt.new, ship it today."
 - **BAB (email):** "Before: a dev ticket and a two-week wait. After: live by lunch. Here's the 90-second version."
 
-These reinforce the rest of the stack rather than competing with it: FAB serves Ogilvy's "facts over adjectives," and a formula's hook should still pass the VoC gut-check (does it ring true to how customers talk?) and the bolt-stop-slop filter before it ships.
+These reinforce the rest of the stack rather than competing with it: FAB serves Ogilvy's "facts over adjectives," and a formula's hook should still pass the VoC gut-check (does it ring true to how customers talk?) and the noslops filter before it ships.

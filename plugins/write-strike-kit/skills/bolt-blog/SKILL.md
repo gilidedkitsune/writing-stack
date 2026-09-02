@@ -1,14 +1,14 @@
 ---
 name: bolt-blog
 description: >
-  Write blog posts and SEO blog content for Bolt.new and StackBlitz. Use this skill for any blog content task: write a post from scratch, produce a content brief or outline, optimize an existing draft, or analyze a competitor URL and write a post to outrank it. Trigger on "bolt blog", "blog post for bolt", "write a blog post", "draft a blog", "content brief", "blog brief", "optimize this post", "outrank this article", or any request for blog content for Bolt.new. Do NOT trigger for other content types (social posts, emails, ads, landing pages, 1-pagers); those route through write-strike. This skill runs robust intake and research, drafts to the locked SEO-blog shape with full Bolt.new TOV, and audits with bolt-stop-slop before presenting clean copy.
+  Write blog posts and SEO blog content for Bolt.new and StackBlitz. Use this skill for any blog content task: write a post from scratch, produce a content brief or outline, optimize an existing draft, or analyze a competitor URL and write a post to outrank it. Trigger on "bolt blog", "blog post for bolt", "write a blog post", "draft a blog", "content brief", "blog brief", "optimize this post", "outrank this article", or any request for blog content for Bolt.new. Do NOT trigger for other content types (social posts, emails, ads, landing pages, 1-pagers); those route through write-strike. This skill runs robust intake and research, drafts to the locked SEO-blog shape with full Bolt.new TOV, and audits with noslops before presenting clean copy.
 ---
 
 # Bolt.new Blog Writer
 
 You write blog content for Bolt.new. This skill pairs a robust process (real research, a sourcing bar, audience calibration, an Ogilvy alternate) with a locked output shape (the four workflows and templates below). The shape is fixed. The process is what makes the output good.
 
-**Read before writing anything:** the Bolt.new voice and editorial rules in `${CLAUDE_PLUGIN_ROOT}/skills/bolt-TOV-and-guidelines/SKILL.md`. The AI-tell filter is its own skill, `bolt-stop-slop`, and runs as a mandatory pass (not an inline checklist). Everything in the TOV applies to blog content.
+**Read before writing anything:** the Bolt.new voice and editorial rules in `${CLAUDE_PLUGIN_ROOT}/skills/bolt-TOV-and-guidelines/SKILL.md`. The AI-tell filter is its own skill, `noslops`, and runs as a mandatory pass (not an inline checklist). Everything in the TOV applies to blog content.
 
 ## Handles four workflows
 
@@ -26,7 +26,7 @@ You write blog content for Bolt.new. This skill pairs a robust process (real res
 
 Always ask the user before continuing. Never assume. Ask: "Do you want a full post, an outline, or an optimization pass?"
 
-**Stop Slop is mandatory on every output, posts and briefs alike.** Before delivering anything, run the `bolt-stop-slop` skill (briefs, outlines, FAQs, and meta copy included). Zero em dashes in any output: restructure every sentence that uses one, using a comma, period, colon, semicolon, or parentheses. If the draft scores below 35/50, revise before delivering.
+**Stop Slop is mandatory on every output, posts and briefs alike.** Before delivering anything, run the `noslops` skill (briefs, outlines, FAQs, and meta copy included). Zero em dashes in any output: restructure every sentence that uses one, using a comma, period, colon, semicolon, or parentheses. If the draft scores below 35/50, revise before delivering.
 
 ---
 
@@ -86,7 +86,7 @@ For deeper planning (a series, new pillars, a backlog) use `/content-strategy`. 
 - Suggest meta title (≤60 chars) and meta description (≤160 chars) at the end
 - Suggest a slug
 
-After writing, run the `bolt-stop-slop` audit. Score the draft 1-10 on each dimension. If below 35/50, revise before delivering. Double-check: zero em dashes.
+After writing, run the `noslops` audit. Score the draft 1-10 on each dimension. If below 35/50, revise before delivering. Double-check: zero em dashes.
 
 ---
 
@@ -207,7 +207,7 @@ Check:
 Report findings as: ✅ Pass / ⚠️ Fix needed / ❌ Missing, with specific fixes inline.
 
 ### Pass 2: Voice, readability & Stop Slop
-Run the `bolt-stop-slop` skill and fix violations in the text. Then check readability against the target persona: Flesch Reading Ease 60-70 for small-business owners and general readers, 50-60 tolerated for professional developers, in between for enterprise buyers and product managers. Flag sentences over 30 words and paragraphs over five sentences. For a full readability and rhythm pass, hand the draft to `mr-gay`. Deliver the revised draft with a short summary of what changed.
+Run the `noslops` skill and fix violations in the text. Then check readability against the target persona: Flesch Reading Ease 60-70 for small-business owners and general readers, 50-60 tolerated for professional developers, in between for enterprise buyers and product managers. Flag sentences over 30 words and paragraphs over five sentences. For a full readability and rhythm pass, hand the draft to `mr-gay`. Deliver the revised draft with a short summary of what changed.
 
 ---
 
@@ -234,7 +234,7 @@ To export to a Google Doc, use the `anthropic-skills:docx` skill to generate a `
 Then ask: **"Want me to draft an Ogilvy version (V2) of this post?"**
 
 ### Ogilvy draft (V2)
-An alternate version of the same post through David Ogilvy's principles (`/ogilvy-copywriting`). Same research, same facts, same structure, different persuasion. Answer three questions first: the **positioning** (what Bolt.new does for this reader, framed by mindset), the **single promise** (one benefit, competitive and deliverable), and the **big idea** (simple, memorable). Then rewrite so the headline carries the promise, facts replace praise adjectives, the product is the hero, and every section serves the one promise. Present V2 alongside the original so the user can compare. Run `bolt-stop-slop` on V2 before presenting.
+An alternate version of the same post through David Ogilvy's principles (`/ogilvy-copywriting`). Same research, same facts, same structure, different persuasion. Answer three questions first: the **positioning** (what Bolt.new does for this reader, framed by mindset), the **single promise** (one benefit, competitive and deliverable), and the **big idea** (simple, memorable). Then rewrite so the headline carries the promise, facts replace praise adjectives, the product is the hero, and every section serves the one promise. Present V2 alongside the original so the user can compare. Run `noslops` on V2 before presenting.
 
 ---
 

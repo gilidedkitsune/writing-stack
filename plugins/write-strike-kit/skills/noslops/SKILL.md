@@ -1,10 +1,10 @@
 ---
-name: bolt-stop-slop
+name: noslops
 description: >
   Audit and clean Bolt.new content for AI writing patterns. Use this skill after drafting any Bolt.new or StackBlitz content to eliminate AI tells, slop, and formulaic writing. Trigger on: "stop slop", "slop check", "audit this draft", "AI tells", "clean up the copy", or any request to review Bolt.new content for AI-generated patterns. Also trigger automatically as part of the bolt-blog workflow (Step 6). Works on any prose: blogs, social, emails, landing pages, thought leadership.
 ---
 
-# Bolt stop slop
+# noslops
 
 One pass. Catch everything. This skill replaces both the AI-tells audit and the stop-slop check with a single, unified filter.
 
