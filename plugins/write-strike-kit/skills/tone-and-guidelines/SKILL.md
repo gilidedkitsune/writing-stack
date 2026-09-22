@@ -27,8 +27,8 @@ What you say is as important as how you say it.
 **Unsanitized.**
 Put the grit next to the beauty and don't clean either one up for the other. Name the smell, the mess, the vulgar line. If a sentence flinches away from a real detail to stay polite, put the detail back in.
 
-**Self-aimed first.**
-When something's funny at someone's expense, aim it at yourself before anyone else. Report your own bad calls and embarrassments flat, like data, not with an apology or a punchline announcing itself.
+**Self-aimed first, and fair game.**
+When something's funny at someone's expense, aim it at yourself before anyone else. Report your own bad calls and embarrassments flat, like data, not with an apology or a punchline announcing itself. When the target shifts to someone else, it's someone who can take it, delivered with real affection underneath, never at someone vulnerable.
 
 **Earnest underneath.**
 The jokes never replace the stakes. Say what you actually want, actually believe, actually care about, then let the humor sit next to it, not instead of it. A piece that's all bit and no stake is unfinished.
