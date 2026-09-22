@@ -97,8 +97,8 @@ Every webinar generates multiple content assets. Check off what's needed and tra
 | Reminder email (24 hours before) | | | | |
 | Reminder email (1 hour before) | | | | |
 | Email invite to existing list | | | | |
-| Social: Eric Simons LinkedIn announcement | | | | |
-| Social: Eric Simons X announcement | | | | |
+| Social: [Speaker] LinkedIn announcement | | | | |
+| Social: [Speaker] X announcement | | | | |
 | Social: Brand LinkedIn announcement | | | | |
 | Social: Brand X announcement | | | | |
 | Social: LinkedIn reminder (day of) | | | | |
@@ -124,8 +124,8 @@ Every webinar generates multiple content assets. Check off what's needed and tra
 | Recording upload and hosting | | | | |
 | Follow-up email (attendees) | | | | |
 | Follow-up email (no-shows + recording link) | | | | |
-| Social: Eric Simons recap (LinkedIn) | | | | |
-| Social: Eric Simons recap (X) | | | | |
+| Social: [Speaker] recap (LinkedIn) | | | | |
+| Social: [Speaker] recap (X) | | | | |
 | Social: Brand recap (LinkedIn) | | | | |
 | Social: Brand recap (X) | | | | |
 | Blog recap or writeup | | | | |
@@ -170,11 +170,11 @@ Structure:
 
 All webinar content, including brand social posts, uses the default voice from tone-and-guidelines.
 
-**Exception:** Social posts attributed to a named person (e.g. Eric Simons) use that person's tone profile if one exists in `bolter-tones`; apply it on top of the tone-and-guidelines editorial guidelines. If no profile exists yet, flag it and use the default voice rather than inventing one. This applies only to person-attributed social posts, not to landing pages, emails, or other webinar content.
+**Exception:** Social posts attributed to a named person (e.g. the presenting speaker) use that person's tone profile if one exists in `bolter-tones`; apply it on top of the tone-and-guidelines editorial guidelines. If no profile exists yet, flag it and use the default voice rather than inventing one. This applies only to person-attributed social posts, not to landing pages, emails, or other webinar content.
 
 ### LinkedIn posts
 
-Draft three posts minimum per account (Eric Simons + brand):
+Draft three posts minimum per account ([Speaker] + brand):
 1. **Announcement** (one to two weeks before): what the webinar covers and why it matters
 2. **Reminder** (day of or day before): shorter, urgency-focused, link to register
 3. **Recap** (day after): key takeaway, link to recording
@@ -183,7 +183,7 @@ Target 800-1,300 characters. Professional with a sense of humor.
 
 ### X posts
 
-Draft three posts minimum per account (Eric Simons + brand):
+Draft three posts minimum per account ([Speaker] + brand):
 1. **Announcement**: hook + link. Target ~250 characters.
 2. **Day-of reminder**: "Starting in [time]" + link
 3. **Recap / highlight**: one standout moment or quote + link to recording
@@ -223,7 +223,7 @@ If the webinar generates a blog recap or landing page that will live on bolt.new
 - [ ] Internal links added where applicable
 - [ ] SEO / GEO elements incorporated (if web-published)
 - [ ] Default voice (tone-and-guidelines) applied to all content (landing page, emails, brand social, slides, recap)
-- [ ] Eric Simons tone applied to his social posts only
+- [ ] [Speaker]'s tone applied to their social posts only
 
 ### Editor review
 - [ ] Tone and voice on-brand
