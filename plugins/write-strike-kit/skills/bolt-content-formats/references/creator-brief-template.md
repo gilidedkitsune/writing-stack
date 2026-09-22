@@ -15,7 +15,7 @@ Answer these before you write the brief. If you can't answer one, find out befor
 - **What's the offer?** Paid, gifted, affiliate, or organic partnership. What are they getting, and what are we getting?
 - **What's the budget and timeline?** Both shape what you can reasonably ask for.
 - **Who approves?** Name the person who signs off before anything publishes, and how long they need.
-- **What's the persona?** Most creator work maps to ICP 4 (agency / creative freelancer), ICP 3 (in-house marketer), or ICP 1 (small business owner / founder). Creators themselves usually *are* ICP 4, so a brief aimed at their audience and a brief aimed at them may target different personas. Read the relevant profile in `bolt-icp` before writing the brief.
+- **What's the persona?** Ask directly: role, seniority, and what they already know. Creators themselves are often a different audience than the people they're creating for, so a brief aimed at their audience and a brief aimed at them may need different calibration.
 
 ---
 
@@ -40,11 +40,11 @@ Answer these before you write the brief. If you can't answer one, find out befor
 
 *Prompts:*
 - Who is the creator's audience, and how does it overlap with ours?
-- Which Bolt.new buyer persona does this audience map to? (Read it in `bolt-icp` and name it here.)
+- Who is this audience, specifically? (Name the role, seniority, and what they already know here.)
 - What does this audience already know about Bolt.new, and what do they care about?
 - What would make this audience stop scrolling?
 
-**Notes:** Tie the audience to a specific persona so the creator understands the register. For ICP 3 and ICP 4, the audience thinks visually and respects craft: show the deliverable quality. For ICP 1, lead with relatable outcomes and plain language. Give the creator the persona's pain points so they can speak to something real.
+**Notes:** Tie the audience to a specific reader so the creator understands the register. A visually literate, craft-respecting audience wants to see deliverable quality; a small-business/founder audience wants relatable outcomes and plain language. Give the creator that reader's real pain points so they can speak to something true.
 
 ---
 
@@ -102,7 +102,7 @@ Specify for each deliverable:
 **Tone:** Firm but not fussy. These are the non-negotiables.
 
 - **Product naming:** Always write and say "Bolt.new," never "Bolt." This matters in voiceover, on-screen text, and captions.
-- **Voice:** Share `bolt-TOV-and-guidelines` with the creator (it's built to be downloadable and shareable). Ask them to keep their own voice but stay inside our tone: plain, direct, no hype, no buzzwords.
+- **Voice:** Share `tone-and-guidelines` with the creator (it's built to be downloadable and shareable). Ask them to keep their own voice but stay inside our tone: plain, direct, no hype, no buzzwords.
 - **Do's:** Show real output. Be specific ("built this in an afternoon"). Speak to a real use case. Let their personality through.
 - **Don'ts:** No buzzword salad. No overpromising. No "this will change everything." No knocking competitors. No em dashes in on-screen text or captions (use commas, colons, periods, or parentheses).
 - **Visual / logo notes:** Where to get the logo, clear space, color, and any "don't alter the logo" rules. Note whether on-screen branding is required and where.

@@ -1,6 +1,6 @@
 # Website Copy Best Practices
 
-Rules specific to website copy (homepages, landing pages, feature pages, pricing pages). These layer on top of the bolt-TOV-and-guidelines and the GEO/AEO writing rules. No duplication: this file covers what those don't.
+Rules specific to website copy (homepages, landing pages, feature pages, pricing pages). These layer on top of the tone-and-guidelines and the GEO/AEO writing rules. No duplication: this file covers what those don't.
 
 ---
 

@@ -37,7 +37,7 @@ Then ask page-type-specific follow-ups:
 - Topic and thesis
 - Target length (~2,000–5,000+ words)
 - Chapter/section structure (if the user has one)
-- Source material and citation constraints (the format itself is fixed: Chicago superscript + Works Cited, per bolt-TOV-and-guidelines)
+- Source material and citation constraints (the format itself is fixed: Chicago superscript + Works Cited, per tone-and-guidelines)
 - Survey/research report variant, also ask: data source (spreadsheet, survey tool, raw data), key findings the user wants highlighted, visualization needs (tables, charts to describe)
 
 **Ad copy:**
@@ -64,7 +64,7 @@ Then ask page-type-specific follow-ups:
 - Partner details (if co-hosted)
 - Target persona and funnel stage
 - Which content assets are needed (the BOM checklist: landing page, emails, social, slides, recap)
-- Voice: all webinar content uses Bolt.new TOV. Personal tone profiles apply only to social posts attributed to a named person (see Webinar-specific in Step 4)
+- Voice: all webinar content uses the default voice. Personal tone profiles apply only to social posts attributed to a named person (see Webinar-specific in Step 4)
 
 **Sales enablement:**
 - Load `${CLAUDE_PLUGIN_ROOT}/skills/bolt-content-formats/references/sales-enablement-template.md` and work through the relevant asset's checklist

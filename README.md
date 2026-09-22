@@ -2,7 +2,7 @@
 
 Two Claude Code plugins for Bolt.new and StackBlitz content. One writes, one edits. Install both and they form a make-then-fix workflow.
 
-- **write-strike-kit** writes the draft (10 skills behind one routing spine).
+- **write-strike-kit** writes the draft (9 skills behind one routing spine).
 - **mr-gay** edits the draft (verdict-first review, then quick-fix or full report).
 
 ## Install (one time)
@@ -39,7 +39,7 @@ To call one explicitly, plugin skills are namespaced `plugin:skill`:
 
 ### The make-then-fix flow
 
-1. **Draft** in write-strike-kit. It picks the workflow for your content type, applies our voice and personas, pulls live SEO/GEO data when the piece needs it, and treats stops-slop's rules as drafting constraints from the first sentence, not a cleanup pass.
+1. **Draft** in write-strike-kit. It picks the workflow for your content type, asks who it's for and applies the default voice (or a specific person's, from bolter-tones), pulls live SEO/GEO data when the piece needs it, and treats stops-slop's rules as drafting constraints from the first sentence, not a cleanup pass.
 2. **Sharpen** with the edit menu. stops-slop runs first and always, then whichever the piece needs: mr-gay for the copyedit, the Ogilvy pass for persuasion, aeo-craft for citability on anything bound for bolt.new.
 3. **Loop** as needed. A structural rewrite goes back to write-strike-kit; line-level polish stays in mr-gay.
 
@@ -50,15 +50,16 @@ write-strike is the front door; it loads the others only when a job needs them.
 | Skill | Job |
 |---|---|
 | write-strike | The writer and routing spine |
-| bolt-TOV-and-guidelines | Brand voice, tone, and editorial rules |
-| bolt-icp | Four ICPs, stack-ranked, plus three named personas; readability and jargon calibration |
-| bolter-tones | Individual team-member voices |
+| tone-and-guidelines | The default voice, plus editorial rules and writing tips |
+| bolter-tones | Voice profiles for writing as a specific person instead of the default. Empty for now; add a profile whenever that's the job |
 | bolt-content-formats | Templates for fixed-shape content (customer story, webinar, sales enablement, creator brief) |
 | bolt-blog | The blog content-type default: write, brief, optimize, outrank a competitor |
 | ogilvy-copywriting | Persuasion principles, plus an optional voice |
 | stops-slop | The AI-tells filter and the 35/50 gate, applied as drafting constraints |
 | aeo-craft | The citability sculpt for bolt.new-bound work: gets a draft found, extracted, and cited by AI answer engines |
 | bolt-seo-geo | Live SEO/GEO data and tooling (setup below) |
+
+There's no persona library anymore: write-strike asks who a piece is for directly (role, seniority, what they already know) instead of picking from a ranked list.
 
 ## bolt-seo-geo setup (per person)
 

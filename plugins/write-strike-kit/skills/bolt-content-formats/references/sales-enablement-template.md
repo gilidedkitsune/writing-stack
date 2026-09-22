@@ -4,7 +4,7 @@
 
 Sales enablement content has one job: give the sales team repeatable, accurate language they can use in a live conversation. That means it has to be benefit-led (tie every feature to a business outcome), honest (acknowledge where we lose, because reps lose trust fast when a card oversells), and tight (a rep skims this between calls, not the night before).
 
-For voice, pain points, and proof points, read the relevant persona in `bolt-icp` first. For how Bolt.new stacks up, read the single **Competitive landscape** section in `bolt-icp`: the wedge statement plus the July 2026 competitor table (Replit, Lovable, Figma Make, Claude Design, Claude Code) and one line of nuance per persona. Pricing and positioning teardowns live in the Messaging & Brand hub in Notion, not in the persona file; pull them from there and date them.
+For voice, pain points, and proof points, ask who this is for directly (role, seniority, what they already know). **NEEDS A SOURCE:** the competitive-landscape data (wedge statement, competitor table, per-audience nuance) used to live in `bolt-icp`, now removed; there is no replacement source yet. Pricing and positioning teardowns live in the Messaging & Brand hub in Notion; pull them from there and date them.
 
 ---
 
@@ -22,12 +22,12 @@ For voice, pain points, and proof points, read the relevant persona in `bolt-icp
 
 # Asset 1: Battle Card (vs a named competitor)
 
-*One card per competitor. Keep it to a single screen a rep can scan in under a minute. The worked example below uses Lovable; build the same structure for Replit, v0, Cursor, Webflow, and others using the competitive landscape in `bolt-icp`.*
+*One card per competitor. Keep it to a single screen a rep can scan in under a minute. The worked example below uses Lovable; build the same structure for other named competitors. **NEEDS A SOURCE:** the competitive landscape used to live in `bolt-icp`, now removed.*
 
 ## Pre-Draft Checklist
 
-- **Which competitor, and for which persona?** A Lovable card for a creative (ICP 3 or ICP 4) reads differently than a Cursor card for the CTO persona. Name both, and for creatives say which half: an agency buyer (ICP 4) weighs margin and client handoff, an in-house marketer (ICP 3) weighs brand governance and launch dates.
-- **What's the latest on their pricing and positioning?** Pull from the Messaging & Brand hub in Notion (`bolt-icp` carries the wedge and the competitor table, deliberately not pricing) and verify against current data. Note the date.
+- **Which competitor, and for which buyer?** A Lovable card for a creative professional reads differently than a Cursor card for a technical buyer. Name both, and say which kind: an agency buyer weighs margin and client handoff, an in-house marketer weighs brand governance and launch dates.
+- **What's the latest on their pricing and positioning?** Pull from the Messaging & Brand hub in Notion and verify against current data. Note the date. **NEEDS A SOURCE:** the wedge statement and competitor table used to live in `bolt-icp`, now removed.
 - **What are the real proof points?** Customer outcomes, metrics, named accounts we can reference. Get specifics.
 
 ## Structure
@@ -60,7 +60,7 @@ Questions that surface where Bolt.new fits and where the competitor falls short,
 
 ### 6. Proof Points
 **Length:** 3-5 items
-Customer outcomes, metrics, named accounts, third-party stats. The evidence a rep drops into the conversation. Pull cited stats from `bolt-icp` (`third-party-research.md`) where relevant.
+Customer outcomes, metrics, named accounts, third-party stats. The evidence a rep drops into the conversation. **NEEDS A SOURCE:** cited third-party stats used to live in `bolt-icp` (`third-party-research.md`), now removed.
 
 ### 7. One-Line Positioning
 **Length:** 1 sentence
@@ -70,7 +70,7 @@ The single line a rep says to frame Bolt.new against this competitor. Memorable,
 
 ## Worked Example: Battle Card vs Lovable
 
-*Persona context: most relevant for ICP 4 (agency / creative freelancer), ICP 3 (in-house marketer), and ICP 1 (small business / founder). Facts as of June 2026, verify before use.*
+*Persona context: most relevant for agency/creative-freelancer, in-house-marketer, and small-business/founder buyers. Facts as of June 2026, verify before use.*
 
 **Competitor Snapshot**
 - AI app builder that generates polished React apps from prompts. Strong, design-forward UI output.
@@ -166,7 +166,7 @@ For every objection, fill in five parts:
 
 ## Pre-Draft Checklist
 
-- **Who's the buyer?** Name the persona (read it in `bolt-icp`). The differentiators and proof points change by audience.
+- **Who's the buyer?** Ask directly and name them (role, seniority, what they already know). The differentiators and proof points change by audience.
 - **What's the one thing they should remember?** The single positioning idea the sheet drives home.
 - **What proof do we have for this buyer?** Customer outcomes, metrics, cited stats relevant to them.
 
@@ -191,7 +191,7 @@ What sets Bolt.new apart, each tied to a business outcome. These are the points 
 
 ### 3. Proof Points
 **Length:** 3-5 items
-The evidence behind the positioning: customer outcomes, named accounts, metrics, third-party stats. Pull cited data from `bolt-icp` (`third-party-research.md`). Lead with the strongest number.
+The evidence behind the positioning: customer outcomes, named accounts, metrics, third-party stats. **NEEDS A SOURCE:** cited data used to live in `bolt-icp` (`third-party-research.md`), now removed. Lead with the strongest number.
 
 ### 4. Target Buyer
 **Length:** 2-4 sentences, or a short profile
