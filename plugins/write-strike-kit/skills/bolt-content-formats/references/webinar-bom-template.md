@@ -76,7 +76,7 @@ If co-hosted or co-marketed with a partner:
 
 ## Audience and positioning
 
-- **Target persona:** (small business owner / founder / entrepreneur; enterprise CTO / App Dev Leader; enterprise CPO; product manager; professional developer; marketer / creative agency / creative freelancer; general reader). See bolt-buyer-personas for the full profiles.
+- **Target ICP or persona:** (an ICP: ICP 1 business owner / entrepreneur, ICP 2 PM / product designer, ICP 3 in-house marketer, ICP 4 agency / creative freelancer; or a persona: enterprise CTO / App Dev Leader, enterprise CPO, professional developer. There is no general-reader option; a broad webinar still names an ICP, usually ICP 1). See bolt-icp for the full profiles.
 - **Funnel stage:** (TOFU / MOFU / BOFU)
 - **Campaign type:** (thought leadership, product education, customer showcase, partner co-marketing)
 - **What the audience gets out of it:** (be specific: not "learn about AI" but "see how to build a working site in 30 minutes")

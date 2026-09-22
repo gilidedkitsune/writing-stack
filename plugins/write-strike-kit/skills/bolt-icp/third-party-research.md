@@ -1,4 +1,4 @@
-# Third-Party Research: Persona Enrichment Data
+# Third-Party Research: ICP and Persona Enrichment Data
 
 Last updated: 2026-05-16
 
@@ -26,7 +26,7 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 
 ---
 
-## Persona 1: Small business owner / founder / entrepreneur
+## ICP 1: Business owner / entrepreneur
 
 ### Key data points
 
@@ -50,7 +50,7 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 
 ---
 
-## Persona 2a: CTO / App Dev Leader
+## Persona: Enterprise CTO / App Dev Leader
 
 ### Key data points
 
@@ -81,7 +81,7 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 
 ---
 
-## Persona 2b: CPO (Chief Product Officer)
+## Persona: Enterprise CPO
 
 ### Key data points
 
@@ -109,7 +109,7 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 
 ---
 
-## Persona 3: Product manager
+## ICP 2: Product manager / product designer
 
 ### Key data points
 
@@ -133,7 +133,7 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 
 ---
 
-## Persona 4: Professional developer
+## Persona: Professional developer
 
 ### Key data points
 
@@ -161,7 +161,9 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 
 ---
 
-## Persona 5: Marketer / creative agency / creative freelancer
+## ICP 3 and ICP 4: Marketers, agencies, and creative freelancers
+
+*ICP 3 (in-house marketer) and ICP 4 (agency / creative freelancer), formerly Personas 5 and 7, were split in v1.4.0. This research spans both: the creative-industry studies below sample marketers, agency creatives, and independents together and cannot be cleanly divided. Read it for either persona, and note which subgroup a given stat actually sampled before citing it.*
 
 ### Key data points
 
@@ -216,9 +218,27 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 
 ---
 
-## Persona 6: General reader
+## Cross-persona themes
 
-### Key data points
+### The trust paradox
+AI adoption is near-universal (78-88% of organizations), but trust is low and declining. Developers distrust accuracy (45.7%), creators worry about training data consent (69%), and marketers hit personalization barriers (98%). The tools are everywhere; confidence in them is not.
+
+### The productivity perception gap
+METR's randomized trial is the sharpest example: developers were measurably slower with AI but believed they were faster. Self-reported productivity gains (69-84% across surveys) may significantly overstate actual impact. The implication for content: lead with specific, measurable outcomes rather than vague productivity claims.
+
+### The "almost right" problem
+66% of developers cite "AI solutions that are almost right, but not quite" as their top frustration. This maps directly to every persona's experience: the prototype that needs to be rebuilt, the landing page that's close but not brand-right, the code that looks correct but breaks in edge cases.
+
+### AI as table stakes, not differentiator
+When 84-86% of an audience already uses AI tools, the tools themselves are no longer the advantage. Korn Ferry's finding for CPOs applies broadly: the differentiator is taste, vision, and strategic judgment, not access to AI. Content should position Bolt.new as the tool that elevates human direction, not the tool that replaces it.
+
+### The scaling gap
+McKinsey: only one-third of organizations have scaled AI beyond pilots, and just 6% qualify as high performers. 64% say AI enables innovation, but only 39% see any EBIT impact. Bain: even modest gains don't translate to ROI without process change. The gap between "we use AI" and "AI drives business results" is where most organizations are stuck, and where Bolt.new's full-app generation (vs. code-completion) value proposition is strongest.
+
+### General AI adoption and investment context
+*Formerly the general-reader section. That profile was retired Sep 2026 (every piece targets an ICP or a persona), but these market-level stats stay useful as framing for any audience.*
+
+#### Key data points
 
 - 78% of organizations use AI in at least one function, up from 55% the prior year. *(Stanford HAI 2025)*
 - Corporate AI investment reached $252.3 billion in 2024; private investment climbed 44.5%. *(Stanford HAI 2025)*
@@ -236,7 +256,7 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 - The "almost right, but not quite" problem is the single biggest AI frustration across all user types (66%). *(Stack Overflow 2025)*
 - 51% of organizations experienced at least one negative consequence from AI. *(McKinsey 2025)*
 
-### Pull quotes
+#### Pull quotes
 
 1. **"Corporate AI investment reached $252.3 billion in 2024, with private generative AI investment alone hitting $33.9 billion, 8.5x higher than 2022."** (Stanford HAI AI Index Report 2025)
 2. **"78% of organizations now use AI in at least one business function, up from 55% just one year prior."** (Stanford HAI AI Index Report 2025)
@@ -244,20 +264,3 @@ Research findings from external surveys and reports, organized by Bolt.new buyer
 4. **"AI boosts productivity and in most cases helps narrow the gap between low- and high-skilled workers."** (Stanford HAI AI Index Report 2025)
 
 ---
-
-## Cross-persona themes
-
-### The trust paradox
-AI adoption is near-universal (78-88% of organizations), but trust is low and declining. Developers distrust accuracy (45.7%), creators worry about training data consent (69%), and marketers hit personalization barriers (98%). The tools are everywhere; confidence in them is not.
-
-### The productivity perception gap
-METR's randomized trial is the sharpest example: developers were measurably slower with AI but believed they were faster. Self-reported productivity gains (69-84% across surveys) may significantly overstate actual impact. The implication for content: lead with specific, measurable outcomes rather than vague productivity claims.
-
-### The "almost right" problem
-66% of developers cite "AI solutions that are almost right, but not quite" as their top frustration. This maps directly to every persona's experience: the prototype that needs to be rebuilt, the landing page that's close but not brand-right, the code that looks correct but breaks in edge cases.
-
-### AI as table stakes, not differentiator
-When 84-86% of an audience already uses AI tools, the tools themselves are no longer the advantage. Korn Ferry's finding for CPOs applies broadly: the differentiator is taste, vision, and strategic judgment, not access to AI. Content should position Bolt.new as the tool that elevates human direction, not the tool that replaces it.
-
-### The scaling gap
-McKinsey: only one-third of organizations have scaled AI beyond pilots, and just 6% qualify as high performers. 64% say AI enables innovation, but only 39% see any EBIT impact. Bain: even modest gains don't translate to ROI without process change. The gap between "we use AI" and "AI drives business results" is where most organizations are stuck, and where Bolt.new's full-app generation (vs. code-completion) value proposition is strongest.

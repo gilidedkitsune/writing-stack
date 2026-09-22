@@ -1,6 +1,6 @@
 # SEO-GEO Drafting
 
-The embedded drafting layer for write-strike: how to draft copy that ranks in Google **and** gets cited by AI answer engines (ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot). Apply to blog, long-form, and website copy. Layers on top of bolt-TOV-and-guidelines and noslops; it does not replace either.
+The embedded drafting layer for write-strike: how to draft copy that ranks in Google **and** gets cited by AI answer engines (ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot). Apply to blog, long-form, and website copy. Layers on top of bolt-TOV-and-guidelines and stops-slop; it does not replace either.
 
 This file is the **writing** layer only: how the words on the page earn rankings and citations. The **tooling** (keyword research, SERP analysis, audits, data pulls, post-draft optimizers) lives in the `bolt-seo-geo` skill. When the workflow needs a tool, delegate there.
 
@@ -28,7 +28,7 @@ Phrase headers as the question a person would actually type or ask, in their wor
 Replace every vague claim with a number, a unit, context, and an inline source. This one habit feeds Google's Experience signal and the top AI-citation levers (statistics, quotations, cited sources) simultaneously.
 - Weak: "Websites can get expensive." / "Studies show AI improves productivity."
 - Strong: "A small business website from an agency typically costs $8,000 to $30,000 in 2026." / "In our 2026 onboarding of ~40 B2B accounts, imports failed most often at the data step."
-Attribute inline, in the same sentence or passage as the claim ("according to [named source, year]"), hyperlinked to the original source. For web-published content (blogs and website pages), never use a footnote or a separate references block; inline attribution is itself the citation lever. (Exception: downloadable long-form assets such as ebooks, whitepapers, guides, and reports follow the Chicago superscript plus Works Cited appendix format in bolt-TOV-and-guidelines, since they are not competing for AI citations.) Inline-and-hyperlinked is the default for all web copy; a rare page-level exception, like a gated-asset download page, is a deliberate one-off. Prefer primary sources and first-party data.
+Attribute inline, in the same sentence as the claim, in two parts: **hyperlink the phrase that carries the statistic** (the anchor text is the claim, never the publisher's name), then **close the sentence with a plain-text parenthetical, "(Publisher Name, year)"**. Example: "Software spend per employee [rose 27% in 2025](url) (Zylo, 2026)." Both halves do work here specifically: the anchor text tells search and answer engines what the linked source says, and the plain parenthetical survives the markup-stripping that happens when an engine lifts a passage, so the attribution travels with the claim either way. For web-published content (blogs and website pages), never use a footnote or a separate references block; inline attribution is itself the citation lever. (Exception: downloadable long-form assets such as ebooks, whitepapers, guides, and reports follow the Chicago superscript plus Works Cited appendix format in bolt-TOV-and-guidelines, since they are not competing for AI citations.) Inline-and-hyperlinked is the default for all web copy; a rare page-level exception, like a gated-asset download page, is a deliberate one-off. Prefer primary sources and first-party data.
 
 ### 4. Information gain
 Every section must add something that does not already exist on the internet: an original observation, a real workflow, an actual cost breakdown, an honest tradeoff, a before/after with specifics. If a section could be written by someone who has never used the product, it adds nothing and earns nothing.
@@ -37,7 +37,7 @@ Every section must add something that does not already exist on the internet: an
 Write about the named real-world things (products, companies, concepts), not search phrases. Use full proper nouns on first mention in each section and tie each to its category ("Bolt.new, an AI app builder, ..."). Cover the related entities and subtopics a knowledgeable writer would naturally mention. Keyword density is dead in both SEO and GEO; stuffing is the single worst tactic. Write fluently, around a 7th to 9th grade reading level.
 
 ### 6. Definitive, non-hedged claims
-Commit to a position where the evidence supports it. Cited and extracted text skews definitive; hedged "some say X, others Y" prose gives an engine nothing to lift and a reader nothing to trust. Hedge only on genuine uncertainty (and accuracy always wins). Pairs with noslops's specificity and anti-hedging rules.
+Commit to a position where the evidence supports it. Cited and extracted text skews definitive; hedged "some say X, others Y" prose gives an engine nothing to lift and a reader nothing to trust. Hedge only on genuine uncertainty (and accuracy always wins). Pairs with stops-slop's specificity and anti-hedging rules.
 
 ### 7. Liftable structures
 AI engines lift these near-verbatim and readers scan them:

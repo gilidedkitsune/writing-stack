@@ -13,7 +13,7 @@ This is the single source of truth for Bolt.new's written voice. Every piece of 
 
 Read this entire file before producing any written output for Bolt.new.
 
-This guide governs HOW to write. WHO you're writing for (register, reading level, jargon tolerance) lives in `bolt-buyer-personas`; read the relevant persona alongside this guide before drafting audience-targeted content.
+This guide governs HOW to write. WHO you're writing for (register, reading level, jargon tolerance) lives in `bolt-icp`; read the relevant persona alongside this guide before drafting audience-targeted content.
 
 ---
 
@@ -34,7 +34,7 @@ We are defining a new market. We want to own prompt coding for the enterprise. O
 **Current.**
 We want to sound like what we are, a modern, AI-native company. Stay away from wording that feels too stodgy or old-school business slang-y.
 
-Stodgy: "We provide best-in-class solutions that help enterprises leverage synergies." Current: "Describe the app you need. Bolt.new builds it." The business-jargon table in `noslops`'s banned.md is the field guide to what old-school sounds like.
+Stodgy: "We provide best-in-class solutions that help enterprises leverage synergies." Current: "Describe the app you need. Bolt.new builds it." The business-jargon table in `stops-slop`'s banned.md is the field guide to what old-school sounds like.
 
 **Engaging and intentional.**
 Our audience should read our content and be thirsty for more. What we take the time to draft, write, and publish should also be worth the reader's time. Our content should have purpose, meet a need, or drive a lead.
@@ -47,7 +47,11 @@ Get to the point. People are busy.
 
 ### Brand name
 
-Always refer to the product as **Bolt.new**. Never just "Bolt."
+**Blogs and web pages: full name on first mention, "Bolt" after that.** Write **Bolt.new** the first time it appears on the page, including when that first mention sits in the hero, then use **Bolt** for the rest of the piece. The full name earns the search and attribution value where it counts; repeating it fifteen times in a blog post reads like a legal disclaimer.
+
+Never use "Bolt" before the full name has appeared. If a section can be lifted and read on its own (a pull quote, a hero, a standalone FAQ answer), give that section the full name.
+
+**Every other format: full name throughout.** Webinar assets, creator briefs, sales enablement, customer stories, captions, voiceover, and on-screen text keep **Bolt.new** on every mention. Those get read out of order, quoted in fragments, or seen without the rest of the page, so each mention has to carry the whole name on its own.
 
 ### Product and terminology glossary
 
@@ -55,7 +59,7 @@ The names we write, the way we write them, every time:
 
 | Term | Usage |
 |---|---|
-| **Bolt.new** | The product. Capital B, always the full name. Never "Bolt" alone. |
+| **Bolt.new** | The product. Capital B. Blogs and web pages: full name on first mention (the hero counts), "Bolt" after that. Every other format: full name every time. |
 | **StackBlitz** | The company. One word, capital S and B. |
 | **WebContainers** | The technology. One word, camel case, plural. |
 | **Skills, Slides** (feature names) | Capitalized as proper nouns. First mention ties to the product ("Bolt.new Skills"); "Skills" alone after that. |
@@ -88,8 +92,21 @@ All headlines, headers, and subheads use sentence casing. Exception: website her
 **Citation format depends on the content type:**
 
 - **Long-form** (ebook, whitepaper, guide, manual, report): superscript in-text numbers tied to a **Works Cited appendix** at the end, formatted in **Chicago Manual of Style**. These are downloadable assets, so the academic treatment fits, and they are exempt from the inline-attribution rule below.
-- **Blog:** inline **parenthetical naming the source** at the end of the sentence, hyperlinked to the original. Example: "...cut onboarding time by 40% (Forrester)." No footnotes, no bibliography.
-- **Website (the default for all web copy):** inline and **hyperlinked**, never superscripts or a works-cited block. Label and link first-party data ("Based on Bolt's 2026 data" links to a methodology or report page). Cite sparingly on conversion pages (hero, pricing, landing) and more freely on content-style pages (industry, solution, persona, research hubs). Keep each claim and its source in the same sentence. Rare page-level exceptions (e.g., a gated-asset download page) are deliberate one-offs, decided per piece.
+- **All web copy (blog and website):** the two-part inline citation below. Never superscripts, footnotes, or a works-cited block.
+
+**The two-part inline citation.** Every sourced claim in web copy carries both halves:
+
+1. **Hyperlink the phrase that carries the statistic**, not the publisher's name. The anchor text is the claim itself.
+2. **Close the sentence with a plain-text parenthetical: (Publisher Name, date).** It is not hyperlinked; the link is already on the phrase.
+
+> Software spend per employee [rose 27% in 2025](https://zylo.com/research/saas-management-index) (Zylo, 2026).
+
+Both halves earn their place. The anchor text tells search and answer engines what the linked source actually says, which a bare publisher name never does. And when an AI engine lifts a passage it usually strips the markup, so the plain parenthetical is what keeps the attribution attached to the claim. Link on the phrase, name in the parens.
+
+**Per-channel notes:**
+
+- **Blog:** cite freely. Sourced statistics are the strongest AI-citation lever.
+- **Website:** cite sparingly on conversion pages (hero, pricing, landing) and more freely on content-style pages (industry, solution, persona, research hubs). Label and link first-party data ("Based on Bolt's 2026 data" links to a methodology or report page). Rare page-level exceptions (e.g., a gated-asset download page) are deliberate one-offs, decided per piece.
 
 ### Naming competitors
 We write comparison content; write it like we're confident, because we are:
@@ -135,7 +152,7 @@ Exceptions:
 - Well-established acronyms (like DVD) don't need to be spelled out if doing so would confuse the reader.
 
 ### Dashes
-Don't use em dashes (—). They read as an AI tell, and we've cut them. Use a comma, colon, semicolon, parentheses, or two sentences instead. (Enforced in the noslops filter.)
+Don't use em dashes (—). They read as an AI tell, and we've cut them. Use a comma, colon, semicolon, parentheses, or two sentences instead. (Enforced in the stops-slop filter.)
 
 En dashes (–) are allowed in ranges only: Jun 15–18, 2–4 pm, $8K–$22K. Never as a stand-in for an em dash.
 
@@ -156,12 +173,14 @@ Write for the whole audience without announcing that you're doing it:
 
 ## Writing Tips
 
+These are the line-level rules every piece follows. The full drafting craft (leads, sentence engineering, rhythm, kickers, the 10% cut) lives in write-strike's `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/prose-craft.md`: writers work those passes at draft time, then these rules and the stops-slop filter gate what ships.
+
 ### The three-rules test
 Run every line that carries weight (headlines, claims, openers, CTAs) through three questions:
 1. **Can I picture it?** "Streamline your workflow" shows nothing. "Cut your Monday report from four hours to 15 minutes" shows a clock.
 2. **Can I prove it true or false?** "Industry-leading" is unfalsifiable. "Used by 12 of the top 20 Shopify stores" is checkable.
 3. **Could a competitor write the same sentence?** "We help businesses grow" fits any logo. "1,000 songs in your pocket" belongs to one product.
-Three yeses, keep it. Two, sharpen it. One or none, rewrite it. Specificity is what passes this test, and specificity is what readers believe. For worked examples, see `${CLAUDE_PLUGIN_ROOT}/skills/noslops/references/slop-vs-gold.md`.
+Three yeses, keep it. Two, sharpen it. One or none, rewrite it. Specificity is what passes this test, and specificity is what readers believe. For worked examples, see `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md`.
 
 ### Murder your darlings
 Make sure everything in a content piece works together. Don't keep an analogy or explanation just because you like how it sounds. If a phrase or concept weakens the cohesion of the piece: kill it.
@@ -214,10 +233,10 @@ Read through your copy to make sure you've got the correct version of all homogr
 ---
 
 
-## Stop Slop: AI writing quality filter
+## Stops-slop: AI writing quality filter
 
-Every draft passes through the stop-slop filter before it ships. That filter lives in one place now: the **`noslops`** skill (`${CLAUDE_PLUGIN_ROOT}/skills/noslops/SKILL.md`). It is the single source of truth for killing dead language, fixing AI structural patterns, the voice rules (active voice, no adverbs, no em dashes, no copula inflation, contractions, specificity over declaration), the second-generation tells, the build-texture rules, the rhythm checks, and the 35/50 scoring rubric. Run it on every piece.
+Every draft passes through the stops-slop filter before it ships. That filter lives in one place now: the **`stops-slop`** skill (`${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/SKILL.md`). It is the single source of truth for killing dead language, fixing AI structural patterns, the voice rules (active voice, no adverbs, no em dashes, no copula inflation, contractions, specificity over declaration), the second-generation tells, the build-texture rules, the rhythm checks, and the 35/50 scoring rubric. Run it on every piece.
 
-Worked examples of specific-beats-slop live in `${CLAUDE_PLUGIN_ROOT}/skills/noslops/references/slop-vs-gold.md`.
+Worked examples of specific-beats-slop live in `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md`.
 
-**Sharing this guide outside the stack** (external creators, agencies): bundle the `noslops` skill and its references alongside it, or the slop filter and worked examples this section points to won't travel.
+**Sharing this guide outside the stack** (external creators, agencies): bundle the `stops-slop` skill and its references alongside it, or the slop filter and worked examples this section points to won't travel.

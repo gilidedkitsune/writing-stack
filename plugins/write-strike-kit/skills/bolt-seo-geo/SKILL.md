@@ -1,16 +1,16 @@
 ---
 name: bolt-seo-geo
 description: >
-  First-party, CONNECTED source for bolt.new's live SEO and traffic data: Google Analytics 4 (sessions, users, engagement, traffic by channel) and Google Search Console (impressions, clicks, CTR, position, top queries and pages), read-only via the user's own Google sign-in. Use whenever the task needs bolt.new's REAL numbers — "how's our traffic", "traffic by channel", "top search queries", "what are we ranking for", "Search Console", "GSC", "GA4", "organic clicks", "impressions", "CTR" — or to feed live data into a performance report or content refresh. Also use to set up or troubleshoot the GA4 / Search Console connection, and to check what SEO data is connected vs. gated before running any /seo-* skill (never fabricate metrics; if a backend isn't connected, this skill says so). Prefer it over generic SEO skills when the task needs bolt.new's actual data. Internal / trusted-agency only — it carries bolt.new property IDs and needs each user's own Google credentials.
+  First-party, CONNECTED source for bolt.new's live SEO and traffic data: Google Analytics 4 (sessions, users, engagement, traffic by channel) and Google Search Console (impressions, clicks, CTR, position, top queries and pages), authenticated as the user. AI-visibility (GEO/AEO) numbers are NOT here: they come from the `bolt-cairrot` skill, which is live. Profound was retired Sep 8 2026. Use whenever the task needs bolt.new's REAL numbers — "how's our traffic", "traffic by channel", "top search queries", "what are we ranking for", "Search Console", "GSC", "GA4", "organic clicks", "impressions", "CTR", "AI visibility", "share of voice", "are we cited by AI", "AEO", "Profound" — or to feed live data into a performance report or content refresh. Also use to set up or troubleshoot the GA4 / Search Console connection, and to check what SEO data is connected vs. gated before running any /seo-* skill (never fabricate metrics; if a backend isn't connected, this skill says so). Prefer it over generic SEO skills when the task needs bolt.new's actual data. Internal / trusted-agency only — it carries bolt.new property IDs and needs each user's own Google credentials.
 ---
 
-# bolt-seo-geo — live GA4 + Search Console for bolt.new
+# bolt-seo-geo — live GA4 + Search Console for bolt.new (plus the AI-visibility snapshot)
 
 > **Internal / trusted-agency only.** This skill is wired to bolt.new's Google properties (the GA4 property ID and the Search Console domain are baked into the puller). Share it inside StackBlitz or with an agency we trust to handle bolt.new's SEO. It contains **no passwords** — every user authenticates with their own Google account that already has access to bolt.new's Analytics and Search Console. Do not redistribute publicly. Credential handling is covered under **Sharing & credentials** at the bottom; read it before you hand this to anyone.
 
 This skill pulls **real** traffic and search-performance numbers for bolt.new and provides the honest map of which SEO data sources are connected. Two jobs:
 
-1. **Pull live data** — GA4 (how people reach and use bolt.new) and Search Console (how bolt.new performs in Google search).
+1. **Pull live data** — GA4 (how people reach and use bolt.new) and Search Console (how bolt.new performs in Google search). AI-answer visibility is *not* pullable; read it from the monthly snapshot file described below.
 2. **Govern the rest** — tell you, before any `/seo-*` skill runs, whether the data it needs is actually connected, so nobody ships invented numbers.
 
 ---
@@ -23,12 +23,20 @@ Read this before running any data skill. The rule that matters: **if a backend i
 - **GA4** — sessions, users, engagement rate, page views, broken out by default channel group (Organic Search, Direct, Referral, etc.). Answers "how much traffic, from where, how engaged."
 - **Search Console** — impressions, clicks, CTR, average position, by query or by page. Answers "what are we ranking for and how does it perform in Google."
 
+**✅ CONNECTED (since Sep 2 2026) — AI-answer visibility, via Cairrot, not Profound.** Live AEO numbers for bolt.new — visibility, named-vs-cited, per-model breakdown, competitor leaderboard, sentiment, AI-crawler hits — now come from **Cairrot**: the Cairrot MCP connector, which every teammate can add (per-user setup in `aeo-craft`), or on Taylor's machine the **`bolt-cairrot`** skill's read-only REST puller. Same API, same project, same numbers. **Use Cairrot for every AI-visibility question.** It is the sole source since Profound was retired Sep 8 2026. **Never mix Cairrot numbers with the archived Profound ones** — different methodologies over different prompt sets, not comparable (Cairrot reads bolt.new visibility around 3.2%; the retired Profound Aug 2026 snapshot read 56.2%). Always name the source and window.
+
+**🪦 RETIRED — Profound (killed Sep 8 2026):**
+- Taylor retired Profound outright. There is no API, no UI pull, no new snapshot, and no path back. **Do not read it, propose it, or treat its absence as a gap.** Every AI-visibility question now goes to `bolt-cairrot`.
+- Two archived snapshots remain at `~/Documents/Profound-Snapshots/` (2026-08, 2026-09) as frozen history so older reports can be traced. They may be cited as historical context with their date window stated. They must never supply a current number.
+- **The archived Profound figures are not comparable to Cairrot's.** Profound's Aug 2026 snapshot read 56.2% visibility and 2.94% citation share at #5; Cairrot reads bolt.new visibility around 3.2%. Different prompt sets, different methodology, both right for their own basis. Never put them in one table, and never report the gap as a decline — it is a change of instrument.
+- Anything still displaying a Profound headline (the Weekly Deltas scoreboard, the AEO Metrics Notion databases) is on the old basis. Flag it rather than silently swapping in a Cairrot number.
+
 **❌ NOT connected — keep gated, never fabricate:**
 - **DataForSEO** (live SERP, search volume, keyword difficulty): the data parts of `/keyword-research`, `/serp-analysis`, `/seo-cluster`, `/seo-content-brief`, `/seo-dataforseo`, `/competitor-analysis`, `/seo-backlinks`.
 - **Firecrawl** (full-site crawl): `/seo-firecrawl`, and the crawl steps in `/seo-audit`.
 - **PageSpeed / CrUX** (Core Web Vitals field data): not wired.
 
-**Always safe with no backend** (logic/judgment, no live data): `/content-strategy`, `/geo-content-optimizer`, `/meta-tags-optimizer`, `/schema-markup-generator`, `/internal-linking-optimizer`, `/socialize-content`, and any WebSearch-driven trend scan.
+**Always safe with no backend** (logic/judgment, no live data): `/content-strategy`, `/meta-tags-optimizer`, `/schema-markup-generator`, `/internal-linking-optimizer`, `/socialize-content`, and any WebSearch-driven trend scan. For AI-citation optimization, `aeo-craft` replaced the generic `/geo-content-optimizer` (retired Sep 2026); its Plan and Sculpt modes run without a backend, flagged blind, and only Measure needs Cairrot.
 
 Connecting DataForSEO or Firecrawl is a one-time install for whoever owns the skills, not a content task. Hand it off rather than wiring it mid-draft.
 
@@ -64,7 +72,7 @@ If `ga4` or `gsc` returns an auth error, the sign-in expired (see the note in se
 
 ### Feeding other skills
 
-When `/performance-reporter`, `/content-refresher`, or a content brief needs real traffic or search numbers for bolt.new, pull them here first, then hand the JSON to that skill. That's the whole point of having a connected source: those skills stop guessing.
+When `/performance-reporter`, `/content-refresher`, or a content brief needs real traffic or search numbers for bolt.new, pull them here first, then hand the JSON to that skill. For AI-answer KPIs, pull `bolt-cairrot` live and pass the figures with their window. That's the whole point of having a connected source: those skills stop guessing.
 
 For **which** `/seo-*` skill to run at **which** stage of a content project (research, outline, post-draft, post-publish), see `${CLAUDE_PLUGIN_ROOT}/skills/bolt-seo-geo/references/seo-geo-toolkit.md` — the full orchestration map with a decision tree. This skill owns *what's connected and how to pull it*; that reference owns *the workflow choreography*.
 
@@ -83,6 +91,10 @@ Each user does this once, on their own machine, with their own Google account. I
 5. **Place credentials.** Save that download as `~/.config/claude-seo/oauth_client.json`. (Create the folder if needed.)
 6. **Install the Python deps:** `pip install google-auth google-auth-oauthlib google-api-python-client`
 7. **Sign in:** `python3 ${CLAUDE_PLUGIN_ROOT}/skills/bolt-seo-geo/scripts/seo_pull.py auth` — a browser opens; approve the read-only scopes. This writes `~/.config/claude-seo/token.json`. Done.
+
+### Profound — retired, nothing to wire
+
+Profound was retired Sep 8 2026. There is nothing to connect and nothing to restore. AI-visibility numbers come from Cairrot: the MCP connector (per-user setup in `aeo-craft`) or, locally, the `bolt-cairrot` puller with its own API key at `~/.config/claude-cairrot/config.json`.
 
 **Why OAuth-as-the-user, not a service account.** A service account would need to be *added* to the GA4 property (Administrator) and Search Console (Owner). Most of us only have Editor (GA4) / Full (GSC), which can read fine through the API but can't add a service-account user. Signing in as the user sidesteps that entirely — you read through the access you already have. No admin grants required.
 
