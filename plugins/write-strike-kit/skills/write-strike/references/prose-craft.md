@@ -123,7 +123,7 @@ Track the cut rate. Under 5% means the pass didn't happen. Over 25% means draft 
 |---|---|---|
 | **prose-craft.md** (this file) | How to build prose | Outline and draft time |
 | **stops-slop** | What a tell looks like (its rules), and the 35/50 gate (its audit) | Draft time via pass 0; audit time as verification |
-| **bolt-TOV-and-guidelines** | Brand voice, mechanics, the three-rules test | Always |
+| **tone-and-guidelines** | Brand voice, mechanics, the three-rules test | Always |
 | **slop-vs-gold.md** | The bar, shown not told | Read one pair pre-draft |
 | **mr-gay** | The same physics, run as diagnostics on finished drafts | Edit time |
 

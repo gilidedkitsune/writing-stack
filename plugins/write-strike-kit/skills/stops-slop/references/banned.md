@@ -103,7 +103,7 @@ Saying two things are related without saying how. Name the relationship or flag 
 
 ### Vague attribution *(escalates to P0 when it props a factual claim)*
 
-Name the source or cut the claim. See bolt-TOV-and-guidelines (Bibliography and attribution) and mr-gay's claims-and-proof lens.
+Name the source or cut the claim. See tone-and-guidelines (Bibliography and attribution) and mr-gay's claims-and-proof lens.
 
 - "Experts believe / experts say"
 - "Studies show" / "Research suggests"

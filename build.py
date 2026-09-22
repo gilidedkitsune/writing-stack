@@ -23,8 +23,8 @@ SRC  = os.path.join(HOME, ".claude", "skills")
 REPO = os.path.dirname(os.path.abspath(__file__))
 VERSION = sys.argv[1] if len(sys.argv) > 1 else "1.0.0"
 
-KIT = ["write-strike", "bolt-TOV-and-guidelines", "bolter-tones",
-       "bolt-icp", "stops-slop", "bolt-content-formats",
+KIT = ["write-strike", "tone-and-guidelines", "bolter-tones",
+       "stops-slop", "bolt-content-formats",
        "ogilvy-copywriting", "bolt-seo-geo", "bolt-blog", "aeo-craft"]
 STANDALONE = ["mr-gay"]
 

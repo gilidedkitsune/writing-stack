@@ -9,7 +9,7 @@ description: >
   this liftable", or asks why a page isn't showing up in AI answers. Also run the Plan mode when a new
   piece targets a definitional or question-shaped query ("what is X", comparisons, how-tos) BEFORE the
   outline is locked. This is the house replacement for the generic /geo-content-optimizer: it knows the
-  Bolt.new TOV, the consent tiers, the campaign's term strategy, and the Copydesk checks panel where present. Sculpting
+  default voice, the consent tiers, the campaign's term strategy, and the Copydesk checks panel where present. Sculpting
   copy for machines never overrides writing for people: stops-slop and mr-gay still gate everything.
 ---
 
@@ -19,7 +19,7 @@ The sculpting pass. Other skills make the prose good; this one makes it **citabl
 
 **Where it sits in the craft topology:** prose-craft builds prose → SEO-GEO-drafting guides searchable drafting → stops-slop catches AI tells → mr-gay diagnoses the writing → **aeo-craft sculpts for machine citability**. Read `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/SEO-GEO-drafting.md` before running a pass: it is the rulebook this skill enforces, including the shared spine, the three tensions, and the per-engine notes (its FAST-MOVING section is the single source for engine behavior — don't duplicate it here, read it there).
 
-**What this skill does not do:** keyword/SERP/traffic data (that's `bolt-seo-geo`, which also says what's connected — never fabricate metrics), drafting voice (bolt-TOV + prose-craft), AI-tell cleanup (stops-slop). If the draft hasn't passed stops-slop, send it there first; sculpting slop makes citable slop.
+**What this skill does not do:** keyword/SERP/traffic data (that's `bolt-seo-geo`, which also says what's connected — never fabricate metrics), drafting voice (tone-and-guidelines + prose-craft), AI-tell cleanup (stops-slop). If the draft hasn't passed stops-slop, send it there first; sculpting slop makes citable slop.
 
 ## The measurement spine
 
@@ -119,7 +119,7 @@ For worked before/after examples of every pass (real ones from the Bolt.new camp
 
 ## Reality checks
 
-- Readability still gates: sculpting must keep the piece inside its persona's Flesch band (bolt-icp). A perfectly liftable page nobody enjoys reading loses the human half of the audience, and engines increasingly follow human engagement.
+- Readability still gates: sculpting must keep the piece inside the target reader's Flesch band (set when the audience was named). A perfectly liftable page nobody enjoys reading loses the human half of the audience, and engines increasingly follow human engagement.
 - **Cairrot is the only AI-visibility source. Profound was retired Sep 8 2026.** Pull Cairrot for everything. Two archived snapshots survive on disk as frozen history and must never supply a current number. **Never put Cairrot and Profound figures in one table or one sentence:** different prompt sets, not comparable, and the gap between them reads as a collapse when it is only a change of instrument. Name the source and the window on every number.
 - **Small samples are volatile.** The tracked prompt set is small, so single-window swings are noise. Prefer trend over any one pull, and never build a campaign claim on a single number.
 - **Cairrot measures the prompt set we configured,** not the whole internet. Competitor numbers are directly comparable to ours on that basis, but they cannot support a public "Nth most visible AI app builder" claim.

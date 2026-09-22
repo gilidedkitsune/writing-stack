@@ -1,73 +1,60 @@
 ---
-name: bolt-TOV-and-guidelines
+name: tone-and-guidelines
 description: >
-  Bolt.new style guide, tone of voice, and quality standards. This is the brand voice reference
-  for all Bolt.new and StackBlitz content. Use alongside any writing workflow; it defines HOW
-  to write, not WHAT to write. Every piece of Bolt.new content must follow these rules.
-  Downloadable and shareable with external creators.
+  Taylor's tone of voice, style guide, and quality standards. This is the default voice
+  reference for all content unless a specific person's profile is loaded from bolter-tones.
+  Use alongside any writing workflow; it defines HOW to write, not WHAT to write.
 ---
 
-# Bolt.new Copywriter Style Guide
+# Tone of Voice & Style Guide
 
-This is the single source of truth for Bolt.new's written voice. Every piece of content (blogs, social, emails, ads, customer stories, whitepapers, landing pages) must pass through these guidelines before it ships.
+This is the single source of truth for the default written voice. Every piece of content (blogs, social, emails, essays, long-form, cover letters, whatever the job is) passes through these guidelines before it ships, unless a specific person's profile from `bolter-tones` is loaded instead.
 
-Read this entire file before producing any written output for Bolt.new.
+Read this entire file before producing any written output.
 
-This guide governs HOW to write. WHO you're writing for (register, reading level, jargon tolerance) lives in `bolt-icp`; read the relevant persona alongside this guide before drafting audience-targeted content.
+This guide governs HOW to write. WHO you're writing for (register, reading level, jargon tolerance): ask directly if the brief doesn't already say. There's no persona library here; name the specific reader and calibrate to them.
 
 ---
 
 ## Tone of Voice
 
-The point of the written word is to engage the reader. To spark their curiosity and get them to ask, "What happens next?"
+The point of the written word is to engage the reader, to spark their curiosity and get them to ask "what happens next," even in something as plain as a work email.
 
 What you say is as important as how you say it.
 
 ### Core tenets
 
-**Real talk.**
-Bolt.new is conversational and as natural as the language people use in our product's prompt box. You are always talking to a person. Read the copy out loud. Don't use jargon. No padding. No fluff. Clear and direct.
+**Unsanitized.**
+Put the grit next to the beauty and don't clean either one up for the other. Name the smell, the mess, the vulgar line. If a sentence flinches away from a real detail to stay polite, put the detail back in.
 
-**Bold.**
-We are defining a new market. We want to own prompt coding for the enterprise. Our tech holds the sharpest cutting edge. Speak with the authority the quality of our platform demands. Bold and Reliable don't conflict: authority comes from specificity, not superlatives. The three-rules test (below) is the referee.
+**Self-aimed first.**
+When something's funny at someone's expense, aim it at yourself before anyone else. Report your own bad calls and embarrassments flat, like data, not with an apology or a punchline announcing itself.
 
-**Current.**
-We want to sound like what we are, a modern, AI-native company. Stay away from wording that feels too stodgy or old-school business slang-y.
+**Earnest underneath.**
+The jokes never replace the stakes. Say what you actually want, actually believe, actually care about, then let the humor sit next to it, not instead of it. A piece that's all bit and no stake is unfinished.
 
-Stodgy: "We provide best-in-class solutions that help enterprises leverage synergies." Current: "Describe the app you need. Bolt.new builds it." The business-jargon table in `stops-slop`'s banned.md is the field guide to what old-school sounds like.
+**Concrete over stated.**
+Don't name the feeling; show the gesture that carries it. The way someone reshelves a book tells the reader more than "he was thoughtful" ever could. This is the three-rules test's older sibling: specifics over declarations, always.
 
-**Engaging and intentional.**
-Our audience should read our content and be thirsty for more. What we take the time to draft, write, and publish should also be worth the reader's time. Our content should have purpose, meet a need, or drive a lead.
+**Metaphor that argues.**
+Reach for a metaphor when it does real work explaining a structure or a feeling ("a first-timer's dinghy" for a first novel), not to decorate a sentence. If you can cut it and lose nothing, cut it.
 
-**Reliable.**
-Tell the truth. No science fiction. No superlatives. We want to be a source of truth, an enterprise watering hole, and a site worth bookmarking because what we have to say (and how we say it) is compelling and valuable.
+**Escalate in specifics, not adjectives.**
+Build a comic or dramatic moment through a sequence of concrete, itemized beats (a numbered ritual, an escalating list of bad exes), not one adjective doing all the work.
 
-**Brief.**
-Get to the point. People are busy.
+### Sentence mechanics
+- Long, clause-stacked sentences are fine, even good: build with dashes, semicolons, and commas toward the sharpest clause at the end. (See Dashes, below, for where this runs into the em-dash rule: use semicolons, colons, and commas to get the same stacking effect.)
+- State hyperbole flat. No exclamation points doing the emphasis for you.
+- Vary rhythm: drop a short, declarative sentence between the long ones.
+- Let dialogue and quoted voices stay unpolished and profane when the person would actually talk that way. Don't sand someone's real voice smooth.
 
-### Brand name
+### What to avoid
+- Sanitizing real detail out of politeness
+- Whimsy with no real stake underneath it
+- Naming an emotion instead of showing what it looked like
+- Hedged, neutral reactions dressed up as balance
 
-**Blogs and web pages: full name on first mention, "Bolt" after that.** Write **Bolt.new** the first time it appears on the page, including when that first mention sits in the hero, then use **Bolt** for the rest of the piece. The full name earns the search and attribution value where it counts; repeating it fifteen times in a blog post reads like a legal disclaimer.
-
-Never use "Bolt" before the full name has appeared. If a section can be lifted and read on its own (a pull quote, a hero, a standalone FAQ answer), give that section the full name.
-
-**Every other format: full name throughout.** Webinar assets, creator briefs, sales enablement, customer stories, captions, voiceover, and on-screen text keep **Bolt.new** on every mention. Those get read out of order, quoted in fragments, or seen without the rest of the page, so each mention has to carry the whole name on its own.
-
-### Product and terminology glossary
-
-The names we write, the way we write them, every time:
-
-| Term | Usage |
-|---|---|
-| **Bolt.new** | The product. Capital B. Blogs and web pages: full name on first mention (the hero counts), "Bolt" after that. Every other format: full name every time. |
-| **StackBlitz** | The company. One word, capital S and B. |
-| **WebContainers** | The technology. One word, camel case, plural. |
-| **Skills, Slides** (feature names) | Capitalized as proper nouns. First mention ties to the product ("Bolt.new Skills"); "Skills" alone after that. |
-| **prompt coding, vibe coding** | Category terms, lowercase. |
-| **AI app builder** | Category term, lowercase (capitalize only in headline casing contexts). |
-| **Claude, Anthropic** | Partner names as they brand them. |
-
-When a new feature ships, add its row here before the launch copy is drafted, not after.
+**Voice in 5 words:** Wry. Sensory. Self-deprecating. Ambitious. Generous.
 
 
 ---
@@ -84,7 +71,7 @@ You can use the passive voice on occasion, for example, to spotlight the object 
 Use the Oxford comma in all content, all the time.
 
 ### Headlines and subheads
-All headlines, headers, and subheads use sentence casing. Exception: website heroes and certain creative assets may use headline casing.
+All headlines, headers, and subheads use sentence casing. Exception: heroes and certain creative assets may use headline casing.
 
 ### Bibliography and attribution
 **Always cite the origin, not the middleman.** Direct quotes and statistics are attributed to their original source. If you found a statistic in Forbes from a Forrester report, confirm it at the source and cite the Forrester report, not the Forbes article. Prefer primary sources and first-party data.
@@ -106,17 +93,17 @@ Both halves earn their place. The anchor text tells search and answer engines wh
 **Per-channel notes:**
 
 - **Blog:** cite freely. Sourced statistics are the strongest AI-citation lever.
-- **Website:** cite sparingly on conversion pages (hero, pricing, landing) and more freely on content-style pages (industry, solution, persona, research hubs). Label and link first-party data ("Based on Bolt's 2026 data" links to a methodology or report page). Rare page-level exceptions (e.g., a gated-asset download page) are deliberate one-offs, decided per piece.
+- **Website:** cite sparingly on conversion pages (hero, pricing, landing) and more freely on content-style pages. Label and link first-party data. Rare page-level exceptions (e.g., a gated-asset download page) are deliberate one-offs, decided per piece.
 
-### Naming competitors
-We write comparison content; write it like we're confident, because we are:
-- Name competitors plainly (Lovable, Replit, Cursor). No coy "other AI builders."
-- Every comparative claim carries a receipt: a benchmark, a price, a dated screenshot, a cited limitation. The three-rules test applies double here.
-- Critique the product, never the company or its people. No punching down, no dunking.
-- Date competitive claims in the sentence ("as of June 2026"): competitor products change monthly, and stale swipes damage us, not them.
+### Naming competitors or comparable work
+Write comparison content like you're confident, because the receipts back it up:
+- Name names plainly. No coy "other tools in the space."
+- Every comparative claim carries a receipt: a benchmark, a price, a dated screenshot, a cited limitation.
+- Critique the product or the work, never the person. No punching down, no dunking.
+- Date competitive claims in the sentence ("as of June 2026"): things change monthly, and a stale swipe damages the writer, not the target.
 
 ### US vs. UK spelling
-Use US spelling as the default for all content. Exception: copy written for UK/EMEA audiences (including English coverage of UK/EMEA regional events) uses UK spelling. APAC, LatAm, and everywhere else default to US spelling.
+Use US spelling as the default for all content. Exception: copy written for a UK/EMEA audience uses UK spelling.
 
 ### Numbers
 - Spell out one through ten.
@@ -142,7 +129,7 @@ For designed collateral, use date and time formats appropriate to the target reg
 **24-hour clock:** 14:00 GMT
 
 ### Percent or %
-Use numerals with the % symbol for all percentages, everywhere: body text, pull quotes, headers ("cut onboarding time by 40%"). Specific figures are what readers believe and what AI engines lift. If a percentage would open a sentence, restructure the sentence.
+Use numerals with the % symbol for all percentages, everywhere: body text, pull quotes, headers ("cut onboarding time by 40%"). Specific figures are what readers believe. If a percentage would open a sentence, restructure the sentence.
 
 ### Acronyms and initialisms
 Spell out the full name or process followed by the abbreviation in parentheses the first time it appears in text.
@@ -152,7 +139,7 @@ Exceptions:
 - Well-established acronyms (like DVD) don't need to be spelled out if doing so would confuse the reader.
 
 ### Dashes
-Don't use em dashes (—). They read as an AI tell, and we've cut them. Use a comma, colon, semicolon, parentheses, or two sentences instead. (Enforced in the stops-slop filter.)
+Don't use em dashes (—). They read as an AI tell, and they're cut here. Use a comma, colon, semicolon, parentheses, or two sentences instead. (Enforced in the stops-slop filter.)
 
 En dashes (–) are allowed in ranges only: Jun 15–18, 2–4 pm, $8K–$22K. Never as a stand-in for an em dash.
 
@@ -179,7 +166,7 @@ These are the line-level rules every piece follows. The full drafting craft (lea
 Run every line that carries weight (headlines, claims, openers, CTAs) through three questions:
 1. **Can I picture it?** "Streamline your workflow" shows nothing. "Cut your Monday report from four hours to 15 minutes" shows a clock.
 2. **Can I prove it true or false?** "Industry-leading" is unfalsifiable. "Used by 12 of the top 20 Shopify stores" is checkable.
-3. **Could a competitor write the same sentence?** "We help businesses grow" fits any logo. "1,000 songs in your pocket" belongs to one product.
+3. **Could anyone else write the same sentence?** "We help businesses grow" fits any logo. "1,000 songs in your pocket" belongs to one product.
 Three yeses, keep it. Two, sharpen it. One or none, rewrite it. Specificity is what passes this test, and specificity is what readers believe. For worked examples, see `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md`.
 
 ### Murder your darlings
@@ -238,5 +225,3 @@ Read through your copy to make sure you've got the correct version of all homogr
 Every draft passes through the stops-slop filter before it ships. That filter lives in one place now: the **`stops-slop`** skill (`${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/SKILL.md`). It is the single source of truth for killing dead language, fixing AI structural patterns, the voice rules (active voice, no adverbs, no em dashes, no copula inflation, contractions, specificity over declaration), the second-generation tells, the build-texture rules, the rhythm checks, and the 35/50 scoring rubric. Run it on every piece.
 
 Worked examples of specific-beats-slop live in `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md`.
-
-**Sharing this guide outside the stack** (external creators, agencies): bundle the `stops-slop` skill and its references alongside it, or the slop filter and worked examples this section points to won't travel.

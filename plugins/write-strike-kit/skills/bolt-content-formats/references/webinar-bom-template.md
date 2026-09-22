@@ -76,7 +76,7 @@ If co-hosted or co-marketed with a partner:
 
 ## Audience and positioning
 
-- **Target ICP or persona:** (an ICP: ICP 1 business owner / entrepreneur, ICP 2 PM / product designer, ICP 3 in-house marketer, ICP 4 agency / creative freelancer; or a persona: enterprise CTO / App Dev Leader, enterprise CPO, professional developer. There is no general-reader option; a broad webinar still names an ICP, usually ICP 1). See bolt-icp for the full profiles.
+- **Target audience:** (ask directly: role, seniority, and what they already know. There is no general-reader option; a broad webinar still names a specific reader.)
 - **Funnel stage:** (TOFU / MOFU / BOFU)
 - **Campaign type:** (thought leadership, product education, customer showcase, partner co-marketing)
 - **What the audience gets out of it:** (be specific: not "learn about AI" but "see how to build a working site in 30 minutes")
@@ -168,9 +168,9 @@ Structure:
 
 ### Voice
 
-All webinar content, including brand social posts, uses the standard Bolt.new TOV from bolt-TOV-and-guidelines.
+All webinar content, including brand social posts, uses the default voice from tone-and-guidelines.
 
-**Exception:** Social posts attributed to Eric Simons use his tone profile. Read `${CLAUDE_PLUGIN_ROOT}/skills/bolter-tones/references/eric-simons-tone.md` before drafting his posts. Apply his voice on top of the Bolt.new editorial guidelines. This applies only to Eric's social posts, not to landing pages, emails, or other webinar content.
+**Exception:** Social posts attributed to a named person (e.g. Eric Simons) use that person's tone profile if one exists in `bolter-tones`; apply it on top of the tone-and-guidelines editorial guidelines. If no profile exists yet, flag it and use the default voice rather than inventing one. This applies only to person-attributed social posts, not to landing pages, emails, or other webinar content.
 
 ### LinkedIn posts
 
@@ -222,7 +222,7 @@ If the webinar generates a blog recap or landing page that will live on bolt.new
 - [ ] Facts and claims verified
 - [ ] Internal links added where applicable
 - [ ] SEO / GEO elements incorporated (if web-published)
-- [ ] Bolt.new TOV applied to all content (landing page, emails, brand social, slides, recap)
+- [ ] Default voice (tone-and-guidelines) applied to all content (landing page, emails, brand social, slides, recap)
 - [ ] Eric Simons tone applied to his social posts only
 
 ### Editor review
