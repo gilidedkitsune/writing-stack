@@ -23,7 +23,14 @@ Remove these and state the content directly.
 - "Here's what I find interesting"
 - "Here's the problem though"
 
-Any "here's what/this/that" construction is throat-clearing. Cut it.
+- "Let's dive in" / "Let's explore" / "Let's break this down"
+- "Here's what you need to know"
+- "Without further ado"
+- "Let's be honest" / "Real talk"
+- "The thing is"
+- "Now let's look at"
+
+Any "here's what/this/that" construction is throat-clearing. Cut it. The staged-candor openers ("Honestly?", "Look,", "Real talk") are the same move wearing a friendlier face: "honestly" inside a casual sentence is ordinary, the tell is the standalone opener before a routine claim.
 
 ### Emphasis crutches
 
@@ -74,6 +81,26 @@ These add no meaning. Delete them.
 - "What nobody tells you"
 - Anything with "nobody" or "most people don't realize"
 
+### Wisdom templates
+
+An ordinary point dressed as a hidden truth. The dressing adds no detail. Replace each with the specific claim.
+
+- "The real question is"
+- "What really matters is"
+- "The deeper issue is"
+- "The heart of the matter"
+- "X is the language of Y" / "the currency of" / "the architecture of"
+- "X becomes a trap"
+- "X is not a tool but a mirror"
+
+### Vague connection *(see structures.md for the full pattern)*
+
+Saying two things are related without saying how. Name the relationship or flag the gap; never invent one.
+
+- "associated with" / "in association with"
+- "connected to" / "in connection with"
+- "linked to" / "tied to"
+
 ### Vague attribution *(escalates to P0 when it props a factual claim)*
 
 Name the source or cut the claim. See bolt-TOV-and-guidelines (Bibliography and attribution) and mr-gay's claims-and-proof lens.
@@ -91,6 +118,11 @@ Name the source or cut the claim. See bolt-TOV-and-guidelines (Bibliography and 
 - "Certainly!" / "Of course!"
 - "Great question" / "Excellent point"
 - "You're absolutely right"
+- "Would you like me to..." / "Want me to...?"
+- "Should I continue?" / "Shall I go on?"
+- "Here is a..." / "Here's the [thing] you asked for"
+
+The offers are the half most often missed, because they wrap real content instead of sitting on top of it. Remove the wrapper, keep the content.
 
 ### Compulsive summaries
 
@@ -171,7 +203,7 @@ If a sentence says something is important without showing the specific thing, cu
 
 A tell in any register. Each entry covers its inflections (plurals, gerunds, participles).
 
-`delve` · `tapestry` · `testament (to)` · `realm` · `paradigm (shift)` · `embark` · `beacon` · `nestled` · `bustling` · `ever-evolving` · `game-changer` · `cutting-edge` · `seamless` · `synergy` · `thought leader` · `learnings` · `actionable` · `impactful` · `leverage` (verb) · `utilize` · `deep dive` (noun) · `unpack` (analysis) · `landscape` (metaphor) · `boasts` · `showcase / showcasing` · `vibrant` · `meticulous` · `intricate / intricacies` · `interplay` · `pivotal` · `underscore(s)` · `garner` · `elevate` (metaphor) · `empower` (marketing sense) · `harness` (metaphor) · `unleash` · `myriad` · `plethora` · `holistic`
+`delve` · `tapestry` · `testament (to)` · `realm` · `paradigm (shift)` · `embark` · `beacon` · `nestled` · `bustling` · `ever-evolving` · `game-changer` · `groundbreaking` (figurative) · `cutting-edge` · `seamless` · `synergy` · `thought leader` · `learnings` · `actionable` · `impactful` · `leverage` (verb) · `utilize` · `deep dive` (noun) · `unpack` (analysis) · `landscape` (metaphor) · `boasts` · `showcase / showcasing` · `vibrant` · `meticulous` · `intricate / intricacies` · `interplay` · `pivotal` · `underscore(s)` · `garner` · `elevate` (metaphor) · `empower` (marketing sense) · `harness` (metaphor) · `unleash` · `myriad` · `plethora` · `holistic`
 
 **Replace with:** the plain word (use, is, has), or the specific thing. "Leverages AI" → "uses AI." "A testament to our commitment" → the thing you actually did.
 
@@ -179,7 +211,7 @@ A tell in any register. Each entry covers its inflections (plurals, gerunds, par
 
 Legitimate alone; damning together.
 
-`crucial` · `key` (adjective) · `essential` · `foster` · `navigate` (challenges) · `enhance` · `ensure` · `robust`\* · `comprehensive`\* · `scalable`\* · `ecosystem`\* · `streamline` · `facilitate` · `resonate` · `transform / transformative` · `revolutionize` · `cultivate` · `encompass` · `nuanced` · `multifaceted` · `cornerstone` · `paramount` · `poised` · `burgeoning` · `nascent` · `quintessential` · `overarching` · `catalyze` · `augment` · `spearhead` · `bolster`
+`crucial` · `key` (adjective) · `essential` · `profound` · `enduring` · `renowned` · `foster` · `navigate` (challenges) · `enhance` · `ensure` · `robust`\* · `comprehensive`\* · `scalable`\* · `ecosystem`\* · `streamline` · `facilitate` · `resonate` · `transform / transformative` · `revolutionize` · `cultivate` · `encompass` · `nuanced` · `multifaceted` · `cornerstone` · `paramount` · `poised` · `burgeoning` · `nascent` · `quintessential` · `overarching` · `catalyze` · `augment` · `spearhead` · `bolster`
 
 \* Legitimate in technical and developer contexts (docs, engineering blogs) where they carry specific meaning. Flag them in marketing prose.
 
@@ -198,6 +230,8 @@ Filler that only registers in bulk.
 | Navigate (challenges) | Handle, address |
 | Unpack (analysis) | Explain, examine |
 | Lean into | Accept, embrace |
+| Align with | Match, fit, support |
+| Diverse array | Name the actual set |
 | Landscape (context) | Situation, field |
 | Game-changer | Name the specific change |
 | Double down | Commit, increase |

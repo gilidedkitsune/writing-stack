@@ -122,6 +122,59 @@ Present-participle phrases bolted onto sentence ends to fake depth.
 
 **Fix:** Name the actual set, or give the two or three real examples.
 
+## Arguing with no one
+
+Defending against an objection the text never raised, or rejecting an option no reader was weighing. Usually a leftover from the writer's own earlier reasoning that was never meant to reach the page.
+
+| Pattern | Problem |
+|---------|---------|
+| "To be clear," | Clarifying something nobody misread |
+| "I'm not saying X" / "This is not to say" | Answering an accusation no one made |
+| "Don't get me wrong" | Pre-empting an objection the reader doesn't hold |
+| "Some might say X, but" | Inventing an opponent to beat |
+| "A tempting approach would be X" / "One might be tempted to" | Rejecting an option nobody proposed |
+| "You might think X, but" | Same move, second person |
+| "It would be easy to just X" | Same, with a dig attached |
+| "This isn't (mainly) about X" | Negating a frame the reader never had |
+
+**Fix:** Delete the defense and state the claim. Keep an objection only when the text attributes it to someone real and answers it in full, or when a reader would genuinely be weighing that option. Several unrelated rejections in one passage is a stronger signal than any one of them.
+
+## Vague connection
+
+Asserting that two things are related without saying how. The relationship is the information; without it the sentence only gestures at one.
+
+| Pattern | Problem |
+|---------|---------|
+| "associated with" / "in association with" | Hides the actual role |
+| "connected to" / "in connection with" | Same |
+| "linked to" | Worst on stats: linked how, measured by whom? |
+| "tied to" | Same |
+
+**Fix:** Name the relationship the source gives. "Associated with the leadership of ExampleCorp" hides whether he was the CEO, a board member, or a consultant. If the source genuinely doesn't say, keep the vague wording rather than inventing a role, and flag it. This one bites hardest on sourced claims: "a 40% gain linked to the migration" hides whether anyone measured causation.
+
+## Repeated sentence openings
+
+Several sentences in a row opening on the same subject, because repetition got handled by rule instead of by ear.
+
+| Pattern | Problem |
+|---------|---------|
+| "She noted the door. She noted the lock. She filed both away." | Mechanical subject repetition |
+| Three consecutive paragraphs opening "The team..." | Same tell at paragraph scale |
+
+**Fix:** Merge the sentences, change the subject, or lead with the action. Don't ban the word: one sentence may still open with it. Deliberate anaphora ("She came. She saw. She conquered.") is craft, not a tell.
+
+## Heading restated in the first sentence
+
+A heading followed by a one-line paragraph that says the heading again before the real content starts.
+
+> ## Performance
+>
+> Speed matters.
+>
+> When users hit a slow page, they leave.
+
+**Fix:** Cut the restatement. The heading already did that work; open on the content.
+
 ## Synonym cycling (elegant variation)
 
 Rotating synonyms to dodge repeating a word: developers → engineers → practitioners → technologists in one passage.
@@ -198,3 +251,15 @@ Every sentence needs a subject doing something.
 |---------|---------|
 | Lazy extremes (every, always, never, everyone, everybody, nobody) | False authority. Use specifics instead of sweeping claims. |
 | All adverbs (-ly words, "really," "just," "literally," "genuinely," "honestly," "simply," "actually") | Empty emphasis. See references/banned.md for the full list and the vocabulary tiers. |
+| Hyphenated pairs kept after the noun ("the team is cross-functional," "the report is high-quality") | Keep the hyphen before a noun where grammar needs it (*a high-quality report*), drop it after (*the report is high quality*). Weak alone; a pileup is the tell. |
+
+## Formatting tells
+
+How the copy is dressed can be as loud a tell as the words. Prose channels only; social has its own conventions (see the channel table in SKILL.md).
+
+| Pattern | Fix |
+|---------|-----|
+| Bold-lead-in bullet walls (every bullet opens "**Header:** description") | One such list per piece, and only when the items are genuinely parallel. Otherwise write prose, or unbold. |
+| Decorative emoji on headers or bullets outside social | Remove. Emoji are a social-platform convention, not typography. |
+| Colon pileup (a colon-hinged sentence in every paragraph) | The em-dash ban displaces into colons and semicolons. One colon-driven sentence per paragraph, at most. |
+| Bullet-itis (three-plus lists per screen doing prose's job) | If the items aren't parallel or scannable by design, it's paragraphs wearing a list's clothes. Write the paragraph. |

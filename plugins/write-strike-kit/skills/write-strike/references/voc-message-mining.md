@@ -27,13 +27,16 @@ The last two buckets are the ones the rest of the stack misses. Loved features f
 
 ## Where to mine (Bolt sources)
 
+- **Sales calls: the `bolt-sybill` connector skill.** The richest seam by far, and the one to reach for first on lean-in content. Sybill carries full transcripts plus structured summaries (Outcome, Key Takeaways, Pain Points, FAQ) with CRM account and deal links, so prospect language, objections, and competitor mentions come pre-sorted. It maps almost directly onto the last two buckets, which are the ones everything else misses.
+- Internal meetings and user interviews (Granola), and email threads (Gmail).
 - Reviews and ratings (G2, app stores, Trustpilot).
 - Reddit, X, Discord, Hacker News threads about Bolt.new and the category.
 - Support threads and tickets.
-- Sales-call and user-interview transcripts (Granola, Gmail).
 - The customer-story interview bank already captures this for that one content type.
 
 Pull verbatim. The exact phrasing ("I was tired of waiting on a dev to ship a landing page") is the asset; paraphrase loses it. Trace every quote to its source.
+
+**Consent gate on anything sourced from calls.** Sybill material is real named prospects and customers who did not sign up to be quoted. Mine it freely for *understanding*: the pain, the phrasing, the objection patterns. But a named account's words never reach audience-facing copy without a consent-tier check against the customer-stories database. Unattributed pattern language ("teams keep telling us the review queue is the bottleneck") is fine; a quote with a company attached is not, until consent says otherwise.
 
 ## Using it in the workflow
 

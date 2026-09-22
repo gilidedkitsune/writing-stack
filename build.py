@@ -24,8 +24,8 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 VERSION = sys.argv[1] if len(sys.argv) > 1 else "1.0.0"
 
 KIT = ["write-strike", "bolt-TOV-and-guidelines", "bolter-tones",
-       "bolt-buyer-personas", "noslops", "bolt-content-formats",
-       "ogilvy-copywriting", "bolt-seo-geo", "bolt-blog"]
+       "bolt-icp", "stops-slop", "bolt-content-formats",
+       "ogilvy-copywriting", "bolt-seo-geo", "bolt-blog", "aeo-craft"]
 STANDALONE = ["mr-gay"]
 
 EXCLUDE_NAMES  = {".last-source-check", ".DS_Store", "__pycache__", ".git"}

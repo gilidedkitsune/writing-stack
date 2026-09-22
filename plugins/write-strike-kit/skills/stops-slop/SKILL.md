@@ -1,12 +1,12 @@
 ---
-name: noslops
+name: stops-slop
 description: >
-  Audit and clean Bolt.new content for AI writing patterns. Use this skill after drafting any Bolt.new or StackBlitz content to eliminate AI tells, slop, and formulaic writing. Trigger on: "stop slop", "slop check", "audit this draft", "AI tells", "clean up the copy", or any request to review Bolt.new content for AI-generated patterns. Also trigger automatically as part of the bolt-blog workflow (Step 6). Works on any prose: blogs, social, emails, landing pages, thought leadership.
+  Audit and clean Bolt.new content for AI writing patterns. Use this skill after drafting any Bolt.new or StackBlitz content to eliminate AI tells, slop, and formulaic writing. Trigger on: "stops-slop", "stopslop", "stop slop", "stop-slop", "slop check", "run stops-slop", "run stopslop", "audit this draft", "AI tells", "clean up the copy", or any request to review Bolt.new content for AI-generated patterns. Also trigger automatically as part of the bolt-blog workflow (Step 6). Works on any prose: blogs, social, emails, landing pages, thought leadership.
 ---
 
-# noslops
+# Stops-slop
 
-One pass. Catch everything. This skill replaces both the AI-tells audit and the stop-slop check with a single, unified filter.
+One pass. Catch everything. This skill is the single, unified filter: the AI-tells audit and the slop check are one thing, done here.
 
 Read the draft once through, applying every rule below simultaneously. Fix violations in place. Don't flag them for later. Rewrite them now.
 
@@ -72,7 +72,7 @@ Paragraph openers that create artificial flow. "This belief defines how we build
 
 If the paragraph follows logically from the prior one, it doesn't need a connector. If it needs one, use something a person would say out loud.
 
-Also in the full catalog, same severity as the patterns above: **superficial -ing analyses** ("..., highlighting the importance of"), **false ranges** ("from startups to Fortune 500s"), **synonym cycling** (developers → engineers → practitioners), **formulaic conclusions** ("Despite these challenges..."), and **significance inflation** ("stands as a testament to"). See [references/structures.md](references/structures.md).
+Also in the full catalog, same severity as the patterns above: **arguing with no one** ("To be clear," "A tempting approach would be": a defense against an objection nobody raised), **vague connection** ("linked to," "associated with": a relationship asserted without being named), **repeated sentence openings**, **a heading restated by its first sentence**, **superficial -ing analyses** ("..., highlighting the importance of"), **false ranges** ("from startups to Fortune 500s"), **synonym cycling** (developers → engineers → practitioners), **formulaic conclusions** ("Despite these challenges..."), **significance inflation** ("stands as a testament to"), and the **formatting tells** (bold-lead-in bullet walls, decorative emoji outside social, colon pileups, bullet-itis). See [references/structures.md](references/structures.md).
 
 
 ## 3. Enforce voice rules
@@ -112,6 +112,9 @@ Vary it. Mix short punchy lines with longer ones. If three consecutive sentences
 
 ### Lists
 Two items beat three. AI defaults to tricolons (groups of three with escalating rhythm). One triple per piece is fine if it genuinely earns it. More than that is a pattern. Default to pairs.
+
+### Punctuation displacement
+The em-dash ban pushes drafts into colon pileups and semicolon chains instead. One colon-driven sentence per paragraph, at most. If every sentence has a hinge, nothing hinges.
 
 ### Paragraph endings
 Vary how paragraphs end. If every paragraph closes with a punchy one-liner, it reads as a formula. Let some paragraphs end mid-thought and carry into the next.
@@ -189,6 +192,8 @@ After revising, re-read the **rewrite**, not the original. Rewrites grow their o
 | Email | Full strength; subject lines may fragment |
 | Docs / technical | Tier 2 technical words (robust, scalable, ecosystem, comprehensive) are legitimate where they carry real meaning; everything else full strength |
 
+**Fixing a tell never adds a fact.** A repair may cut, merge, restructure, or shorten, but a name, number, date, quote, citation, or claim must come from the source or the writer. If a sentence needs a detail you don't have, ask for it or write the simpler sentence. An unsupported addition is a worse failure than the tell it replaced.
+
 **Preserve on sight — never sand these off:**
 - Specific, hard-to-fabricate detail (names, numbers, dates, first-hand observations)
 - Mixed feelings and unresolved tension
@@ -198,7 +203,11 @@ After revising, re-read the **rewrite**, not the original. Rewrites grow their o
 A scrub that removes these made the draft worse, not cleaner. If the rewrite is more polished but less alive, put the life back.
 
 
-## 10. The editorial judgment call
+## 10. Sources
+
+The structural and vocabulary catalog draws on Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, by way of [blader/humanizer](https://github.com/blader/humanizer) v3.0.0 (MIT). Patterns that duplicated house rules were dropped; the ones kept were rewritten to Bolt.new's stricter standards (zero em dashes rather than sample-matched, pairs over triads). The worked before/after examples in `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md` are ours.
+
+## 11. The editorial judgment call
 
 The question is never "does this pattern exist in the text?" It's "is this an intentional rhetorical choice, or is AI defaulting to a pattern?"
 

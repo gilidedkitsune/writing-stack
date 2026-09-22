@@ -16,4 +16,4 @@ Structural scaffolding for the Bolt.new content types that have a defined shape.
 | Creator brief | [references/creator-brief-template.md](references/creator-brief-template.md) | The 9-section brief: objective, audience, key messages, deliverables, guardrails, timeline |
 | Exec summary / 1-pager / byline / sales argument | [references/minto-scaffold.md](references/minto-scaffold.md) | Answer-first document skeleton: governing thesis, SCQA lead, MECE supporting arguments, integrity check |
 
-These scaffolds carry structure plus any content-type-specific reminders. They do not define brand voice, tone of voice, or persuasion strategy: those come from `write-strike` and its sources (`bolt-TOV-and-guidelines`, `bolter-tones`, `bolt-buyer-personas`).
+These scaffolds carry structure plus any content-type-specific reminders. They do not define brand voice, tone of voice, or persuasion strategy: those come from `write-strike` and its sources (`bolt-TOV-and-guidelines`, `bolter-tones`, `bolt-icp`).

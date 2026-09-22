@@ -4,7 +4,7 @@
 
 Sales enablement content has one job: give the sales team repeatable, accurate language they can use in a live conversation. That means it has to be benefit-led (tie every feature to a business outcome), honest (acknowledge where we lose, because reps lose trust fast when a card oversells), and tight (a rep skims this between calls, not the night before).
 
-For competitor facts, voice, and proof points, read the relevant persona in `bolt-buyer-personas` first. The competitive landscape sections (Persona 2a/2b for enterprise, Persona 4 for developers, Persona 5 for creatives) are the source of truth for how Bolt.new stacks up against Lovable, Replit, v0, Cursor, Webflow, and others.
+For voice, pain points, and proof points, read the relevant persona in `bolt-icp` first. For how Bolt.new stacks up, read the single **Competitive landscape** section in `bolt-icp`: the wedge statement plus the July 2026 competitor table (Replit, Lovable, Figma Make, Claude Design, Claude Code) and one line of nuance per persona. Pricing and positioning teardowns live in the Messaging & Brand hub in Notion, not in the persona file; pull them from there and date them.
 
 ---
 
@@ -22,12 +22,12 @@ For competitor facts, voice, and proof points, read the relevant persona in `bol
 
 # Asset 1: Battle Card (vs a named competitor)
 
-*One card per competitor. Keep it to a single screen a rep can scan in under a minute. The worked example below uses Lovable; build the same structure for Replit, v0, Cursor, Webflow, and others using the competitive landscape in `bolt-buyer-personas`.*
+*One card per competitor. Keep it to a single screen a rep can scan in under a minute. The worked example below uses Lovable; build the same structure for Replit, v0, Cursor, Webflow, and others using the competitive landscape in `bolt-icp`.*
 
 ## Pre-Draft Checklist
 
-- **Which competitor, and for which persona?** A Lovable card for a creative (Persona 5) reads differently than a Cursor card for a CTO (Persona 2a). Name both.
-- **What's the latest on their pricing and positioning?** Pull from `bolt-buyer-personas` and verify against current data. Note the date.
+- **Which competitor, and for which persona?** A Lovable card for a creative (ICP 3 or ICP 4) reads differently than a Cursor card for the CTO persona. Name both, and for creatives say which half: an agency buyer (ICP 4) weighs margin and client handoff, an in-house marketer (ICP 3) weighs brand governance and launch dates.
+- **What's the latest on their pricing and positioning?** Pull from the Messaging & Brand hub in Notion (`bolt-icp` carries the wedge and the competitor table, deliberately not pricing) and verify against current data. Note the date.
 - **What are the real proof points?** Customer outcomes, metrics, named accounts we can reference. Get specifics.
 
 ## Structure
@@ -60,7 +60,7 @@ Questions that surface where Bolt.new fits and where the competitor falls short,
 
 ### 6. Proof Points
 **Length:** 3-5 items
-Customer outcomes, metrics, named accounts, third-party stats. The evidence a rep drops into the conversation. Pull cited stats from `bolt-buyer-personas` (`third-party-research.md`) where relevant.
+Customer outcomes, metrics, named accounts, third-party stats. The evidence a rep drops into the conversation. Pull cited stats from `bolt-icp` (`third-party-research.md`) where relevant.
 
 ### 7. One-Line Positioning
 **Length:** 1 sentence
@@ -70,7 +70,7 @@ The single line a rep says to frame Bolt.new against this competitor. Memorable,
 
 ## Worked Example: Battle Card vs Lovable
 
-*Persona context: most relevant for Persona 5 (creative / agency / freelancer) and Persona 1 (small business / founder). Facts as of June 2026, verify before use.*
+*Persona context: most relevant for ICP 4 (agency / creative freelancer), ICP 3 (in-house marketer), and ICP 1 (small business / founder). Facts as of June 2026, verify before use.*
 
 **Competitor Snapshot**
 - AI app builder that generates polished React apps from prompts. Strong, design-forward UI output.
@@ -133,7 +133,7 @@ For every objection, fill in five parts:
 ## Worked Example 1: "Is AI-generated code production-ready?"
 
 - **The objection:** "AI tools spit out demos, not real code. We'd just have to rebuild it."
-- **Why they raise it:** They've been burned. They've reviewed AI-generated PRs that looked right and broke in edge cases, or inherited prototypes that couldn't be refactored into a real codebase. Most relevant for Persona 2a (CTO) and Persona 4 (developer).
+- **Why they raise it:** They've been burned. They've reviewed AI-generated PRs that looked right and broke in edge cases, or inherited prototypes that couldn't be refactored into a real codebase. Most relevant for the CTO persona and the developer persona.
 - **The reframe:** The gap isn't "AI code is bad," it's "most tools stop at the prototype." Bolt.new is built for the handoff: real code, native GitHub integration, output engineering can pick up and refine rather than throw away.
 - **Proof:** Native GitHub integration for real dev handoff. WebContainers for transparent, inspectable execution. Point to a developer-facing customer story where the output went to production. (Cite a current one.)
 - **What to say:** "Fair concern, most tools stop at the demo. The difference here is the output is real code in your GitHub, so your engineers refine it instead of rebuilding it. Want to see what the handoff actually looks like?"
@@ -143,7 +143,7 @@ For every objection, fill in five parts:
 ## Worked Example 2: "What about security and compliance?"
 
 - **The objection:** "We can't put an AI tool in front of our team without a security review, and that takes forever."
-- **Why they raise it:** Security review adds four to six weeks to every enterprise cycle, and "shadow AI" (teams adopting tools faster than governance can keep up) is a live fear. Most relevant for Persona 2a (CTO) and the enterprise buyer generally. Note: security is the top friction point even for PM power users (44%).
+- **Why they raise it:** Security review adds four to six weeks to every enterprise cycle, and "shadow AI" (teams adopting tools faster than governance can keep up) is a live fear. Most relevant for the CTO persona and the enterprise buyer generally. Note: security is the top friction point even for PM power users (44%).
 - **The reframe:** Bolt.new's architecture is built for this conversation. WebContainers run code in the browser, so there's no remote server executing your code, a fundamentally different (and easier to review) security model. Pair that with granular admin controls and SSO.
 - **Proof:** WebContainers (browser-based execution, no remote server dependency). Granular admin controls and publishing governance. SSO and standard enterprise controls. Disableable native publishing per security policy.
 - **What to say:** "That's exactly the right question to ask. The architecture is built for it: code runs in the browser, not on our servers, so your security team is reviewing a much simpler model. I can get you the security documentation to start that review now."
@@ -153,7 +153,7 @@ For every objection, fill in five parts:
 ## Worked Example 3: "We already use Cursor."
 
 - **The objection:** "Our developers already have Cursor. Why would we add another tool?"
-- **Why they raise it:** They're wary of tool sprawl and don't want to pay for overlapping capabilities. Most relevant for Persona 2a (CTO) and Persona 4 (developer).
+- **Why they raise it:** They're wary of tool sprawl and don't want to pay for overlapping capabilities. Most relevant for the CTO persona and the developer persona.
 - **The reframe:** Cursor and Bolt.new solve different problems, and they're complementary. Cursor is for developers doing line-by-line work in an existing codebase. Bolt.new is for generating full apps and letting non-developers (PMs, designers, marketers) build without consuming engineering capacity. This isn't "replace Cursor," it's "stop routing every internal build through your engineers."
 - **Proof:** Bolt.new CLI integrates with Cursor for handoff. Position the split honestly: Cursor for working in existing code, Bolt.new for new-app generation and empowering non-dev teammates. (This honest framing is itself the proof for a skeptical developer.)
 - **What to say:** "Keep Cursor, your developers should. Bolt.new isn't competing with it. It's for everything that currently lands on your engineers' backlog from product and marketing. They build it, your engineers review instead of build. The two even integrate for handoff."
@@ -166,7 +166,7 @@ For every objection, fill in five parts:
 
 ## Pre-Draft Checklist
 
-- **Who's the buyer?** Name the persona (read it in `bolt-buyer-personas`). The differentiators and proof points change by audience.
+- **Who's the buyer?** Name the persona (read it in `bolt-icp`). The differentiators and proof points change by audience.
 - **What's the one thing they should remember?** The single positioning idea the sheet drives home.
 - **What proof do we have for this buyer?** Customer outcomes, metrics, cited stats relevant to them.
 
@@ -191,7 +191,7 @@ What sets Bolt.new apart, each tied to a business outcome. These are the points 
 
 ### 3. Proof Points
 **Length:** 3-5 items
-The evidence behind the positioning: customer outcomes, named accounts, metrics, third-party stats. Pull cited data from `bolt-buyer-personas` (`third-party-research.md`). Lead with the strongest number.
+The evidence behind the positioning: customer outcomes, named accounts, metrics, third-party stats. Pull cited data from `bolt-icp` (`third-party-research.md`). Lead with the strongest number.
 
 ### 4. Target Buyer
 **Length:** 2-4 sentences, or a short profile

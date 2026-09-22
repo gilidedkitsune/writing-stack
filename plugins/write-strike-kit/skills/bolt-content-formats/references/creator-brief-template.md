@@ -15,7 +15,7 @@ Answer these before you write the brief. If you can't answer one, find out befor
 - **What's the offer?** Paid, gifted, affiliate, or organic partnership. What are they getting, and what are we getting?
 - **What's the budget and timeline?** Both shape what you can reasonably ask for.
 - **Who approves?** Name the person who signs off before anything publishes, and how long they need.
-- **What's the persona?** Most creator work maps to Persona 5 (marketer / creative agency / creative freelancer) or Persona 1 (small business owner / founder). Read the relevant profile in `bolt-buyer-personas` before writing the brief.
+- **What's the persona?** Most creator work maps to ICP 4 (agency / creative freelancer), ICP 3 (in-house marketer), or ICP 1 (small business owner / founder). Creators themselves usually *are* ICP 4, so a brief aimed at their audience and a brief aimed at them may target different personas. Read the relevant profile in `bolt-icp` before writing the brief.
 
 ---
 
@@ -40,11 +40,11 @@ Answer these before you write the brief. If you can't answer one, find out befor
 
 *Prompts:*
 - Who is the creator's audience, and how does it overlap with ours?
-- Which Bolt.new buyer persona does this audience map to? (Read it in `bolt-buyer-personas` and name it here.)
+- Which Bolt.new buyer persona does this audience map to? (Read it in `bolt-icp` and name it here.)
 - What does this audience already know about Bolt.new, and what do they care about?
 - What would make this audience stop scrolling?
 
-**Notes:** Tie the audience to a specific persona so the creator understands the register. For Persona 5, the audience thinks visually and respects craft: show the deliverable quality. For Persona 1, lead with relatable outcomes and plain language. Give the creator the persona's pain points so they can speak to something real.
+**Notes:** Tie the audience to a specific persona so the creator understands the register. For ICP 3 and ICP 4, the audience thinks visually and respects craft: show the deliverable quality. For ICP 1, lead with relatable outcomes and plain language. Give the creator the persona's pain points so they can speak to something real.
 
 ---
 
