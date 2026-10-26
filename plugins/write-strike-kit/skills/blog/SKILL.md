@@ -1,14 +1,14 @@
 ---
-name: bolt-blog
+name: blog
 description: >
-  Write blog posts and SEO blog content for Bolt.new and StackBlitz. Use this skill for any blog content task: write a post from scratch, produce a content brief or outline, optimize an existing draft, or analyze a competitor URL and write a post to outrank it. Trigger on "bolt blog", "blog post for bolt", "write a blog post", "draft a blog", "content brief", "blog brief", "optimize this post", "outrank this article", or any request for blog content for Bolt.new. Do NOT trigger for other content types (social posts, emails, ads, landing pages, 1-pagers); those route through write-strike. This skill runs robust intake and research, drafts to the locked SEO-blog shape with the full default voice from tone-and-guidelines, and audits with stops-slop before presenting clean copy.
+  Write blog posts and SEO blog content. Use this skill for any blog content task: write a post from scratch, produce a content brief or outline, optimize an existing draft, or analyze a competitor URL and write a post to outrank it. Trigger on "blog post", "write a blog post", "draft a blog", "content brief", "blog brief", "optimize this post", "outrank this article", or any request for blog content. Do NOT trigger for other content types (social posts, emails, ads, landing pages, 1-pagers); those route through write-strike. This skill runs robust intake and research, drafts to the locked SEO-blog shape with the full default voice from tone-and-guidelines, and audits with stops-slop before presenting clean copy.
 ---
 
-# Bolt.new Blog Writer
+# Blog Writer
 
-You write blog content for Bolt.new. This skill pairs a robust process (real research, a sourcing bar, audience calibration, a separate edit menu after the draft) with a locked output shape (the four workflows and templates below). The shape is fixed. The process is what makes the output good.
+You write blog content. This skill pairs a robust process (real research, a sourcing bar, audience calibration, a separate edit menu after the draft) with a locked output shape (the four workflows and templates below). The shape is fixed. The process is what makes the output good.
 
-**Read before writing anything, in this order:** first the craft passes in `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/prose-craft.md`, pass 0 included, which puts `stops-slop`'s rulebook (the banned list, Tier 1 vocabulary, §0 fingerprint patterns, structural tells) in front of you as drafting constraints; then the Bolt.new voice and editorial rules in `${CLAUDE_PLUGIN_ROOT}/skills/tone-and-guidelines/SKILL.md`. Stops-slop also runs after the draft as a mandatory verification pass, and it should find nothing. Everything in the TOV applies to blog content.
+**Read before writing anything, in this order:** first the craft passes in `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/prose-craft.md`, pass 0 included, which puts `stops-slop`'s rulebook (the banned list, Tier 1 vocabulary, §0 fingerprint patterns, structural tells) in front of you as drafting constraints; then the default voice and editorial rules in `${CLAUDE_PLUGIN_ROOT}/skills/tone-and-guidelines/SKILL.md`. Stops-slop also runs after the draft as a mandatory verification pass, and it should find nothing. Everything in it applies to blog content.
 
 ## Handles four workflows
 
@@ -58,7 +58,7 @@ Gather context before writing. Run these in parallel when possible. Don't go dow
 **Citation format (every post).** Two parts, both required: **hyperlink the phrase that carries the statistic** (not the publisher's name), then **close the sentence with a plain-text parenthetical, "(Publisher Name, date)"**. Example: "onboarding time [dropped 40% in 2026](url) (Forrester, 2026)." The anchor text carries the claim, which is a signal a bare publisher name never sends, and the plain parenthetical keeps the attribution attached when an engine lifts the passage and strips the markup. No footnotes, no bibliography, no works-cited block on a blog. Chicago-style Works Cited belongs to long-form assets (guides, eBooks, reports), which route through write-strike, not here. Source of truth: tone-and-guidelines, "Bibliography and attribution."
 
 **Content-strategy check.** Position the post before drafting:
-- Searchable, shareable, or both? Most Bolt.new posts are searchable first, shareable second.
+- Searchable, shareable, or both? Most posts are searchable first, shareable second.
 - Buyer stage: awareness, consideration, decision, or implementation?
 - Pillar alignment and internal-link opportunities.
 - What gap does this fill that competitors haven't?
@@ -125,8 +125,8 @@ A scannable summary block placed before the intro. Gives the reader an instant r
 - [Concrete takeaway or key point]
 - [Add a 4th or 5th if the post warrants it]
 
-**Bolt.new callout** *(include when it fits naturally, skip if forced)*:
-If any highlight directly connects to something Bolt.new does or solves, add a one-sentence callout tied to that bullet. Format: a short, specific statement, not a sales pitch. E.g. "Bolt.new lets you ship this without writing a line of backend code." Only include if it earns its place. One callout per highlights block maximum.
+**Product callout** *(include when it fits naturally, skip if forced)*:
+If any highlight directly connects to something the subject does or solves, add a one-sentence callout tied to that bullet. Format: a short, specific statement, not a sales pitch, e.g. "[Product] lets you ship this without writing a line of backend code." Only include if it earns its place. One callout per highlights block maximum.
 
 **Intro angle:** [1-2 sentences on the hook/angle]
 
@@ -176,7 +176,7 @@ Derive these from: the target keyword's topic cluster, terms that appear across 
 [If a competitor URL was provided, note their angle, gaps, and how this post will differ]
 
 ### Internal linking opportunities:
-[Suggested Bolt.new content to link to, if known]
+[Suggested content to link to, if known]
 
 ---
 
@@ -187,7 +187,7 @@ Rules:
 - Questions should feel like something a real reader would search or ask
 - Answers should be concise, 2 to 4 sentences each
 - Suitable for FAQPage schema markup
-- If a question naturally connects to a Bolt.new use case, include a brief product tie-in in the answer, one sentence max, only if it fits
+- If a question naturally connects to a product use case, include a brief product tie-in in the answer, one sentence max, only if it fits
 
 **Q: [Question]**
 A: [Answer]
@@ -224,9 +224,9 @@ Run the `stops-slop` skill and fix violations in the text. Then check readabilit
 
 ## Workflow 4: Outrank Competitor
 
-Read `${CLAUDE_PLUGIN_ROOT}/skills/bolt-blog/references/competitor-research.md` in full before starting this workflow.
+Read `${CLAUDE_PLUGIN_ROOT}/skills/blog/references/competitor-research.md` in full before starting this workflow.
 
-1. **Analyze the competitor URL** using the full 5-step process in the reference. Pull SERP results and competitor pages through `bolt-seo-geo`'s connected tools when available; fall back to web search if they aren't.
+1. **Analyze the competitor URL** using the full 5-step process in the reference. Pull SERP results and competitor pages through `seo-geo`'s connected tools when available; fall back to web search if they aren't.
 2. **Propose a differentiated angle**, don't write the same post longer. The reference outlines six strategies; pick the right one.
 3. **Deliver a brief first** (Workflow 2 format) with the Competitive Brief Summary Block filled in.
 4. **Write the post** once the brief is approved, following Workflow 1 requirements.
@@ -246,7 +246,7 @@ To export to a Google Doc, use the `anthropic-skills:docx` skill to generate a `
 
 Each is a separate tool applied to the finished post, the same Step 5 menu write-strike uses. Drafting craft stays in the draft; these happen to what you wrote.
 
-- **aeo-craft** (default for every post bound for bolt.new): sculpt for AI-answer citability, using `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/SEO-GEO-drafting.md` as the rulebook and Cairrot as the measurement spine. TOV and accuracy win every disagreement.
+- **aeo-craft** (default for every published post): sculpt for AI-answer citability, using `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/SEO-GEO-drafting.md` as the rulebook and Cairrot as the measurement spine. TOV and accuracy win every disagreement.
 - **mr-gay** (default for anything going to publish): the copyedit, with the readability script against the target reader's Flesch band and the numbered 🔴🟡🔵 findings.
 - **Ogilvy pass** (on request): run `ogilvy-copywriting`'s Diagnostic Questions against the finished post. Positioning, the single promise, does the headline carry it, is there proof, is the news buried, is the product the hero. Not a second draft: an edit of this one, presented alongside the original if the changes are large. Run stops-slop on the result.
 - **Schwartz re-angle** (when the substance is right and the opening isn't): rewrite headline, lead, and structure to the reader's awareness cell per `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/schwartz-5x5-matrix.md`. Run stops-slop on the result.
@@ -257,8 +257,8 @@ Each is a separate tool applied to the finished post, the same Step 5 menu write
 
 When drafting, apply the GEO/AEO writing rules (answer-first passages, passage-level extractability, AI-citation optimization) in `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/SEO-GEO-drafting.md`. That is the drafting layer; the tooling layer follows.
 
-The full stage-by-stage tool map (pre-draft research and briefs, post-draft optimization, post-publish monitoring, and data integrations) lives in `${CLAUDE_PLUGIN_ROOT}/skills/bolt-seo-geo/references/seo-geo-toolkit.md`. Reach for it for keyword research, competitive content briefs, SERP and competitor analysis, schema, internal linking, and performance tracking. This skill delegates there; it does not duplicate the catalog. Before running any `/seo-*` tool, `bolt-seo-geo` says what is connected versus gated, so never fabricate metrics.
+The full stage-by-stage tool map (pre-draft research and briefs, post-draft optimization, post-publish monitoring, and data integrations) lives in `${CLAUDE_PLUGIN_ROOT}/skills/seo-geo/references/seo-geo-toolkit.md`. Reach for it for keyword research, competitive content briefs, SERP and competitor analysis, schema, internal linking, and performance tracking. This skill delegates there; it does not duplicate the catalog. Before running any `/seo-*` tool, `seo-geo` says what is connected versus gated, so never fabricate metrics.
 
 ## Brand reminder
 
-Write **Bolt.new** on first mention, then **Bolt** for the rest of the post. Never "Bolt" before the full name has appeared, and give the full name to any passage that gets lifted on its own (a pull quote, a standalone FAQ answer). Source of truth: `tone-and-guidelines` (Brand name).
+Use the subject's full name on first mention, then its short form for the rest of the post, unless the brief specifies a different convention. Never use the short form before the full name has appeared, and give the full name to any passage that gets lifted on its own (a pull quote, a standalone FAQ answer).

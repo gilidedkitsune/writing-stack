@@ -1,8 +1,8 @@
 # Webinar Bill of Materials (BOM) Template
 
-A production checklist and content template for Bolt.new webinars. Covers everything from planning through post-event content. Work through each section in order; skip what doesn't apply.
+A production checklist and content template for webinars. Covers everything from planning through post-event content. Work through each section in order; skip what doesn't apply.
 
-Based on the editorial-calendar template used for HustleFund, Storybook/Bolt, and other Bolt.new webinars. The calendar of record is now ContentedCal.
+Adapt the filing step below to wherever your own editorial calendar of record lives.
 
 ---
 
@@ -12,7 +12,7 @@ Webinar BOMs do **not** export as `.docx`. The finished package (all drafted ass
 
 ### 1. Create the Notion BOM page
 
-Create a new page as a **child of the Webinar Hub** (parent page ID `395d971055d6809dad1bff2c70e24b50`, https://www.notion.so/stackblitz/Webinar-Hub-395d971055d6809dad1bff2c70e24b50) using the Notion MCP (`notion-create-pages`). One new doc per webinar, filed under the Hub.
+Create a new page as a **child of your own Webinar Hub** (set its parent page ID once you have one) using the Notion MCP (`notion-create-pages`). One new doc per webinar, filed under the Hub.
 
 - **Title:** the webinar title (append the date if the title alone is ambiguous)
 - **Content:** the filled-in BOM below, rendered as Notion-flavored Markdown:
@@ -159,7 +159,7 @@ Structure:
 
 ### Follow-up emails
 
-- **Attendees:** thank you → key takeaway → recording link → CTA (try Bolt.new, book a demo, etc.)
+- **Attendees:** thank you → key takeaway → recording link → CTA (try the product, book a demo, etc.)
 - **No-shows:** no guilt trip. "Here's what you missed" → recording link → same CTA
 
 ---
@@ -194,7 +194,7 @@ Brevity first. More room for personality than LinkedIn.
 
 ## SEO and GEO
 
-If the webinar generates a blog recap or landing page that will live on bolt.new:
+If the webinar generates a blog recap or landing page that will be published:
 
 ### SEO
 - **Primary keyword:**

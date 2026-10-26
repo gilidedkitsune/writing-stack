@@ -241,7 +241,7 @@ Filler that only registers in bulk.
 | Circle back | Return to, revisit |
 | On the same page | Aligned, agreed |
 
-## Adverbs — Bolt style rule
+## Adverbs — house style rule
 
 This one is stricter than tell-detection: it's brand voice. Kill all of them. No -ly words. No softeners, intensifiers, or hedges.
 

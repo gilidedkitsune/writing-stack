@@ -1,7 +1,7 @@
 ---
 name: stops-slop
 description: >
-  Audit and clean Bolt.new content for AI writing patterns. Use this skill after drafting any Bolt.new or StackBlitz content to eliminate AI tells, slop, and formulaic writing. Trigger on: "stops-slop", "stopslop", "stop slop", "stop-slop", "slop check", "run stops-slop", "run stopslop", "audit this draft", "AI tells", "clean up the copy", or any request to review Bolt.new content for AI-generated patterns. Also trigger automatically as part of the bolt-blog workflow (Step 6). Works on any prose: blogs, social, emails, landing pages, thought leadership.
+  Audit and clean content for AI writing patterns. Use this skill after drafting any content to eliminate AI tells, slop, and formulaic writing. Trigger on: "stops-slop", "stopslop", "stop slop", "stop-slop", "slop check", "run stops-slop", "run stopslop", "audit this draft", "AI tells", "clean up the copy", or any request to review content for AI-generated patterns. Also trigger automatically as part of the blog workflow (Step 6). Works on any prose: blogs, social, emails, landing pages, thought leadership.
 ---
 
 # Stops-slop
@@ -68,7 +68,7 @@ Floating above the scene. "Nobody designed this." "This happens because..." "Peo
 Put the reader in the room. "You" beats "People." Specifics beat abstractions.
 
 ### Overly smooth connectors
-Paragraph openers that create artificial flow. "This belief defines how we build Bolt.new." "This is personal for us." "That same pattern shows up across the team."
+Paragraph openers that create artificial flow. "This belief defines how we build this." "This is personal for us." "That same pattern shows up across the team."
 
 If the paragraph follows logically from the prior one, it doesn't need a connector. If it needs one, use something a person would say out loud.
 
@@ -205,7 +205,7 @@ A scrub that removes these made the draft worse, not cleaner. If the rewrite is 
 
 ## 10. Sources
 
-The structural and vocabulary catalog draws on Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, by way of [blader/humanizer](https://github.com/blader/humanizer) v3.0.0 (MIT). Patterns that duplicated house rules were dropped; the ones kept were rewritten to Bolt.new's stricter standards (zero em dashes rather than sample-matched, pairs over triads). The worked before/after examples in `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md` are ours.
+The structural and vocabulary catalog draws on Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, by way of [blader/humanizer](https://github.com/blader/humanizer) v3.0.0 (MIT). Patterns that duplicated house rules were dropped; the ones kept were rewritten to this stack's stricter standards (zero em dashes rather than sample-matched, pairs over triads). The worked before/after examples in `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md` are ours.
 
 ## 11. The editorial judgment call
 

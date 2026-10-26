@@ -1,4 +1,4 @@
-# Bolt.new Customer Story Template
+# Customer Story Template
 
 *Internal framework: use this structure for every customer story. Adapt section lengths based on the customer's narrative, but hit every section.*
 
@@ -9,17 +9,17 @@
 Answer these before writing:
 
 - **Who's the customer?** Company name, size, industry, and the specific person(s) quoted.
-- **What did they build?** The product, app, or workflow they created with Bolt.new.
-- **What was broken before?** The pain point, bottleneck, or gap that led them to Bolt.new.
+- **What did they build?** The product, app, or workflow they created with [Product].
+- **What was broken before?** The pain point, bottleneck, or gap that led them to [Product].
 - **What's the measurable outcome?** Time saved, revenue generated, speed to launch. Get a number.
-- **Who's reading this?** (e.g., enterprise buyers evaluating Bolt.new, developers considering adoption, founders looking for proof)
+- **Who's reading this?** (e.g., enterprise buyers evaluating [Product], developers considering adoption, founders looking for proof)
 
 ---
 
 ## Story Structure
 
 ### 1. Headline
-**Format:** [Result/outcome] + [who did it] + [with Bolt.new]
+**Format:** [Result/outcome] + [who did it] + with [Product]
 **Length:** 8–12 words
 **Tone:** Concrete and specific. Lead with what they achieved, not who they are.
 
@@ -28,7 +28,7 @@ Answer these before writing:
 - Can you state it with a number?
 
 **Examples of the shape (not actual headlines):**
-- [Company] shipped their MVP in 48 hours with Bolt.new
+- [Company] shipped their MVP in 48 hours with [Product]
 - How [Company] cut development time by 70%
 
 ---
@@ -41,7 +41,7 @@ Include:
 - **Company:** Name, one-line description
 - **Use case:** What they built
 - **Before:** The old way / the problem
-- **After:** The Bolt.new way / the result
+- **After:** The [Product] way / the result
 - **Key metric:** The headline number
 
 ---
@@ -74,16 +74,16 @@ Include:
 
 ---
 
-### 5. The Turn, Why Bolt.new
+### 5. The Turn, Why [Product]
 **Length:** 75–125 words
 **Tone:** Natural, not salesy. This should read like a recommendation from a colleague, not an ad.
 
 *Prompts:*
-- How did they find Bolt.new?
+- How did they find [Product]?
 - What made them try it over alternatives?
 - Was there a specific moment or feature that clicked?
 
-**Notes:** Keep this tight. Don't list features; describe the decision. One quote works well here: *why* they chose Bolt.new in their own words.
+**Notes:** Keep this tight. Don't list features; describe the decision. One quote works well here: *why* they chose [Product] in their own words.
 
 ---
 
@@ -94,7 +94,7 @@ Include:
 *Prompts:*
 - What did they build? (App, internal tool, prototype, customer-facing product)
 - What was the workflow? (Prompt-to-production, iteration cycles, team collaboration)
-- Which Bolt.new capabilities mattered most? (Be specific; don't just say "AI")
+- Which [Product] capabilities mattered most? (Be specific; don't just say "AI")
 - Did they involve non-technical team members? How?
 - What surprised them during the build?
 
@@ -121,7 +121,7 @@ Include:
 **Tone:** Forward-looking, grounded.
 
 *Prompts:*
-- What are they building next with Bolt.new?
+- What are they building next with [Product]?
 - How has it changed their team's approach to building?
 - Would they recommend it? (Get a closing quote)
 
@@ -131,7 +131,7 @@ Include:
 
 ### 9. CTA
 **Length:** 1–2 lines
-**Format:** Direct link to try Bolt.new or talk to sales, depending on distribution channel.
+**Format:** Direct link to try [Product] or talk to sales, depending on distribution channel.
 
 ---
 
@@ -171,13 +171,13 @@ Use these when interviewing the customer. You won't use all of them; pick the on
 - What's your team's technical setup? (In-house devs, contractors, no-code tools, etc.)
 
 **Problem:**
-- What were you trying to build when you found Bolt.new?
+- What were you trying to build when you found [Product]?
 - What was your biggest bottleneck before?
 - What had you tried that didn't work?
 - What was that costing you, in time, money, or missed opportunities?
 
 **Discovery and decision:**
-- How did you hear about Bolt.new?
+- How did you hear about [Product]?
 - What made you try it?
 - Was there a specific moment where it clicked?
 
@@ -193,7 +193,7 @@ Use these when interviewing the customer. You won't use all of them; pick the on
 
 **Forward-looking:**
 - What are you planning to build next?
-- How would you describe Bolt.new to a peer who hasn't tried it?
+- How would you describe [Product] to a peer who hasn't tried it?
 
 ---
 
@@ -203,4 +203,4 @@ Use these when interviewing the customer. You won't use all of them; pick the on
 - **Specific > superlative.** "Shipped in 48 hours" beats "incredibly fast."
 - **Customer's voice > your voice.** Let their quotes carry the story. Your job is structure and connective tissue.
 - **No fluff.** If a sentence doesn't add information or momentum, cut it.
-- **Always Bolt.new.** Never just "Bolt."
+- **Use the product's full name on first mention, short form after**, unless the brief specifies otherwise.

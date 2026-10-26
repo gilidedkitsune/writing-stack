@@ -13,7 +13,7 @@ A reader switches only when the forces toward change beat the forces against it:
 - **Anxiety** of the new: fear and uncertainty about switching. ("Is the output real code? Will it scale? Is it mine?")
 - **Habit** of the present: inertia, sunk cost, the comfort of the current workflow. ("We already have a process, even if it's slow.")
 
-Most copy oversells the pull and ignores the two forces working against the switch. For Bolt.new, where readers are leaving hand-coding or another builder, **anxiety and habit are usually the real blockers**, and they are exactly what the VoC anxieties bucket surfaces.
+Most copy oversells the pull and ignores the two forces working against the switch. For a developer tool, where readers are leaving hand-coding or another builder, **anxiety and habit are usually the real blockers**, and they are exactly what the VoC anxieties bucket surfaces.
 
 ## Using it
 

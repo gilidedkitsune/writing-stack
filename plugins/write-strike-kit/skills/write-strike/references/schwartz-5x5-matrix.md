@@ -97,7 +97,7 @@ The reader feels the pain. Multiple solutions claim unique mechanisms. Yours nee
 - **Headline:** Problem + proven mechanism. Lead with evidence, not just the approach.
 - **Lead:** Problem → "you've probably seen tools that claim X" → "here's what actually works, and here's the proof."
 - **Copy structure:** Medium. Problem → mechanism landscape → your proven mechanism → stacked proof (numbers, testimonials, demos) → CTA.
-- **Example:** "129 seconds. That's the average time it takes to build a working site on Bolt.new. Here's what three founders shipped."
+- **Example:** "129 seconds. That's the average time it takes to build a working site on [Product]. Here's what three founders shipped."
 
 #### Problem-aware + Stage 5 (Market skepticism)
 
@@ -130,7 +130,7 @@ The reader is shopping. Your claim needs to be the biggest and most specific.
 - **Headline:** Direct comparison. Your biggest advantage, stated as a fact.
 - **Lead:** Acknowledge alternatives, then make your enlarged claim with specifics.
 - **Copy structure:** Medium. Comparison → your advantage → evidence → CTA.
-- **Example:** "Other AI builders give you templates. Bolt.new gives you real, editable, deployable code."
+- **Example:** "Other tools in the category give you templates. [Product] gives you real, editable, deployable code."
 
 #### Solution-aware + Stage 3 (Mechanism required)
 
@@ -139,7 +139,7 @@ The reader is shopping and has heard similar claims from everyone. Your mechanis
 - **Headline:** Mechanism-led differentiation. How yours works differently.
 - **Lead:** "You've seen the promises. Here's how ours actually delivers."
 - **Copy structure:** Medium. Mechanism explanation → why it matters → comparison table → proof → CTA.
-- **Example:** "Most AI builders run on remote servers. Bolt.new runs WebContainers in your browser: zero latency, full control."
+- **Example:** "Most tools in the category run on remote servers. [Product] runs in your browser: zero latency, full control."
 
 #### Solution-aware + Stage 4 (Mechanism arms race)
 
@@ -181,7 +181,7 @@ They know you, competitors exist, and they're comparing. They need a reason to c
 - **Headline:** Competitive advantage. What you have that they don't.
 - **Lead:** Direct comparison on the dimension that matters most.
 - **Copy structure:** Short-medium. Comparison → your advantage → offer → CTA.
-- **Example:** "Unlike [alternative], Bolt.new gives you full code ownership. Export and deploy anywhere."
+- **Example:** "Unlike [alternative], [Product] gives you full code ownership. Export and deploy anywhere."
 
 #### Product-aware + Stage 3 (Mechanism required)
 
@@ -199,7 +199,7 @@ They know you, competitors have similar mechanisms, and they need proof yours de
 - **Headline:** Fresh proof. New testimonial, new metric, new case study.
 - **Lead:** Lead with the newest, most specific evidence.
 - **Copy structure:** Short-medium. New proof → restate mechanism advantage → urgency → CTA.
-- **Example:** "Last month, 12,000 new sites were deployed on Bolt.new. Here's what the builders said."
+- **Example:** "Last month, 12,000 new sites were deployed on [Product]. Here's what the builders said."
 
 #### Product-aware + Stage 5 (Market skepticism)
 
@@ -208,7 +208,7 @@ They know you, trust is low across the market, and they need radical transparenc
 - **Headline:** Honesty and risk removal. "Here's what we can't do" builds more trust than "here's what we can."
 - **Lead:** Transparent limitations followed by genuine strengths.
 - **Copy structure:** Short. Honest assessment → where you genuinely excel → zero-risk trial → CTA.
-- **Example:** "Bolt.new won't replace a custom dev team for enterprise apps. But for your business site, it's worth 30 minutes to find out."
+- **Example:** "[Product] won't replace a custom dev team for enterprise apps. But for your business site, it's worth 30 minutes to find out."
 
 ---
 
@@ -223,7 +223,7 @@ At maximum awareness, sophistication level matters less. The reader has already 
 - **Headline:** The offer. Price, discount, bonus, deadline. Nothing else.
 - **Lead:** The deal, stated plainly.
 - **Copy structure:** Short. Offer → deadline/scarcity → CTA. That's it.
-- **Example:** "Bolt.new Pro. $20/month. Start free for 14 days."
+- **Example:** "[Product] Pro. $20/month. Start free for 14 days."
 
 ---
 

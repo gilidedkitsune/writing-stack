@@ -19,15 +19,15 @@ Pick one per piece. Do not stack them.
 
 Whenever you write about a feature, run it through FAB so you never ship a bare feature:
 
-- **Feature:** what it is. ("Bolt.new now supports X.")
+- **Feature:** what it is. ("[Product] now supports X.")
 - **Advantage:** what that lets you do. ("so you can do Y...")
 - **Benefit:** the outcome the reader cares about. ("...and ship Z without waiting on a dev.")
 
 Kill any feature line that cannot ladder to a reader benefit.
 
-## Bolt examples
+## Worked examples
 
-- **PAS (tweet):** "Your landing page has been 'almost done' for three weeks. Every day it's down is leads you're not capturing. Describe it to Bolt.new, ship it today."
+- **PAS (tweet):** "Your landing page has been 'almost done' for three weeks. Every day it's down is leads you're not capturing. Describe it to [Product], ship it today."
 - **BAB (email):** "Before: a dev ticket and a two-week wait. After: live by lunch. Here's the 90-second version."
 
 These reinforce the rest of the stack rather than competing with it: FAB serves Ogilvy's "facts over adjectives," and a formula's hook should still pass the VoC gut-check (does it ring true to how customers talk?) and the stops-slop filter before it ships.

@@ -208,7 +208,7 @@ Monumentalizing the mundane. Cousin of copula inflation (see SKILL.md §3).
 
 Paragraph openers that create artificial flow between sections.
 
-- "This belief defines how we build Bolt.new."
+- "This belief defines how we build this."
 - "This is personal for us."
 - "These qualities embody our team."
 - "That same pattern shows up across the team."

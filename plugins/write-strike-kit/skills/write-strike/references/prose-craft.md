@@ -2,7 +2,7 @@
 
 The generative counterpart to `stops-slop`. That skill's rules are pass 0 here, so they shape the draft from the first word; its audit runs after, as verification, and should find nothing. Sanding can't add life a draft never had, and a tell sanded out of a finished sentence leaves a sentence that was built around the tell. Flat copy that passes every filter is still flat: craft happens at generation, not correction.
 
-Work the passes in order. Pass 0 is the constraint set you write inside; the rest match how a piece actually gets built: promise, lead, sentences, specifics, rhythm, thread, ending, cut. Product examples in this file are invented for teaching; never reuse them as real Bolt.new claims.
+Work the passes in order. Pass 0 is the constraint set you write inside; the rest match how a piece actually gets built: promise, lead, sentences, specifics, rhythm, thread, ending, cut. Product examples in this file are invented for teaching; never reuse them as real product claims.
 
 ---
 

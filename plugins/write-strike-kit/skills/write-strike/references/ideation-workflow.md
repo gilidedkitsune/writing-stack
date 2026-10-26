@@ -34,17 +34,17 @@ Condense findings into **5 trending topics**: the themes, debates, product launc
 - **Topic**: one-line description
 - **Why it's trending**: the news hook or cultural moment driving it
 - **Source(s)**: which publications covered it, with links where available
-- **Bolt.new angle**: how this trend connects to something Bolt.new could credibly write about
+- **Subject angle**: how this trend connects to something the subject could credibly write about
 
 Present the 5 trending topics to the user before moving into the skill pipeline. These trends inform the ideation conversation; they're context, not commitments. The user may want to build on one, ignore all of them, or use them as background for a different direction.
 
 ### Research phase
 
-Run a focused SEO/GEO research pass to ground the ideation in data, then weave findings into the conversation (not a report dump). The tool choreography, the exact triggers, and what's connected all live in `bolt-seo-geo`, mapped in `${CLAUDE_PLUGIN_ROOT}/skills/bolt-seo-geo/references/seo-geo-toolkit.md`. Delegate there rather than duplicating it here.
+Run a focused SEO/GEO research pass to ground the ideation in data, then weave findings into the conversation (not a report dump). The tool choreography, the exact triggers, and what's connected all live in `seo-geo`, mapped in `${CLAUDE_PLUGIN_ROOT}/skills/seo-geo/references/seo-geo-toolkit.md`. Delegate there rather than duplicating it here.
 
-For ideation specifically, the useful order is: content strategy and pillars first (`/content-strategy`), then keyword and SERP research (`/keyword-research`, `/serp-analysis`), competitor and gap analysis (`/competitor-analysis`, `/content-gap-analysis`), topic clustering (`/seo-cluster`), and bolt.new's own GA4/GSC numbers where they ground the angle. Offer deeper passes (`/seo-geo`, `/entity-optimizer`, `/seo-content-brief`, and the others in the map) based on the goal.
+For ideation specifically, the useful order is: content strategy and pillars first (`/content-strategy`), then keyword and SERP research (`/keyword-research`, `/serp-analysis`), competitor and gap analysis (`/competitor-analysis`, `/content-gap-analysis`), topic clustering (`/seo-cluster`), and the site's own GA4/GSC numbers where they ground the angle. Offer deeper passes (`/seo-geo`, `/entity-optimizer`, `/seo-content-brief`, and the others in the map) based on the goal.
 
-Run only the steps whose backend is connected: Google (GA4 + Search Console) is wired via `bolt-seo-geo`; DataForSEO and Firecrawl are gated, so ask the user for that data instead of fabricating volumes, difficulty, or rankings. **AI-answer visibility comes from `bolt-cairrot`**, which is live and pullable. Profound was retired Sep 8 2026; do not reach for it or its snapshots. Steps 1, 4, and 6 plus the trend scan run fine with no backend.
+Run only the steps whose backend is connected: Google (GA4 + Search Console) is wired via `seo-geo`; DataForSEO and Firecrawl are gated, so ask the user for that data instead of fabricating volumes, difficulty, or rankings. **AI-answer visibility comes from a Cairrot connector**, where one is set up. Steps 1, 4, and 6 plus the trend scan run fine with no backend.
 
 ### Schwartz thought exercise
 
@@ -71,7 +71,7 @@ After research and the Schwartz thought exercise, present a prioritized content 
 - **Messaging angle**: the Schwartz-informed headline/lead direction (one to two sentences)
 - **Why this idea**: the data point or gap that makes it worth doing
 - **Estimated effort** (light, medium, heavy)
-- **GEO opportunity**: whether this topic has AI citation potential. Ground it in a live `bolt-cairrot` pull and state the window; if Cairrot returns nothing usable, mark this "not grounded" rather than guessing
+- **GEO opportunity**: whether this topic has AI citation potential. Ground it in a live Cairrot pull and state the window; if Cairrot isn't connected or returns nothing usable, mark this "not grounded" rather than guessing
 
 Organize by priority: high-impact quick wins first, then strategic investments, then long-tail opportunities.
 

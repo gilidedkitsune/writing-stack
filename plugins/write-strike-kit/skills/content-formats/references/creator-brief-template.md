@@ -1,4 +1,4 @@
-# Bolt.new Content Creator Brief Template
+# Content Creator Brief Template
 
 *Internal framework: use this structure for every external creator or influencer brief. The goal is a brief a creator can execute cold, with no follow-up call. Adapt section lengths to the collaboration, but hit every section.*
 
@@ -10,7 +10,7 @@ A good brief gives the creator everything they need to deliver on the first try:
 
 Answer these before you write the brief. If you can't answer one, find out before sending.
 
-- **Who's the creator?** Name, platform(s), audience size, and why they're a fit (their audience overlaps with ours, their style matches our voice, they've used Bolt.new).
+- **Who's the creator?** Name, platform(s), audience size, and why they're a fit (their audience overlaps with ours, their style matches our voice, they've used the product).
 - **What's the one outcome?** Awareness, signups, a specific launch, event registrations. Pick one. A brief with five goals has none.
 - **What's the offer?** Paid, gifted, affiliate, or organic partnership. What are they getting, and what are we getting?
 - **What's the budget and timeline?** Both shape what you can reasonably ask for.
@@ -41,7 +41,7 @@ Answer these before you write the brief. If you can't answer one, find out befor
 *Prompts:*
 - Who is the creator's audience, and how does it overlap with ours?
 - Who is this audience, specifically? (Name the role, seniority, and what they already know here.)
-- What does this audience already know about Bolt.new, and what do they care about?
+- What does this audience already know about the product, and what do they care about?
 - What would make this audience stop scrolling?
 
 **Notes:** Tie the audience to a specific reader so the creator understands the register. A visually literate, craft-respecting audience wants to see deliverable quality; a small-business/founder audience wants relatable outcomes and plain language. Give the creator that reader's real pain points so they can speak to something true.
@@ -101,7 +101,7 @@ Specify for each deliverable:
 **Length:** A short reference block
 **Tone:** Firm but not fussy. These are the non-negotiables.
 
-- **Product naming:** Always write and say "Bolt.new," never "Bolt." This matters in voiceover, on-screen text, and captions.
+- **Product naming:** Use the product's full name on first mention, short form after, unless the brief says otherwise. This matters in voiceover, on-screen text, and captions.
 - **Voice:** Share `tone-and-guidelines` with the creator (it's built to be downloadable and shareable). Ask them to keep their own voice but stay inside our tone: plain, direct, no hype, no buzzwords.
 - **Do's:** Show real output. Be specific ("built this in an afternoon"). Speak to a real use case. Let their personality through.
 - **Don'ts:** No buzzword salad. No overpromising. No "this will change everything." No knocking competitors. No em dashes in on-screen text or captions (use commas, colons, periods, or parentheses).
@@ -112,7 +112,7 @@ Specify for each deliverable:
 - Are there on-screen branding requirements (logo placement, lower-third, end card)?
 - Any visual treatments we want or want to avoid?
 
-**Notes:** The "Bolt.new" naming rule is the one creators break most. Call it out twice if you have to.
+**Notes:** The naming convention is the rule creators break most. Call it out twice if you have to.
 
 ---
 
@@ -122,7 +122,7 @@ Specify for each deliverable:
 
 - [ ] **CTA:** The exact call to action and where it goes (in-caption, verbal, on-screen, link in bio).
 - [ ] **Tracking link / UTM:** The specific link to use. Provide it built; don't make the creator construct it.
-- [ ] **Disclosure:** Required ad disclosure (#ad, "Sponsored by Bolt.new," paid-partnership label). State the exact wording and placement. This is a legal requirement, not a preference.
+- [ ] **Disclosure:** Required ad disclosure (#ad, "Sponsored by [Brand]," paid-partnership label). State the exact wording and placement. This is a legal requirement, not a preference.
 - [ ] **Anything legally required:** Trademark notices, claim qualifiers, age or region restrictions, platform-specific rules.
 
 *Prompts:*
@@ -163,7 +163,7 @@ Specify for each deliverable:
 
 *Prompts:*
 - What past content (theirs or others') nails the vibe we want?
-- Are there Bolt.new pieces that show the voice and quality bar?
+- Are there existing pieces that show the voice and quality bar?
 - Any anti-examples worth flagging? ("Great creator, but this one's too salesy for us.")
 
 **Notes:** Examples communicate faster than adjectives. One link that shows the tone we want beats a paragraph describing it. Annotate each link with the one thing to take from it.
@@ -190,9 +190,9 @@ Specify for each deliverable:
 
 ## Tone Reminders
 
-- **Specific beats vague.** "60-second video showing a prompt-to-live-site build" beats "a fun video about Bolt.new."
+- **Specific beats vague.** "60-second video showing a prompt-to-live-site build" beats "a fun video about the product."
 - **One outcome.** A brief that wants everything gets nothing.
 - **Let the creator be the creator.** Give them the message and the guardrails, not a script. They know their audience better than we do.
 - **Spell out the boring parts.** Disclosure, tracking links, usage rights, revision count. The unglamorous details are what keep the collaboration clean.
-- **Always Bolt.new.** Never just "Bolt." In copy, captions, voiceover, and on-screen text.
+- **Use the product's full name on first mention, short form after**, unless the brief specifies otherwise. In copy, captions, voiceover, and on-screen text.
 - **No em dashes.** Anywhere. Use commas, colons, periods, or parentheses.

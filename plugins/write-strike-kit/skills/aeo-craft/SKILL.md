@@ -1,10 +1,10 @@
 ---
 name: aeo-craft
 description: >
-  The AEO/GEO sculpting pass for Bolt.new content: audits and reshapes a finished draft so AI answer
+  The AEO/GEO sculpting pass: audits and reshapes a finished draft so AI answer
   engines (ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot) can find, extract, and cite it,
   and plans the citability angle before drafting starts. Run it on EVERY blog or website piece bound
-  for bolt.new after the stops-slop audit, and whenever the user says "AEO pass", "GEO pass", "aeo-craft",
+  for publication after the stops-slop audit, and whenever the user says "AEO pass", "GEO pass", "aeo-craft",
   "optimize for AI citations", "will AI cite this?", "is this AEO/GEO optimized?", "citability", "make
   this liftable", or asks why a page isn't showing up in AI answers. Also run the Plan mode when a new
   piece targets a definitional or question-shaped query ("what is X", comparisons, how-tos) BEFORE the
@@ -19,27 +19,27 @@ The sculpting pass. Other skills make the prose good; this one makes it **citabl
 
 **Where it sits in the craft topology:** prose-craft builds prose → SEO-GEO-drafting guides searchable drafting → stops-slop catches AI tells → mr-gay diagnoses the writing → **aeo-craft sculpts for machine citability**. Read `${CLAUDE_PLUGIN_ROOT}/skills/write-strike/references/SEO-GEO-drafting.md` before running a pass: it is the rulebook this skill enforces, including the shared spine, the three tensions, and the per-engine notes (its FAST-MOVING section is the single source for engine behavior — don't duplicate it here, read it there).
 
-**What this skill does not do:** keyword/SERP/traffic data (that's `bolt-seo-geo`, which also says what's connected — never fabricate metrics), drafting voice (tone-and-guidelines + prose-craft), AI-tell cleanup (stops-slop). If the draft hasn't passed stops-slop, send it there first; sculpting slop makes citable slop.
+**What this skill does not do:** keyword/SERP/traffic data (that's `seo-geo`, which also says what's connected — never fabricate metrics), drafting voice (tone-and-guidelines + prose-craft), AI-tell cleanup (stops-slop). If the draft hasn't passed stops-slop, send it there first; sculpting slop makes citable slop.
 
 ## The measurement spine
 
-This skill used to run blind. It doesn't now. **Cairrot is the backbone**: bolt.new's live AI-answer data across ChatGPT, Gemini, Claude, Perplexity, AI Overviews, DeepSeek, and Grok. Read it before you sculpt and again after you publish. Everyone on the team can have it; setup is at the bottom of this file.
+This skill runs best with a measurement source wired in. **Cairrot is the backbone where configured**: live AI-answer data across ChatGPT, Gemini, Claude, Perplexity, AI Overviews, DeepSeek, and Grok, for whatever project you point it at. Read it before you sculpt and again after you publish. Setup is at the bottom of this file.
 
 **Primary path: the Cairrot MCP connector.** Load its tools with ToolSearch, keyword `cairrot` (the server prefix is a UUID that changes between sessions, so search by name, never by prefix). Eleven tools, and what this skill uses them for:
 
-- `list_projects`, `get_project`: orient. The bolt.new project is the one you want.
+- `list_projects`, `get_project`: orient. Pick the project this content belongs to.
 - `get_index_schema`, then `build_lucene_query`: learn the field names, then scope a query to a topic, a model, and a window.
-- `search_mentions`: **named**. Answers where "Bolt.new" appears in the text.
-- `search_citations`: **cited**. Answers that link a bolt.new URL. The gap between these two is this skill's whole job.
+- `search_mentions`: **named**. Answers where your brand or product name appears in the text.
+- `search_citations`: **cited**. Answers that link your site's URL. The gap between these two is this skill's whole job.
 - `search_fanouts`: the sub-questions an engine actually ran to build its answer, which is the question tree (pass 2) written by the engine itself.
 - `search_crawler_hits`: which AI crawlers fetched which pages, for pass 8's freshness and cluster-link checks.
 - `search_sentiment_phrases`, `search_runs`, `generate_report`: sentiment, run history, and one rolled-up artifact when a readout needs it.
 
 Tool names as of Sep 2026, mapped from the tool surface rather than from schemas; if they've moved, `list_projects` and `get_index_schema` will orient you, and the first live run should confirm the mapping above.
 
-**Fallback: the `bolt-cairrot` REST puller**, on machines that have that skill installed (Taylor's does). `cairrot_pull.py topics --days 30` returns the same named and cited numbers per topic and per model, and `competitors` the leaderboard. Same API, same project, same numbers; only the transport differs. Never mix the two in one table without saying so, and never fabricate a number if both are unavailable: sculpt blind, flagged blind.
+**Fallback: a local REST puller**, if you have one set up against the same API. It returns the same named and cited numbers per topic and per model, and a competitor leaderboard. Same API, same project, same numbers; only the transport differs. Never mix the two in one table without saying so, and never fabricate a number if both are unavailable: sculpt blind, flagged blind.
 
-The one number that drives everything is **named vs. cited**. Named is the engine writing "Bolt.new" in the answer text. Cited is the engine linking a bolt.new URL. They move independently, and the gap between them is this skill's entire job. Over the 30 days to Sep 3 2026, bolt.new was named in 6% of tracked answers and cited in 0.4%: engines know us and credit someone else.
+The one number that drives everything is **named vs. cited**. Named is the engine writing your brand or product name in the answer text. Cited is the engine linking your URL. They move independently, and the gap between them is this skill's entire job. A project named in 6% of tracked answers but cited in only 0.4% of them is the classic pattern: engines know the brand and credit someone else.
 
 **How to pull it.** Over the MCP, scope `search_mentions` and `search_citations` to the piece's topic and a 30-day window (build the filter with `build_lucene_query` after reading `get_index_schema`). With the puller, `cairrot_pull.py topics --days 30`. Either way, name the window on every number.
 
@@ -52,7 +52,7 @@ The one number that drives everything is **named vs. cited**. Named is the engin
 | Low | High | Rare. Narrow authority. Protect it and build the cluster around it. | 8 freshness, cluster links |
 | High | High | Working. Don't re-sculpt it; go find the next topic. | none |
 
-**Per-model targeting.** Cairrot breaks every topic down by engine (a model filter on `search_mentions` and `search_citations` over the MCP, or the `topics` view in the puller), so sculpt for the engine you're losing rather than the one you already win. As of the 30 days to Sep 3 2026, "browser-based full-stack app creation" ran Perplexity 43%, AI Overviews 15%, Claude 7%, Gemini 3%, ChatGPT 3%, DeepSeek 0%: a Perplexity-shaped page ChatGPT ignores. The per-engine behavior notes stay in `SEO-GEO-drafting`'s FAST-MOVING section; Cairrot tells you which of those notes matter for this piece.
+**Per-model targeting.** Cairrot breaks every topic down by engine (a model filter on `search_mentions` and `search_citations` over the MCP, or the `topics` view in the puller), so sculpt for the engine you're losing rather than the one you already win. A topic might run Perplexity 43%, AI Overviews 15%, Claude 7%, Gemini 3%, ChatGPT 3%, DeepSeek 0%: a Perplexity-shaped page ChatGPT ignores. The per-engine behavior notes stay in `SEO-GEO-drafting`'s FAST-MOVING section; Cairrot tells you which of those notes matter for this piece.
 
 ## Three modes
 
@@ -69,13 +69,13 @@ The one number that drives everything is **named vs. cited**. Named is the engin
 
 Before optimizing for a term, ask two questions: can the term be won, and are we already in the answer without credit?
 
-Start with Cairrot's per-topic named-versus-cited view (MCP: `search_mentions` against `search_citations`, scoped to the topic; puller: `topics`). A topic where we are **named often and cited rarely** is the highest-value target available, because retrieval already works and only the page is failing. A topic where we are neither named nor cited is a slower, more expensive bet, and often the wrong one for a sculpting pass. A **greenfield term** (nobody owns it in AI answers: "prompt queueing," "clustered prompting") gets the full definitional play: own the bare question "What is X?". An **owned term** (a forty-year-old CS concept, a competitor's brand, a saturated head query) cannot be taken head-on — every engine already has its answer. Scope it to the entity instead: not "What is a message queue?" (Kafka wins that forever) but "What is the message queue **in Bolt.new**?". The scoped question is winnable because only we can answer it. When the term choice is still open, say plainly which name is winnable and what the unwinnable name costs — that argument has changed launch naming before.
+Start with Cairrot's per-topic named-versus-cited view (MCP: `search_mentions` against `search_citations`, scoped to the topic; puller: `topics`). A topic where you are **named often and cited rarely** is the highest-value target available, because retrieval already works and only the page is failing. A topic where you are neither named nor cited is a slower, more expensive bet, and often the wrong one for a sculpting pass. A **greenfield term** (nobody owns it in AI answers, a genuinely new coinage) gets the full definitional play: own the bare question "What is X?". An **owned term** (a decades-old established concept, a competitor's brand, a saturated head query) cannot be taken head-on — every engine already has its answer. Scope it to the entity instead: not "What is a message queue?" (the established players win that forever) but "What is the message queue **in [Product]**?". The scoped question is winnable because only you can answer it. When the term choice is still open, say plainly which name is winnable and what the unwinnable name costs — that argument can change launch naming.
 
 To check what's winnable: Cairrot's topic and competitor views (MCP: `search_mentions` and `search_citations` plus `search_fanouts` for who else the engines pull in; puller: `topics` and `competitors`) for where we already appear and who outranks us in the same answers, or a quick web check of who answers the bare question today.
 
 ### 2. The question tree
 
-Every H2/H3 is a question a real person would type or ask an assistant, in their words ("Why did my credits go so fast?" beats "Understanding token consumption"). Clean H1→H2→H3, no skipped levels. Source real phrasings where they exist: the prompt set configured in Cairrot (visible in its web UI, and the basis for every number Cairrot returns), Cairrot's `search_fanouts` (the sub-questions an engine actually ran to build its answer, in the engine's own words), GSC queries via `bolt-seo-geo`, the FAQ language customers use on calls. One non-question H2 for a closing section is fine; a page of statement headers is a finding.
+Every H2/H3 is a question a real person would type or ask an assistant, in their words ("Why did my credits go so fast?" beats "Understanding token consumption"). Clean H1→H2→H3, no skipped levels. Source real phrasings where they exist: the prompt set configured in Cairrot (visible in its web UI, and the basis for every number Cairrot returns), Cairrot's `search_fanouts` (the sub-questions an engine actually ran to build its answer, in the engine's own words), GSC queries via `seo-geo`, the FAQ language customers use on calls. One non-question H2 for a closing section is fine; a page of statement headers is a finding.
 
 ### 3. Answer-first, self-contained sections
 
@@ -83,7 +83,7 @@ Each section opens with the direct, neutral answer in ~40–60 words, then expan
 
 ### 4. The definitional block
 
-For any piece that defines something, one sentence-cluster must carry four signals together: the **term**, the **entity tied to its category** ("Bolt.new, an AI app builder"), the **claim**, and the **date** ("as of August 2026"). Engines lift definitions whole; a definition missing its entity or date gets lifted without credit or rots silently. Write it quotable: it should survive out of context as a complete, attributed fact.
+For any piece that defines something, one sentence-cluster must carry four signals together: the **term**, the **entity tied to its category** ("[Product], a [category]"), the **claim**, and the **date** ("as of [Month Year]"). Engines lift definitions whole; a definition missing its entity or date gets lifted without credit or rots silently. Write it quotable: it should survive out of context as a complete, attributed fact.
 
 ### 5. Receipts
 
@@ -111,29 +111,29 @@ After a Sculpt pass:
 
 1. Numbered findings (🔴/🟡/🔵, lens-tagged: Term, Tree, Answer-first, Definition, Receipts, Liftable, FAQ, Freshness, Glaze) — applied or listed, per the user's ask.
 2. The citability checklist: each of the nine passes as pass / warn / fail with one line of detail.
-3. Copydesk, where present (Taylor's local editor; the tell is a `.copydesk/` directory beside the draft in `~/Documents/Drafts`): mirror the checklist into its checks panel (`.copydesk/checks/<urlencoded-filename>.json`, shape: `{summary, updated (ms epoch), items: [{label, status, detail}]}`) and anchor pending-confirmation items as Copydesk comments so they live next to the text. Without Copydesk, put the checklist at the end of the delivered draft.
-4. **Name the Cairrot baseline the pass targeted**: topic, named %, cited %, and the window ("browser-based full-stack app creation, named 20.6% / cited 0%, 30 days to Sep 3 2026"). If you sculpted without a pull, say so plainly.
+3. Copydesk, where present (a local editor; the tell is a `.copydesk/` directory beside the draft in `~/Documents/Drafts`): mirror the checklist into its checks panel (`.copydesk/checks/<urlencoded-filename>.json`, shape: `{summary, updated (ms epoch), items: [{label, status, detail}]}`) and anchor pending-confirmation items as Copydesk comments so they live next to the text. Without Copydesk, put the checklist at the end of the delivered draft.
+4. **Name the Cairrot baseline the pass targeted**: topic, named %, cited %, and the window (e.g. "named 20.6% / cited 0%, 30 days to [date]"). If you sculpted without a pull, say so plainly.
 5. Name what was protected: honest-frictions passages, deliberate campaign refrains, and verbatim quotes are load-bearing — a pass that sands them off made the piece worse.
 
-For worked before/after examples of every pass (real ones from the Bolt.new campaign, not invented), read `${CLAUDE_PLUGIN_ROOT}/skills/aeo-craft/references/worked-examples.md` — especially before your first run.
+There's no worked-examples file bundled here (it would need real before/afters from your own campaigns to be worth anything); build one from your own sculpts as they accumulate, and reuse the moves below, never anyone else's claims.
 
 ## Reality checks
 
 - Readability still gates: sculpting must keep the piece inside the target reader's Flesch band (set when the audience was named). A perfectly liftable page nobody enjoys reading loses the human half of the audience, and engines increasingly follow human engagement.
-- **Cairrot is the only AI-visibility source. Profound was retired Sep 8 2026.** Pull Cairrot for everything. Two archived snapshots survive on disk as frozen history and must never supply a current number. **Never put Cairrot and Profound figures in one table or one sentence:** different prompt sets, not comparable, and the gap between them reads as a collapse when it is only a change of instrument. Name the source and the window on every number.
-- **Small samples are volatile.** The tracked prompt set is small, so single-window swings are noise. Prefer trend over any one pull, and never build a campaign claim on a single number.
-- **Cairrot measures the prompt set we configured,** not the whole internet. Competitor numbers are directly comparable to ours on that basis, but they cannot support a public "Nth most visible AI app builder" claim.
+- **If you ever retire or swap an AI-visibility tool, never mix its numbers with the new tool's in one table or one sentence:** different prompt sets, not comparable, and the gap between them reads as a collapse when it is only a change of instrument. Name the source and the window on every number.
+- **Small samples are volatile.** A tracked prompt set is usually small, so single-window swings are noise. Prefer trend over any one pull, and never build a claim on a single number.
+- **Cairrot measures the prompt set configured for your project,** not the whole internet. Competitor numbers are directly comparable to yours on that basis, but they cannot support a public "Nth most visible" claim.
 - **Never fabricate a metric.** If a pull comes back empty, say so and sculpt blind, flagged as blind.
-- When aeo-craft and the TOV disagree, TOV wins; when aeo-craft and accuracy disagree, accuracy wins. The skill exists to earn citations for true, well-written things.
+- When aeo-craft and the voice guide disagree, the voice guide wins; when aeo-craft and accuracy disagree, accuracy wins. The skill exists to earn citations for true, well-written things.
 
 ## One-time setup: Cairrot (per user, about five minutes)
 
-Cairrot is the AI-visibility source for bolt.new, and everyone on the team can have it. The skill runs without it (Plan and Sculpt work blind, flagged blind), but Measure needs it, and a sculpt you can't measure is a guess.
+Cairrot is the AI-visibility source this skill expects, for whichever project you point it at. The skill runs without it (Plan and Sculpt work blind, flagged blind), but Measure needs it, and a sculpt you can't measure is a guess.
 
-1. **Get a Cairrot login** on the bolt.new project (ask Taylor). In Cairrot, Account Settings → Create API Key. Prefer a project-scoped key over a global one, and treat it like a password: never paste it into chat, a doc, or a skill file.
-2. **Add the connector** in Claude Desktop → Settings → Connectors → add custom connector. Server: `https://api.cairrot.com/api/v1/mcp`. Auth: OAuth, Client ID `Cairrot-MCP`, your API key as the client secret. If "Add custom connector" is missing, the workspace setting `allow_quick_web_setup` is off for your account; ask Taylor to route it to the admin.
-3. **Confirm.** Start a new session (one that was already open won't see the new tools), ToolSearch `cairrot`, run `list_projects`. If bolt.new is listed, you're wired.
+1. **Get a Cairrot login** for your project. In Cairrot, Account Settings → Create API Key. Prefer a project-scoped key over a global one, and treat it like a password: never paste it into chat, a doc, or a skill file.
+2. **Add the connector** in Claude Desktop → Settings → Connectors → add custom connector. Server: `https://api.cairrot.com/api/v1/mcp`. Auth: OAuth, Client ID `Cairrot-MCP`, your API key as the client secret. If "Add custom connector" is missing, the workspace setting `allow_quick_web_setup` is off for your account; your workspace admin can turn it on.
+3. **Confirm.** Start a new session (one that was already open won't see the new tools), ToolSearch `cairrot`, run `list_projects`. If your project is listed, you're wired.
 
-Treat the connector as read-only for this skill: query reports, never edit. Cairrot's keyword and competitor lists are edited with `PUT` calls that replace the whole list, so one careless write wipes the tracking set the whole team's numbers rest on.
+Treat the connector as read-only for this skill: query reports, never edit. Cairrot's keyword and competitor lists are edited with `PUT` calls that replace the whole list, so one careless write wipes the tracking set everyone's numbers rest on.
 
-On Taylor's machine the `bolt-cairrot` skill's REST puller is already present and returns the same numbers; the connector is not required there.
+If you have a local REST puller set up against the same API, it returns the same numbers; the connector is not required there.

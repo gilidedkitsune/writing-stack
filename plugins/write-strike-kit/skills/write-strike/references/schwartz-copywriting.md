@@ -53,7 +53,7 @@ The prospect knows solutions exist but hasn't chosen one. They're comparing opti
 
 **Copy length:** Medium. The reader is already motivated. Focus on proof and mechanism.
 
-**Example opener:** "Most AI website builders generate templates. Bolt.new generates real, functional code you can edit and deploy."
+**Example opener:** "Most tools in the category generate templates. [Product] generates real, functional code you can edit and deploy."
 
 ### Stage 4: Product-aware
 
@@ -65,7 +65,7 @@ The prospect knows your product but hasn't bought. They're on the fence. Somethi
 
 **Copy length:** Medium-short. Don't re-explain. Add the missing piece that pushes them over.
 
-**Example opener:** "40,000 people have built sites on Bolt.new. Here's what three of them shipped last week."
+**Example opener:** "40,000 people have built sites on [Product]. Here's what three of them shipped last week."
 
 ### Stage 5: Most aware
 
@@ -77,7 +77,7 @@ The prospect knows your product and wants it. They just need a reason to act now
 
 **Copy length:** Short. They don't need convincing. They need a trigger.
 
-**Example opener:** "Bolt.new Pro is free for 14 days. No credit card."
+**Example opener:** "[Product] Pro is free for 14 days. No credit card."
 
 ---
 

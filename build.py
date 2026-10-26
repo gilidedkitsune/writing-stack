@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate the bolt-writing-plugins marketplace from the LIVE skills in
+Generate the writing-stack marketplace from the LIVE skills in
 ~/.claude/skills/. Re-run this after editing any skill, then commit + push.
 
     python3 build.py [version]      # default version 1.0.0
@@ -24,8 +24,8 @@ REPO = os.path.dirname(os.path.abspath(__file__))
 VERSION = sys.argv[1] if len(sys.argv) > 1 else "1.0.0"
 
 KIT = ["write-strike", "tone-and-guidelines", "bolter-tones",
-       "stops-slop", "bolt-content-formats",
-       "ogilvy-copywriting", "bolt-seo-geo", "bolt-blog", "aeo-craft"]
+       "stops-slop", "content-formats",
+       "ogilvy-copywriting", "seo-geo", "blog", "aeo-craft"]
 STANDALONE = ["mr-gay"]
 RESEARCH = ["the-stacks"]
 
@@ -80,7 +80,7 @@ def build_plugin(plugin_name, skill_list, description):
         "name": plugin_name,
         "description": description,
         "version": VERSION,
-        "author": {"name": "Taylor", "email": "taylor@stackblitz.com"},
+        "author": {"name": "Taylor", "email": "taylor.spear@gmail.com"},
     }
     with open(os.path.join(pdir, ".claude-plugin", "plugin.json"), "w") as fh:
         json.dump(plugin_json, fh, indent=2)
@@ -90,7 +90,7 @@ def build_plugin(plugin_name, skill_list, description):
 def main():
     build_plugin("write-strike-kit", KIT,
         "The make-it kit: routing spine, brand voice, personas, content formats, "
-        "Ogilvy, slop audit, and SEO/GEO data for Bolt.new and StackBlitz content.")
+        "Ogilvy, slop audit, and SEO/GEO data for written content.")
     build_plugin("mr-gay", STANDALONE,
         "The fix-it tool: a tough, exacting copyeditor with verdict-first review, "
         "quick-fix or full report, and concreteness scoring.")
@@ -99,9 +99,9 @@ def main():
         "every stat to its primary source, dates it, checks it against a do-not-cite "
         "trap list, and delivers a ready-to-use citation.")
     marketplace = {
-        "name": "bolt-writing-plugins",
-        "owner": {"name": "Taylor / Bolt.new Content", "email": "taylor@stackblitz.com"},
-        "description": "Internal writing and editing skills for Bolt.new and StackBlitz content.",
+        "name": "writing-stack",
+        "owner": {"name": "Taylor", "email": "taylor.spear@gmail.com"},
+        "description": "Personal writing and editing skills: research, draft, and edit.",
         "plugins": [
             {"name": "write-strike-kit", "source": "./plugins/write-strike-kit",
              "description": "The make-it kit: routing spine + craft + voice + personas + formats + SEO/GEO.",

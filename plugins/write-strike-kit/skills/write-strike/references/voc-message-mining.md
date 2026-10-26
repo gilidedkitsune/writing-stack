@@ -25,12 +25,12 @@ Sort what you mine into these. Each maps to a draft slot:
 
 The last two buckets are the ones the rest of the stack misses. Loved features feed Ogilvy's proof discipline; anxieties feed the Four Forces switching model.
 
-## Where to mine (Bolt sources)
+## Where to mine
 
-- **Sales calls: the `bolt-sybill` connector skill.** The richest seam by far, and the one to reach for first on lean-in content. Sybill carries full transcripts plus structured summaries (Outcome, Key Takeaways, Pain Points, FAQ) with CRM account and deal links, so prospect language, objections, and competitor mentions come pre-sorted. It maps almost directly onto the last two buckets, which are the ones everything else misses.
+- **Sales calls: a Sybill connector, where one is set up.** The richest seam by far, and the one to reach for first on lean-in content. Sybill carries full transcripts plus structured summaries (Outcome, Key Takeaways, Pain Points, FAQ) with CRM account and deal links, so prospect language, objections, and competitor mentions come pre-sorted. It maps almost directly onto the last two buckets, which are the ones everything else misses.
 - Internal meetings and user interviews (Granola), and email threads (Gmail).
 - Reviews and ratings (G2, app stores, Trustpilot).
-- Reddit, X, Discord, Hacker News threads about Bolt.new and the category.
+- Reddit, X, Discord, Hacker News threads about the product and the category.
 - Support threads and tickets.
 - The customer-story interview bank already captures this for that one content type.
 

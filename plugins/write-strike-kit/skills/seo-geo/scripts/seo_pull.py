@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""bolt-seo-geo: live SEO data puller for bolt.new (GA4 + Google Search Console).
+"""seo-geo: live SEO data puller for your site (GA4 + Google Search Console).
 
 Reads via OAuth, signed in AS the user (not a service account). That matters because
 "Full" access in Search Console and "Editor" in Analytics can READ through the API but
@@ -9,9 +9,9 @@ that user already has.
 CREDENTIALS live OUTSIDE this skill, in ~/.config/claude-seo/ (per-user, never shared):
   oauth_client.json   the Desktop OAuth client you download from Google Cloud Console
   token.json          created on first `auth`; your saved sign-in
-  config.json         (optional) overrides the baked-in bolt.new defaults below
+  config.json         sets ga4_property and gsc_site for your site (see setup in SKILL.md)
 
-Defaults are baked in for bolt.new, so the data commands work with no config file.
+No property is baked in: set config.json once, or pass --property/--site on each call.
 
 Commands:
   auth                                  one-time browser sign-in; saves token.json
@@ -36,14 +36,12 @@ SCOPES = [
 REDIRECT_PORT = 8765
 REDIRECT_URI = f"http://localhost:{REDIRECT_PORT}/"
 
-# Baked-in defaults for bolt.new. A config.json in CONFIG_DIR can override either key.
-#   ga4_property: the GA4 property literally named "bolt.new" (NOT 102991586, which has no access)
-#   gsc_site:     a Search Console *Domain* property, so the sc-domain: form is required
-#                 (the https://bolt.new/ URL-prefix form returns 403)
-DEFAULTS = {
-    "ga4_property": "properties/464310328",
-    "gsc_site": "sc-domain:bolt.new",
-}
+# No property baked in. Set both keys in CONFIG_DIR/config.json once (see SKILL.md setup),
+# or pass --property / --site on each call.
+#   ga4_property: a GA4 property ID, e.g. "properties/123456789"
+#   gsc_site:     a Search Console property. Domain properties need the sc-domain: form
+#                 (e.g. "sc-domain:example.com"); URL-prefix properties use the full URL.
+DEFAULTS = {}
 
 
 def _config():
@@ -52,7 +50,7 @@ def _config():
 
 
 def _default(key):
-    """CLI arg (handled by caller) > config.json override > baked-in bolt.new default."""
+    """CLI arg (handled by caller) > config.json."""
     return _config().get(key) or DEFAULTS.get(key)
 
 
@@ -147,7 +145,7 @@ def cmd_gsc(args):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="bolt-seo-geo data puller (GA4 + GSC), signed in as the user")
+    ap = argparse.ArgumentParser(description="seo-geo data puller (GA4 + GSC), signed in as the user")
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("auth")
     sub.add_parser("properties")

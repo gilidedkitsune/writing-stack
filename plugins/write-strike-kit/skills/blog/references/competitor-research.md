@@ -2,7 +2,7 @@
 
 Use this reference whenever a competitor URL is provided or the goal is to outrank existing content.
 
-**Data source:** pull SERP results and competitor pages through `bolt-seo-geo`'s connected tools when available (`/serp-analysis`, `/competitor-analysis`, `/content-gap-analysis`). Check `bolt-seo-geo` first for what's connected versus gated. Only fall back to live web search if those tools aren't available. Don't fabricate SERP positions or metrics.
+**Data source:** pull SERP results and competitor pages through `seo-geo`'s connected tools when available (`/serp-analysis`, `/competitor-analysis`, `/content-gap-analysis`). Check `seo-geo` first for what's connected versus gated. Only fall back to live web search if those tools aren't available. Don't fabricate SERP positions or metrics.
 
 ---
 
@@ -10,7 +10,7 @@ Use this reference whenever a competitor URL is provided or the goal is to outra
 
 ### 1a. Run searches
 
-Search for the target keyword on both Google and Bing. Use the keyword exactly as provided, do not modify it. Prefer `bolt-seo-geo`'s SERP tools; if they're gated, use web search.
+Search for the target keyword on both Google and Bing. Use the keyword exactly as provided, do not modify it. Prefer `seo-geo`'s SERP tools; if they're gated, use web search.
 
 - Pull the top 3 organic results per engine (skip ads, featured snippets, and People Also Ask boxes).
 - Collect up to 6 URLs total. Deduplicate: if the same URL appears in both, count it once and note it ranked on both.

@@ -2,14 +2,14 @@
 
 The per-type intake questions for write-strike Step 1. Read only the block for the detected content type. Pick the two that matter most for Round 1 (they batch with the audience and mode questions in one AskUserQuestion call) and carry the rest into Round 2. Skip anything the brief already answered.
 
-Where a block says to load a template from `bolt-content-formats`, that template's own pre-draft checklist is part of the intake for that type.
+Where a block says to load a template from `content-formats`, that template's own pre-draft checklist is part of the intake for that type.
 
 ---
 
-**Blog:** delegated to `bolt-blog` at routing; it runs its own intake. Don't run blog intake here.
+**Blog:** delegated to `blog` at routing; it runs its own intake. Don't run blog intake here.
 
 **Customer story:**
-- Load `${CLAUDE_PLUGIN_ROOT}/skills/bolt-content-formats/references/customer-story-template.md` and work through its Pre-Draft Checklist
+- Load `${CLAUDE_PLUGIN_ROOT}/skills/content-formats/references/customer-story-template.md` and work through its Pre-Draft Checklist
 - Customer name, company, what they built, the problem before, the measurable outcome
 - Available assets: interview transcript, quotes, screenshots, data?
 
@@ -59,7 +59,7 @@ Then ask page-type-specific follow-ups:
 - Core argument or thesis
 
 **Webinar:**
-- Load `${CLAUDE_PLUGIN_ROOT}/skills/bolt-content-formats/references/webinar-bom-template.md` and work through the Event Details section first
+- Load `${CLAUDE_PLUGIN_ROOT}/skills/content-formats/references/webinar-bom-template.md` and work through the Event Details section first
 - Webinar title, date/time, format, platform, speakers
 - Partner details (if co-hosted)
 - Target persona and funnel stage
@@ -67,13 +67,13 @@ Then ask page-type-specific follow-ups:
 - Voice: all webinar content uses the default voice. Personal tone profiles apply only to social posts attributed to a named person (see Webinar-specific in Step 4)
 
 **Sales enablement:**
-- Load `${CLAUDE_PLUGIN_ROOT}/skills/bolt-content-formats/references/sales-enablement-template.md` and work through the relevant asset's checklist
+- Load `${CLAUDE_PLUGIN_ROOT}/skills/content-formats/references/sales-enablement-template.md` and work through the relevant asset's checklist
 - Asset type (battle card, objection handler, competitive one-sheet)
 - Target buyer persona
 - Key objections or competitive positioning
 
 **Creator brief:**
-- Load `${CLAUDE_PLUGIN_ROOT}/skills/bolt-content-formats/references/creator-brief-template.md` and work through its Pre-Brief Checklist
+- Load `${CLAUDE_PLUGIN_ROOT}/skills/content-formats/references/creator-brief-template.md` and work through its Pre-Brief Checklist
 - Creator type (influencer, content partner, agency)
 - Deliverables expected
 - Key messages and guardrails

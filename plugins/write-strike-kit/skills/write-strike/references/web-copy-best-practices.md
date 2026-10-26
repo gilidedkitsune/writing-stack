@@ -203,7 +203,7 @@ Structure adapts to the page's job. Use these as starting frameworks, not rigid 
 
 ### General web copy
 
-Covers homepage, feature pages, pricing pages, solution pages, persona pages, industry pages, and any persistent page on bolt.new. These pages live on the site long-term and serve mixed traffic across awareness levels.
+Covers homepage, feature pages, pricing pages, solution pages, persona pages, industry pages, and any persistent page on the site. These pages live on the site long-term and serve mixed traffic across awareness levels.
 
 **Homepage:** Orient, excite, route. Hero with outcome headline → social proof bar → three to four feature highlights linking deeper → audience routing ("For founders", "For developers") → closing CTA. Restrain scope: tease depth, don't explain the whole product.
 
@@ -211,7 +211,7 @@ Covers homepage, feature pages, pricing pages, solution pages, persona pages, in
 
 **Pricing page:** Scannable tier comparison → what's included (specifics, not vague descriptors) → objection handling per tier → CTA per tier. Clarity over narrative. Name the price. Address the top three objections on the page.
 
-**Solution / persona / industry page:** Audience-specific pain point → how Bolt.new solves it for this audience → proof from similar users → CTA. Mirror the reader's language. These pages are Schwartz problem-aware to solution-aware: the reader feels the pain and is comparing options.
+**Solution / persona / industry page:** Audience-specific pain point → how the product solves it for this audience → proof from similar users → CTA. Mirror the reader's language. These pages are Schwartz problem-aware to solution-aware: the reader feels the pain and is comparing options.
 
 **Rules for all general web copy:**
 - One clear purpose per page. Competing CTAs weaken all of them.
@@ -223,7 +223,7 @@ Covers homepage, feature pages, pricing pages, solution pages, persona pages, in
 
 ### Single-use landing page
 
-Campaign-specific pages tied to a single traffic source (paid ad, email, event, social, contest). These pages exist to convert on one goal and are disposable once the campaign ends. Reference template: [piday.bolt.host](https://piday.bolt.host/).
+Campaign-specific pages tied to a single traffic source (paid ad, email, event, social, contest). These pages exist to convert on one goal and are disposable once the campaign ends.
 
 **Structure** (adapt sections to the campaign; skip what doesn't apply, but maintain the order):
 1. **Hero**: bold headline + tagline or outcome statement + primary CTA + urgency element (countdown timer, deadline, limited availability)

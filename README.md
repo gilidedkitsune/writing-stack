@@ -1,6 +1,6 @@
-# Bolt Writing Plugins
+# Writing Stack
 
-Three Claude Code plugins for Bolt.new and StackBlitz content. One researches, one writes, one edits. Install all three and they form a find-then-make-then-fix workflow.
+Three Claude Code plugins for written content. One researches, one writes, one edits. Install all three and they form a find-then-make-then-fix workflow.
 
 - **the-stacks** researches: stats, quotes, and sources traced to their primary origin, with a do-not-cite trap list and ready-to-use citations.
 - **write-strike-kit** writes the draft (9 skills behind one routing spine).
@@ -45,7 +45,7 @@ To call one explicitly, plugin skills are namespaced `plugin:skill`:
 
 1. **Research** in the-stacks, when a piece needs real stats, quotes, or a competitive landscape, not vibes. Every finding is traced to its primary source, dated, checked against the trap list, and handed back as a stat card ready to paste.
 2. **Draft** in write-strike-kit. It picks the workflow for your content type, asks who it's for and applies the default voice (or a specific person's, from bolter-tones), pulls live SEO/GEO data when the piece needs it, and treats stops-slop's rules as drafting constraints from the first sentence, not a cleanup pass.
-3. **Sharpen** with the edit menu. stops-slop runs first and always, then whichever the piece needs: mr-gay for the copyedit, the Ogilvy pass for persuasion, aeo-craft for citability on anything bound for bolt.new.
+3. **Sharpen** with the edit menu. stops-slop runs first and always, then whichever the piece needs: mr-gay for the copyedit, the Ogilvy pass for persuasion, aeo-craft for citability on anything bound for publication.
 4. **Loop** as needed. A structural rewrite goes back to write-strike-kit; line-level polish stays in mr-gay; a thin or stale source goes back to the-stacks.
 
 ## What is in write-strike-kit
@@ -57,18 +57,18 @@ write-strike is the front door; it loads the others only when a job needs them.
 | write-strike | The writer and routing spine |
 | tone-and-guidelines | The default voice, plus editorial rules and writing tips |
 | bolter-tones | Voice profiles for writing as a specific person instead of the default. Empty for now; add a profile whenever that's the job |
-| bolt-content-formats | Templates for fixed-shape content (customer story, webinar, sales enablement, creator brief) |
-| bolt-blog | The blog content-type default: write, brief, optimize, outrank a competitor |
+| content-formats | Templates for fixed-shape content (customer story, webinar, sales enablement, creator brief) |
+| blog | The blog content-type default: write, brief, optimize, outrank a competitor |
 | ogilvy-copywriting | Persuasion principles, plus an optional voice |
 | stops-slop | The AI-tells filter and the 35/50 gate, applied as drafting constraints |
-| aeo-craft | The citability sculpt for bolt.new-bound work: gets a draft found, extracted, and cited by AI answer engines |
-| bolt-seo-geo | Live SEO/GEO data and tooling (setup below) |
+| aeo-craft | The citability sculpt for published work: gets a draft found, extracted, and cited by AI answer engines |
+| seo-geo | Live SEO/GEO data and tooling (setup below) |
 
 There's no persona library anymore: write-strike asks who a piece is for directly (role, seniority, what they already know) instead of picking from a ranked list.
 
-## bolt-seo-geo setup (per person)
+## seo-geo setup (per person)
 
-bolt-seo-geo reads bolt.new's real Google Analytics and Search Console numbers using **your own** Google sign-in. Credentials live in `~/.config/claude-seo/` on your machine and are never stored in this repo. The first time you use it, follow the setup steps inside the skill. This plugin is internal only.
+seo-geo reads your site's real Google Analytics and Search Console numbers using **your own** Google sign-in. Credentials live in `~/.config/claude-seo/` on your machine and are never stored in this repo; the GA4 property and Search Console domain it targets come from a `config.json` you set up, not a baked-in default. The first time you use it, follow the setup steps inside the skill.
 
 ## the-stacks setup (per person)
 

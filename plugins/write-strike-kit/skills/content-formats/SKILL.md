@@ -1,12 +1,12 @@
 ---
-name: bolt-content-formats
+name: content-formats
 description: >
-  Structural templates and asset specs for Bolt.new / StackBlitz content types that have a fixed shape: customer stories / case studies, webinars (full bill of materials), sales enablement assets (battle cards, objection handlers, competitive one-sheets), creator briefs, plus an answer-first document scaffold (Minto/SCQA) for executive summaries, 1-pagers, bylines, and sales arguments. This skill owns FORMAT and STRUCTURE, not writing craft, and is the single source of truth for "what sections or assets does this content type need." It is loaded by write-strike during the matching content-type workflow. Do NOT use this skill to write or create content. It only supplies the structural skeleton. All content creation, including for these types, goes through write-strike, which loads these templates itself. For HOW to write (voice, persuasion, quality), see write-strike: this skill defines the shape, that one fills it with great copy.
+  Structural templates and asset specs for content types that have a fixed shape: customer stories / case studies, webinars (full bill of materials), sales enablement assets (battle cards, objection handlers, competitive one-sheets), creator briefs, plus an answer-first document scaffold (Minto/SCQA) for executive summaries, 1-pagers, bylines, and sales arguments. This skill owns FORMAT and STRUCTURE, not writing craft, and is the single source of truth for "what sections or assets does this content type need." It is loaded by write-strike during the matching content-type workflow. Do NOT use this skill to write or create content. It only supplies the structural skeleton. All content creation, including for these types, goes through write-strike, which loads these templates itself. For HOW to write (voice, persuasion, quality), see write-strike: this skill defines the shape, that one fills it with great copy.
 ---
 
-# Bolt Content Formats
+# Content Formats
 
-Structural scaffolding for the Bolt.new content types that have a defined shape. Writing craft lives in `write-strike`; asset shape lives here. When a content-type workflow needs a structure, load the matching reference file below and work through its checklist. Voice, tone, persuasion, and the quality bar get applied on top, from write-strike.
+Structural scaffolding for the content types that have a defined shape. Writing craft lives in `write-strike`; asset shape lives here. When a content-type workflow needs a structure, load the matching reference file below and work through its checklist. Voice, tone, persuasion, and the quality bar get applied on top, from write-strike.
 
 | Content type | Scaffold | What it defines |
 |---|---|---|
