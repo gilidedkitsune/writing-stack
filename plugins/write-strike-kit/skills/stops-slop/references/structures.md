@@ -260,6 +260,42 @@ How the copy is dressed can be as loud a tell as the words. Prose channels only;
 | Pattern | Fix |
 |---------|-----|
 | Bold-lead-in bullet walls (every bullet opens "**Header:** description") | One such list per piece, and only when the items are genuinely parallel. Otherwise write prose, or unbold. |
-| Decorative emoji on headers or bullets outside social | Remove. Emoji are a social-platform convention, not typography. |
+| Erratic inline bolding (random bold words scattered through prose paragraphs, no consistent rule for what earns it) | Bold marks genuine emphasis or a defined term, used rarely. If more than one word per paragraph is bold, none of them are doing real work; unbold and let the sentence carry its own weight. |
+| Decorative emoji or arrows (→, ➜) on headers or bullets outside social | Remove. Emoji and arrows-as-bullets are a social-platform convention, not typography. |
 | Colon pileup (a colon-hinged sentence in every paragraph) | The em-dash ban displaces into colons and semicolons. One colon-driven sentence per paragraph, at most. |
 | Bullet-itis (three-plus lists per screen doing prose's job) | If the items aren't parallel or scannable by design, it's paragraphs wearing a list's clothes. Write the paragraph. |
+| Curly ("smart") quotes where straight quotes are syntactically required (code blocks, CLI commands, JSON, config examples, shell snippets) | A model trained on prose defaults to typographic quotes everywhere, including inside code, where `"curly"` breaks the parser. In running prose this isn't a tell (curly quotes are correct typography there; see mr-gay's formatting scan), but inside anything meant to execute or parse, straight quotes only. Check every code block separately from the surrounding prose. |
+
+## Diff-anchored / meta-document writing
+
+Narrating the document's own edit history or its own structure instead of describing the current state of the subject.
+
+| Pattern | Problem |
+|---------|---------|
+| "This function was added to handle..." (in docs describing what code does now) | Narrates the change, not the behavior. A reader of current docs doesn't care what changed; they care what's true now. |
+| "The table below compares..." / "This section covers..." | Describes the document instead of using it. The table or section should just do its job. |
+| "Previously X, now Y" in reference material that only needs Y | Changelog framing leaking into docs that aren't a changelog. |
+
+**Fix:** State the current behavior, flatly. Changelogs and migration guides are the exception: there, narrating the diff is the actual job. Everywhere else, describe the subject, not the document.
+
+## Sudden register or voice shift
+
+A full change in tone, formality, or voice partway through a piece, not to be confused with the register *mixing* that SKILL.md §6 asks for.
+
+| What's good (§6 register mixing) | What's a tell (this section) |
+|---|---|
+| A technical term next to "stuff" in the same paragraph, word-level, deliberate | The whole piece turns formal for two paragraphs then turns casual again, no reason given |
+| Natural, lumpy vocabulary across a page | A section that reads like it was drafted separately and stitched in |
+
+**Fix:** Read the piece end to end, out loud, in one sitting. If the voice drops or formalizes abruptly and nothing in the content explains why (a quote, a legal disclaimer, a shift in speaker), smooth the seam.
+
+## Question-format section headers
+
+Context-dependent: this is a tell in most prose, and the deliberate point in AEO/GEO work.
+
+| Context | Call |
+|---|---|
+| Blog, long-form, docs, standard section headers | Tell. "Why Does This Matter?" as a header is a crutch; a stated header ("The Cost of Waiting") does the same job without the question-mark fishing. |
+| AEO/GEO-targeted content (see `aeo-craft`) | Deliberate and correct. Question-shaped headers ("What is X?", "How does Y work?") match what readers type and what AI answer engines extract. This is the one context where the pattern is the craft, not the tell. |
+
+**Fix:** Check which content type this is before flagging it. A question header on a standard blog section is a finding; the same header on an aeo-craft-targeted definitional piece is the assignment.

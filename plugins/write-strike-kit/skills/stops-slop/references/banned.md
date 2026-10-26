@@ -92,6 +92,7 @@ An ordinary point dressed as a hidden truth. The dressing adds no detail. Replac
 - "X is the language of Y" / "the currency of" / "the architecture of"
 - "X becomes a trap"
 - "X is not a tool but a mirror"
+- "X is the new Y"
 
 ### Vague connection *(see structures.md for the full pattern)*
 
@@ -110,6 +111,10 @@ Name the source or cut the claim. See tone-and-guidelines (Bibliography and attr
 - "Industry reports indicate"
 - "Many argue" / "Some critics say"
 - "It is widely known/accepted"
+
+**Notability name-dropping.** A variant of vague attribution: listing prestigious outlets or names as proof instead of saying what they actually reported. "Covered by TechCrunch, Forbes, and The Verge" asserts credibility by association without a single claim attached. Name what each source said, or cut the list down to the one that's actually load-bearing.
+
+**Hallucination markers.** A suspiciously precise, unverifiable number or fact stated with full confidence: an exact percentage, an oddly specific date, a named-but-uncheckable study. Precision is not the same as sourcing. If you can't trace it, the specificity is a tell, not a strength: round it to what you actually know, or cut it.
 
 ### Chatbot artifacts and sycophancy *(P0 — these end credibility)*
 

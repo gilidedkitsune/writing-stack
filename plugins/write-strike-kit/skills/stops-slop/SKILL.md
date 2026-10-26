@@ -20,6 +20,8 @@ Before the read-through, sweep for P0 fingerprints: near-certain AI artifacts th
 - **AI-tool URL parameters:** utm_source=chatgpt.com / openai / copilot in any link
 - **Knowledge-cutoff disclaimers:** "As of my last update...", "I don't have access to real-time..."
 - **Chatbot artifacts:** "I hope this helps", "Let me know if...", "Great question", "Certainly!"
+- **Reasoning-chain leakage:** "Let me think about this...", "Step 1:", "First, I'll...", "Okay, so..." — visible-reasoning scaffolding that belongs in a thinking process, not the delivered copy.
+- **Unicode hygiene:** zero-width characters, homoglyphs (lookalike letters from another alphabet), or other invisible/non-standard unicode that can leak in from a copy-paste. Strip on sight; this is a hygiene check, not a detector-evasion technique, and this skill never adds unicode to *defeat* detection.
 
 Any one of these shipping in public is worse than every other violation in this file combined.
 
@@ -72,7 +74,7 @@ Paragraph openers that create artificial flow. "This belief defines how we build
 
 If the paragraph follows logically from the prior one, it doesn't need a connector. If it needs one, use something a person would say out loud.
 
-Also in the full catalog, same severity as the patterns above: **arguing with no one** ("To be clear," "A tempting approach would be": a defense against an objection nobody raised), **vague connection** ("linked to," "associated with": a relationship asserted without being named), **repeated sentence openings**, **a heading restated by its first sentence**, **superficial -ing analyses** ("..., highlighting the importance of"), **false ranges** ("from startups to Fortune 500s"), **synonym cycling** (developers → engineers → practitioners), **formulaic conclusions** ("Despite these challenges..."), **significance inflation** ("stands as a testament to"), and the **formatting tells** (bold-lead-in bullet walls, decorative emoji outside social, colon pileups, bullet-itis). See [references/structures.md](references/structures.md).
+Also in the full catalog, same severity as the patterns above: **arguing with no one** ("To be clear," "A tempting approach would be": a defense against an objection nobody raised), **vague connection** ("linked to," "associated with": a relationship asserted without being named), **repeated sentence openings**, **a heading restated by its first sentence**, **superficial -ing analyses** ("..., highlighting the importance of"), **false ranges** ("from startups to Fortune 500s"), **synonym cycling** (developers → engineers → practitioners), **formulaic conclusions** ("Despite these challenges..."), **significance inflation** ("stands as a testament to"), the **formatting tells** (bold-lead-in bullet walls, erratic inline bolding, decorative emoji/arrows outside social, colon pileups, bullet-itis, curly quotes inside code), **diff-anchored writing** (docs narrating their own edits instead of the current state), **sudden register shift**, and **question-format headers** (a tell in prose, the deliberate point in aeo-craft). See [references/structures.md](references/structures.md).
 
 
 ## 3. Enforce voice rules
@@ -205,7 +207,9 @@ A scrub that removes these made the draft worse, not cleaner. If the rewrite is 
 
 ## 10. Sources
 
-The structural and vocabulary catalog draws on Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, by way of [blader/humanizer](https://github.com/blader/humanizer) v3.0.0 (MIT). Patterns that duplicated house rules were dropped; the ones kept were rewritten to this stack's stricter standards (zero em dashes rather than sample-matched, pairs over triads). The worked before/after examples in `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md` are ours.
+The structural and vocabulary catalog draws on Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, by way of [blader/humanizer](https://github.com/blader/humanizer) v3.0.0 (MIT), cross-checked against the larger 55-pattern catalog in [Aboudjem/humanizer-skill](https://github.com/Aboudjem/humanizer-skill) (MIT) for coverage gaps. Patterns that duplicated house rules were dropped; the ones kept were rewritten to this stack's stricter standards (zero em dashes rather than sample-matched, pairs over triads). The worked before/after examples in `${CLAUDE_PLUGIN_ROOT}/skills/stops-slop/references/slop-vs-gold.md` are ours.
+
+Last cross-checked against both catalogs: October 2026. Worth a re-check periodically; the tells move as models change (em dash suppression attempts, new hedging patterns) faster than any fixed list stays current.
 
 ## 11. The editorial judgment call
 

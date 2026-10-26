@@ -1,7 +1,7 @@
 {
   "name": "the-stacks",
   "description": "The find-it tool: a research assistant with newsroom-strict sourcing. Traces every stat to its primary source, dates it, checks it against a do-not-cite trap list, and delivers a ready-to-use citation.",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "author": {
     "name": "Taylor",
     "email": "taylor.spear@gmail.com"
