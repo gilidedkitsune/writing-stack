@@ -27,6 +27,7 @@ KIT = ["write-strike", "tone-and-guidelines", "bolter-tones",
        "stops-slop", "bolt-content-formats",
        "ogilvy-copywriting", "bolt-seo-geo", "bolt-blog", "aeo-craft"]
 STANDALONE = ["mr-gay"]
+RESEARCH = ["the-stacks"]
 
 EXCLUDE_NAMES  = {".last-source-check", ".DS_Store", "__pycache__", ".git"}
 EXCLUDE_SUFFIX = (".pyc",)
@@ -93,6 +94,10 @@ def main():
     build_plugin("mr-gay", STANDALONE,
         "The fix-it tool: a tough, exacting copyeditor with verdict-first review, "
         "quick-fix or full report, and concreteness scoring.")
+    build_plugin("the-stacks", RESEARCH,
+        "The find-it tool: a research assistant with newsroom-strict sourcing. Traces "
+        "every stat to its primary source, dates it, checks it against a do-not-cite "
+        "trap list, and delivers a ready-to-use citation.")
     marketplace = {
         "name": "bolt-writing-plugins",
         "owner": {"name": "Taylor / Bolt.new Content", "email": "taylor@stackblitz.com"},
@@ -103,6 +108,9 @@ def main():
              "version": VERSION},
             {"name": "mr-gay", "source": "./plugins/mr-gay",
              "description": "The fix-it tool: verdict-first copyedit, quick-fix or full report, concreteness scoring.",
+             "version": VERSION},
+            {"name": "the-stacks", "source": "./plugins/the-stacks",
+             "description": "The find-it tool: newsroom-strict sourcing, trap-list checks, ready-to-use citations.",
              "version": VERSION},
         ],
     }

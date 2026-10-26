@@ -10,13 +10,19 @@
       "name": "write-strike-kit",
       "source": "./plugins/write-strike-kit",
       "description": "The make-it kit: routing spine + craft + voice + personas + formats + SEO/GEO.",
-      "version": "2.1.2"
+      "version": "2.1.3"
     },
     {
       "name": "mr-gay",
       "source": "./plugins/mr-gay",
       "description": "The fix-it tool: verdict-first copyedit, quick-fix or full report, concreteness scoring.",
-      "version": "2.1.2"
+      "version": "2.1.3"
+    },
+    {
+      "name": "the-stacks",
+      "source": "./plugins/the-stacks",
+      "description": "The find-it tool: newsroom-strict sourcing, trap-list checks, ready-to-use citations.",
+      "version": "2.1.3"
     }
   ]
 }

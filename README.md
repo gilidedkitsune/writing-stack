@@ -1,16 +1,18 @@
 # Bolt Writing Plugins
 
-Two Claude Code plugins for Bolt.new and StackBlitz content. One writes, one edits. Install both and they form a make-then-fix workflow.
+Three Claude Code plugins for Bolt.new and StackBlitz content. One researches, one writes, one edits. Install all three and they form a find-then-make-then-fix workflow.
 
+- **the-stacks** researches: stats, quotes, and sources traced to their primary origin, with a do-not-cite trap list and ready-to-use citations.
 - **write-strike-kit** writes the draft (9 skills behind one routing spine).
 - **mr-gay** edits the draft (verdict-first review, then quick-fix or full report).
 
 ## Install (one time)
 
-In Claude Code, add this marketplace, then install both plugins:
+In Claude Code, add this marketplace, then install all three plugins:
 
 ```
 /plugin marketplace add gilidedkitsune/writing-stack
+/plugin install the-stacks@writing-stack
 /plugin install write-strike-kit@writing-stack
 /plugin install mr-gay@writing-stack
 ```
@@ -27,21 +29,24 @@ You will be asked to trust the marketplace the first time. After that you are se
 
 The skills **trigger automatically** when you describe a task, so most of the time you just talk:
 
+- "Find stats for this piece" or "what's the competitive landscape" starts the-stacks.
 - "Draft a customer story about a team that shipped in a weekend" starts write-strike-kit.
 - "Edit this" with a pasted draft starts mr-gay.
 
 To call one explicitly, plugin skills are namespaced `plugin:skill`:
 
 ```
+/the-stacks:the-stacks             # research a claim, a stat, a landscape
 /write-strike-kit:write-strike     # start a piece
 /mr-gay:mr-gay                     # edit a piece
 ```
 
-### The make-then-fix flow
+### The find-make-fix flow
 
-1. **Draft** in write-strike-kit. It picks the workflow for your content type, asks who it's for and applies the default voice (or a specific person's, from bolter-tones), pulls live SEO/GEO data when the piece needs it, and treats stops-slop's rules as drafting constraints from the first sentence, not a cleanup pass.
-2. **Sharpen** with the edit menu. stops-slop runs first and always, then whichever the piece needs: mr-gay for the copyedit, the Ogilvy pass for persuasion, aeo-craft for citability on anything bound for bolt.new.
-3. **Loop** as needed. A structural rewrite goes back to write-strike-kit; line-level polish stays in mr-gay.
+1. **Research** in the-stacks, when a piece needs real stats, quotes, or a competitive landscape, not vibes. Every finding is traced to its primary source, dated, checked against the trap list, and handed back as a stat card ready to paste.
+2. **Draft** in write-strike-kit. It picks the workflow for your content type, asks who it's for and applies the default voice (or a specific person's, from bolter-tones), pulls live SEO/GEO data when the piece needs it, and treats stops-slop's rules as drafting constraints from the first sentence, not a cleanup pass.
+3. **Sharpen** with the edit menu. stops-slop runs first and always, then whichever the piece needs: mr-gay for the copyedit, the Ogilvy pass for persuasion, aeo-craft for citability on anything bound for bolt.new.
+4. **Loop** as needed. A structural rewrite goes back to write-strike-kit; line-level polish stays in mr-gay; a thin or stale source goes back to the-stacks.
 
 ## What is in write-strike-kit
 
@@ -65,11 +70,26 @@ There's no persona library anymore: write-strike asks who a piece is for directl
 
 bolt-seo-geo reads bolt.new's real Google Analytics and Search Console numbers using **your own** Google sign-in. Credentials live in `~/.config/claude-seo/` on your machine and are never stored in this repo. The first time you use it, follow the setup steps inside the skill. This plugin is internal only.
 
+## the-stacks setup (per person)
+
+the-stacks points at your own research libraries so verified finds and known-bad stats compound over time instead of getting re-researched every run. It ships with five placeholders left blank in `the-stacks/SKILL.md`; fill each in with wherever that material lives for you (a Notion page, a Google Doc, a folder, a URL, it doesn't matter):
+
+| Placeholder | What to put there |
+|---|---|
+| `[VERIFIED SOURCE LIBRARY]` | Where you keep stats you've already traced to origin |
+| `[TRAP LIST LOCATION]` | Your Do Not Cite list of known-bad stats (can live inside the library) |
+| `[RESEARCH HUB]` | Where finished research reports get filed |
+| `[YOUR COMPETITIVE SET]` | The companies to track by default for market intel |
+| `[YOUR DOCS LOCATION]` | Where exported documents should be saved |
+
+Starting from nothing is fine: create two empty pages, a source library and a research hub, and let them fill up. The skill offers to deposit verified finds and newly discovered traps every time it runs.
+
 ## Getting updates
 
 When a new version is pushed, you receive it automatically on next launch, or pull it now:
 
 ```
+/plugin update the-stacks@writing-stack
 /plugin update write-strike-kit@writing-stack
 /plugin update mr-gay@writing-stack
 ```
